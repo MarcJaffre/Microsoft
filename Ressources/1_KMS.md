@@ -55,10 +55,51 @@ docker logs vlmcsd;
 | Windows Client   | 7       | Entreprise N       | YDRBP-3D83W-TY26F-D46B2-XCKRJ |
 | Windows Client   | 7       | Entreprise E       | C29WB-22CC8-VJ326-GHFJW-H9DH4 |
 
+
+| Operatin System  | Version | Catégorie         | Clé de Produit                |  
+| ---------------- | ------- | ----------------- | ----------------------------- |
+| Microsoft Office | 2019  	 | Professional Plus | NMMKJ-6RK4F-KMJVX-8D9MJ-6MWKP |
+| Microsoft Office | 2019	   | Standard          | 6NWWJ-YQWMR-QKGCB-6TMB3-9D9HK |
+| Microsoft Office | 2016    | Professional Plus | XQNVK-8JYDB-WJ9W3-YJ8YR-WFG99 |
+| Microsoft Office | 2016    | Standard          | JNRGM-WHDWX-FJJG3-K47QV-DRTFM |
+
 <br />
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
-### III. Activation de Windows Server Evaluation Edition
+### III. Activation de Microsoft Windows
+#### A. Windows Server
+##### 1. Présentation
+Lorsqu'on installe Windows serveur, celui-ci est en version `Evaluation Edition`. Pour activer Windows Server, il faut passer en `Standart Edition`.
+
+##### 2. Pré-requis
+La commande suivante permet d'obtenir la version `Standard Edition` de Windows Server.
+```bash
+dism /online /set-edition:ServerStandard /productKey:XXXX-XXXX-XXXX-XXXX-XXXX /accepteula
+```
+
+##### 3. Activation du système
+La commande `cscript //B` est une commande permettant de lancer une commande en mode silencieux.
+```bash
+:: Retirer Licence sur le poste
+cscript //B "%windir%\system32\slmgr.vbs" -upk
+
+:: Licence Windows
+cscript //B "%windir%\system32\slmgr.vbs" -ipk XXXX-XXXX-XXXX-XXXX-XXXX
+
+:: Adresse IP du serveur d'activation
+cscript //B "%windir%\system32\slmgr.vbs" -skms XXX.XXX.XXX.XXX
+
+:: Lancer l'activation
+cscript //B "%windir%\system32\slmgr.vbs" -ato
+
+:: Vérification
+"%windir%\system32\slmgr.vbs" -dlv
+```
+
+<br />
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+### IV. Activation de Microsoft office
 #### A. Présentation
 Lorsqu'on installe Windows serveur, celui-ci est en version `Evaluation Edition`. Pour activer Windows Server, il faut passer en `Standart Edition`.
 
@@ -87,4 +128,3 @@ cscript //B "%windir%\system32\slmgr.vbs" -ato
 "%windir%\system32\slmgr.vbs" -dlv
 ```
 
-<br />
