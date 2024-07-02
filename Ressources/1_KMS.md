@@ -86,10 +86,10 @@ cscript //B "%windir%\system32\slmgr.vbs" -upk
 :: Définir la Licence
 cscript //B "%windir%\system32\slmgr.vbs" -ipk XXXX-XXXX-XXXX-XXXX-XXXX
 
-:: Définir le serveur d'activation
+:: Définir le serveur d-activation
 cscript //B "%windir%\system32\slmgr.vbs" -skms 192.168.XXX.XXX
 
-:: Lancer processus d'activation
+:: Lancer processus d-activation
 cscript //B "%windir%\system32\slmgr.vbs" -ato
 
 :: Vérification
@@ -111,9 +111,9 @@ cd "c:\Program Files\Microsoft Office\Office16"
 :: Définir la Licence
 cscript ospp.vbs /inpkey:XXXXX-XXXXX-XXXXX-XXXXX-XXXXX
 
-:: Définir le serveur d'activation
+:: Définir le serveur d-activation
 cscript ospp.vbs /sethst:192.168.XXX.XXX
 
-:: Lancer processus d'activation
+:: Lancer processus d-activation
 cscript ospp.vbs /act
 ```
