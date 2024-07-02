@@ -5,6 +5,8 @@
 ## I. Présentation
 Le serveur KMS permet l'activation en local d'une machine Windows ou d'office.
 
+<br />
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 ## II. Conteneur
 ### A. Lancement du conteneur
@@ -16,6 +18,8 @@ docker run -d -p 1688:1688 --restart=always --name vlmcsd mikolatero/vlmcsd;
 ```bash
 docker logs vlmcsd;
 ```
+
+<br />
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 ## III. Clés d'activation de Microsoft Windows et d'office
@@ -51,6 +55,8 @@ docker logs vlmcsd;
 | Windows Client   | 7       | Entreprise N       | YDRBP-3D83W-TY26F-D46B2-XCKRJ |
 | Windows Client   | 7       | Entreprise E       | C29WB-22CC8-VJ326-GHFJW-H9DH4 |
 
+<br />
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 ## III. Activation de Windows Server Evaluation Edition
 ### A. Présentation
@@ -80,3 +86,5 @@ cscript //B "%windir%\system32\slmgr.vbs" -ato
 :: Vérification
 "%windir%\system32\slmgr.vbs" -dlv
 ```
+
+<br />
