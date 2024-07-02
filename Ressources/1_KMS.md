@@ -17,9 +17,8 @@ docker run -d -p 1688:1688 --restart=always --name vlmcsd mikolatero/vlmcsd;
 docker logs vlmcsd;
 ```
 
-
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
-## III. Clé d'activation de Microsoft Windows
+## III. Clés d'activation de Microsoft Windows et d'office
 
 ([Generic Volume License Keys](https://learn.microsoft.com/en-us/windows-server/get-started/kms-client-activation-keys))
 
@@ -51,3 +50,33 @@ docker logs vlmcsd;
 | Windows Client   | 7       | Entreprise         | 33PXH-7Y6KF-2VJC9-XBBR8-HVTHH |
 | Windows Client   | 7       | Entreprise N       | YDRBP-3D83W-TY26F-D46B2-XCKRJ |
 | Windows Client   | 7       | Entreprise E       | C29WB-22CC8-VJ326-GHFJW-H9DH4 |
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+## III. Activation de Windows Server Evaluation Edition
+### A. Présentation
+Lorsqu'on installe Windows serveur, celui-ci est en version `Evaluation Edition`. Pour activer Windows Server, il faut passer en `Standart Edition`.
+
+### B. Pré-requis
+La commande suivante permet d'obtenir la version `Standard Edition` de Windows Server.
+```bash
+dism /online /set-edition:ServerStandard /productKey:XXXX-XXXX-XXXX-XXXX-XXXX /accepteula
+```
+
+### C. Activation du système
+La commande `cscript //B` est une commande permettant de lancer une commande en mode silencieux.
+```bash
+:: Retirer Licence sur le poste
+cscript //B "%windir%\system32\slmgr.vbs" -upk
+
+:: Licence Windows
+cscript //B "%windir%\system32\slmgr.vbs" -ipk XXXX-XXXX-XXXX-XXXX-XXXX
+
+:: Adresse IP du serveur d'activation
+cscript //B "%windir%\system32\slmgr.vbs" -skms XXX.XXX.XXX.XXX
+
+:: Lancer l'activation
+cscript //B "%windir%\system32\slmgr.vbs" -ato
+
+:: Vérification
+"%windir%\system32\slmgr.vbs" -dlv
+```
