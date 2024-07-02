@@ -1,20 +1,20 @@
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
-## <p align='center'> Serveur d'activation Microsoft (Local) </p>
+# <p align='center'> Serveur d'activation Microsoft (Local) </p>
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
-### I. Présentation
+## I. Présentation
 Le serveur KMS permet l'activation en local d'une machine Windows ou d'office.
 
 <br />
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
-### II. Conteneur
-#### A. Lancement du conteneur
+## II. Conteneur
+### A. Lancement du conteneur
 Pour lancer le conteneur, il est nécessaire de disposer de l'application Docker.
 ```bash
 docker run -d -p 1688:1688 --restart=always --name vlmcsd mikolatero/vlmcsd;
 ```
-#### B. Afficher la log
+### B. Afficher la log
 ```bash
 docker logs vlmcsd;
 ```
@@ -22,7 +22,7 @@ docker logs vlmcsd;
 <br />
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
-### III. Clés d'activation de Microsoft Windows et d'office
+## III. Clés d'activation de Microsoft Windows et d'office
 
 ([Generic Volume License Keys](https://learn.microsoft.com/en-us/windows-server/get-started/kms-client-activation-keys))
 
@@ -66,30 +66,30 @@ docker logs vlmcsd;
 <br />
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
-### III. Activation de Microsoft Windows
-#### A. Windows Server
-##### 1. Présentation
+## III. Activation de Microsoft Windows
+### A. Windows Server
+#### 1. Présentation
 Lorsqu'on installe Windows serveur, celui-ci est en version `Evaluation Edition`. Pour activer Windows Server, il faut passer en `Standart Edition`.
 
-##### 2. Pré-requis
+#### 2. Pré-requis
 La commande suivante permet d'obtenir la version `Standard Edition` de Windows Server.
 ```bash
 dism /online /set-edition:ServerStandard /productKey:XXXX-XXXX-XXXX-XXXX-XXXX /accepteula
 ```
 
-##### 3. Activation du système
+#### 3. Activation du système
 La commande `cscript //B` est une commande permettant de lancer une commande en mode silencieux.
 ```bash
 :: Retirer Licence sur le poste
 cscript //B "%windir%\system32\slmgr.vbs" -upk
 
-:: Licence Windows
+:: Définir la Licence
 cscript //B "%windir%\system32\slmgr.vbs" -ipk XXXX-XXXX-XXXX-XXXX-XXXX
 
-:: Adresse IP du serveur d'activation
-cscript //B "%windir%\system32\slmgr.vbs" -skms XXX.XXX.XXX.XXX
+:: Définir le serveur d'activation
+cscript //B "%windir%\system32\slmgr.vbs" -skms 192.168.XXX.XXX
 
-:: Lancer l'activation
+:: Lancer processus d'activation
 cscript //B "%windir%\system32\slmgr.vbs" -ato
 
 :: Vérification
@@ -99,32 +99,21 @@ cscript //B "%windir%\system32\slmgr.vbs" -ato
 <br />
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
-### IV. Activation de Microsoft office
-#### A. Présentation
-Lorsqu'on installe Windows serveur, celui-ci est en version `Evaluation Edition`. Pour activer Windows Server, il faut passer en `Standart Edition`.
-
-#### B. Pré-requis
-La commande suivante permet d'obtenir la version `Standard Edition` de Windows Server.
+## IV. Activation de Microsoft office
+### A. Pré-requis
+Pour permettre l'activation de Microsoft Office, il est nécessaire d'avoir la version GVLK du logiciel.
+### B. Activation du système
 ```bash
-dism /online /set-edition:ServerStandard /productKey:XXXX-XXXX-XXXX-XXXX-XXXX /accepteula
+:: Dossier Office 2016
+cd "c:\Program Files (x86)\Microsoft Office\Office16"
+cd "c:\Program Files\Microsoft Office\Office16"
+
+:: Définir la Licence
+cscript ospp.vbs /inpkey:XXXXX-XXXXX-XXXXX-XXXXX-XXXXX
+
+:: Définir le serveur d'activation
+cscript ospp.vbs /sethst:192.168.XXX.XXX
+
+:: Lancer processus d'activation
+cscript ospp.vbs /act
 ```
-
-#### C. Activation du système
-La commande `cscript //B` est une commande permettant de lancer une commande en mode silencieux.
-```bash
-:: Retirer Licence sur le poste
-cscript //B "%windir%\system32\slmgr.vbs" -upk
-
-:: Licence Windows
-cscript //B "%windir%\system32\slmgr.vbs" -ipk XXXX-XXXX-XXXX-XXXX-XXXX
-
-:: Adresse IP du serveur d'activation
-cscript //B "%windir%\system32\slmgr.vbs" -skms XXX.XXX.XXX.XXX
-
-:: Lancer l'activation
-cscript //B "%windir%\system32\slmgr.vbs" -ato
-
-:: Vérification
-"%windir%\system32\slmgr.vbs" -dlv
-```
-
