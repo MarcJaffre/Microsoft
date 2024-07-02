@@ -1,20 +1,20 @@
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
-# <p align='center'> Serveur d'activation Microsoft (Local) </p>
+## <p align='center'> Serveur d'activation Microsoft (Local) </p>
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
-## I. Présentation
+### I. Présentation
 Le serveur KMS permet l'activation en local d'une machine Windows ou d'office.
 
 <br />
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
-## II. Conteneur
-### A. Lancement du conteneur
+### II. Conteneur
+#### A. Lancement du conteneur
 Pour lancer le conteneur, il est nécessaire de disposer de l'application Docker.
 ```bash
 docker run -d -p 1688:1688 --restart=always --name vlmcsd mikolatero/vlmcsd;
 ```
-### B. Afficher la log
+#### B. Afficher la log
 ```bash
 docker logs vlmcsd;
 ```
@@ -22,7 +22,7 @@ docker logs vlmcsd;
 <br />
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
-## III. Clés d'activation de Microsoft Windows et d'office
+### III. Clés d'activation de Microsoft Windows et d'office
 
 ([Generic Volume License Keys](https://learn.microsoft.com/en-us/windows-server/get-started/kms-client-activation-keys))
 
@@ -58,17 +58,17 @@ docker logs vlmcsd;
 <br />
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
-## III. Activation de Windows Server Evaluation Edition
-### A. Présentation
+### III. Activation de Windows Server Evaluation Edition
+#### A. Présentation
 Lorsqu'on installe Windows serveur, celui-ci est en version `Evaluation Edition`. Pour activer Windows Server, il faut passer en `Standart Edition`.
 
-### B. Pré-requis
+#### B. Pré-requis
 La commande suivante permet d'obtenir la version `Standard Edition` de Windows Server.
 ```bash
 dism /online /set-edition:ServerStandard /productKey:XXXX-XXXX-XXXX-XXXX-XXXX /accepteula
 ```
 
-### C. Activation du système
+#### C. Activation du système
 La commande `cscript //B` est une commande permettant de lancer une commande en mode silencieux.
 ```bash
 :: Retirer Licence sur le poste
