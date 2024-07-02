@@ -67,7 +67,6 @@ La commande suivante permet d'obtenir la version `Standard Edition` de Windows S
 ```bash
 dism /online /set-edition:ServerStandard /productKey:XXXX-XXXX-XXXX-XXXX-XXXX /accepteula
 ```
-<br />
 
 #### C. Activation du système
 La commande `cscript //B` est une commande permettant de lancer une commande en mode silencieux.
