@@ -6,7 +6,7 @@
 Le client VDI permet la connexion à la machine distante.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-## II. Proxmox
+## II. Proxmox (Accès)
 ### A. Création d'un Utilisateur (PVE)
 ![image](https://github.com/MarcJaffre/Microsoft/assets/35907/026f3a1d-3f96-40d7-80ae-3a42c0d1c9c2)
 
@@ -42,6 +42,12 @@ Le Rôle `PVEVMUser` permet de gérer l'état de la machine, d'accéder à la co
 
 <br />
 <br />
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## III Proxmox (VM)
+### A. Configuration de l'affichage en Spice
+### B. Ajout du périphérique Audio Spice
+### C. Ajout de matériel USB Spice
 
 
 
