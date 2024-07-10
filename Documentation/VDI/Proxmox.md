@@ -6,7 +6,28 @@
 Le client VDI permet la connexion à la machine distante.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-## II. Installation du client
+## II. Proxmox
+### A. Création d'un Utilisateur (PVE)
+![image](https://github.com/MarcJaffre/Microsoft/assets/35907/026f3a1d-3f96-40d7-80ae-3a42c0d1c9c2)
+
+![image](https://github.com/MarcJaffre/Microsoft/assets/35907/c84913e2-12d5-4f56-b0c8-1ece8e43f132)
+
+### B. Création d'un Jeton API
+Le jeton se nomme `TOKEN_VDI_PVE` et à comme clé API `0cb62366-317f-489f-8da0-191378282e76`
+
+![image](https://github.com/MarcJaffre/Microsoft/assets/35907/09e39141-2117-4436-b619-731246c201e2)
+
+![image](https://github.com/MarcJaffre/Microsoft/assets/35907/ec7c44a8-830b-4b77-98c8-9eb0ff70a9a3)
+
+
+
+### C. Permission de la clé API
+
+
+<br />
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## IV. Installation du client
 ### A. Télécharger le client
 Aller sur le github [joshpatten](https://github.com/joshpatten/PVE-VDIClient/releases) pour récupérer l'installateur `vdiclient-X.X.X-YY.msi`.
 
