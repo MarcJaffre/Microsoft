@@ -19,10 +19,19 @@ Le jeton se nomme `TOKEN_VDI_PVE` et à comme clé API `0cb62366-317f-489f-8da0-
 
 ![image](https://github.com/MarcJaffre/Microsoft/assets/35907/ec7c44a8-830b-4b77-98c8-9eb0ff70a9a3)
 
+### C. Création d'un Groupe VDI
+Après avoir crée le groupe, il faut éditer l'utilisateur `VDI` pour qu'il rejoigne le groupe.
+
+![image](https://github.com/MarcJaffre/Microsoft/assets/35907/9b400417-6dfd-4a2b-a5c5-41dbf7a0d452)
 
 
-### C. Permission de la clé API
+### X. Permission de la clé API
+Le scénario suivant est que le compte `VDI` pourras se connecter à la machine Virtuelle `201`
 
+
+VM.PowerMgmt
+VM.Console
+VM.Audit
 
 <br />
 
