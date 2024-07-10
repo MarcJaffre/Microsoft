@@ -24,14 +24,23 @@ Après avoir crée le groupe, il faut éditer l'utilisateur `VDI` pour qu'il rej
 
 ![image](https://github.com/MarcJaffre/Microsoft/assets/35907/9b400417-6dfd-4a2b-a5c5-41dbf7a0d452)
 
-
-### X. Permission de la clé API
+### D. Configuration des permissions
 Le scénario suivant est que le compte `VDI` pourras se connecter à la machine Virtuelle `201`
 
+#### 1. Permettre l'accès au Pool 
+Le Rôle `PVEPoolUser` permet de voir le pool uniquement. (Pool.Audit)
 
-VM.PowerMgmt
-VM.Console
-VM.Audit
+![image](https://github.com/MarcJaffre/Microsoft/assets/35907/9e3bdee5-dad7-4d20-bbad-ada86c9b5595)
+
+#### 2. Permettre l'accès la VM
+Le Rôle `PVEVMUser` permet de gérer l'état de la machine, d'accéder à la console. (VM.PowerMgmt, VM.Console, VM.Audit)
+
+![image](https://github.com/MarcJaffre/Microsoft/assets/35907/f7c6e2af-a607-4cff-8f9a-c6df10b17c59)
+
+#### 
+
+
+
 
 <br />
 
