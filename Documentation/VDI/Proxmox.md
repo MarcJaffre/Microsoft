@@ -36,11 +36,11 @@ auth_backend  = pve
 auth_totp     = false
 tls_verify    = false
 user          = XXXXXXX
-token_name   = XXXXXXX
-token_value  = XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
-
+token_name    = XXXXXXX
+token_value   = XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
 hostpool      = { "192.168.XXX.XXX" : 8006 }
 auto_vmid     = XXX
+
 
 [SpiceProxyRedirect]
 proxmox.mondomain:3128 = 192.168.XXX.XXX
