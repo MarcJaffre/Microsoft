@@ -116,7 +116,6 @@ type         = spice
 ################################################################################
 ```
 
-
 ### F. Code Final (Debug OFF)
 ```
 [General]
@@ -153,8 +152,13 @@ toggle-fullscreen = Shift+F11
 ################################################################################
 ```
 
+### G. [Fix] XFCE (Dimension)
+```
+https://dannyda.com/2020/10/22/how-to-fix-cant-resize-kali-linux-vm-screen-display-via-virt-viewer-running-on-proxmox-ve-pve-with-default-xfce4-desktop-environment/#google_vignette
+```
 
 
+```
 # apt install python3-pip python3-tk virt-viewer git
 # git clone https://github.com/joshpatten/PVE-VDIClient.git
 # cd ./PVE-VDIClient/
