@@ -13,7 +13,7 @@ Le client VDI permet la connexion à la machine distante.
 ![image](https://github.com/MarcJaffre/Microsoft/assets/35907/c84913e2-12d5-4f56-b0c8-1ece8e43f132)
 
 ### B. Création d'un Jeton API
-Le jeton se nomme `TOKEN_VDI_PVE` et à comme clé API `0cb62366-317f-489f-8da0-191378282e76`
+Le jeton se nomme `TOKEN_VDI_PVE` et à comme clé API `0cb62366-317f-489f-8da0-191378282e76` et appartient au compte `VDI` qui s'authentifie sur `Proxmox`. (PVE)
 
 ![image](https://github.com/MarcJaffre/Microsoft/assets/35907/09e39141-2117-4436-b619-731246c201e2)
 
