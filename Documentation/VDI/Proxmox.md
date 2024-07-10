@@ -81,18 +81,23 @@ hostpool      = { "192.168.0.2" : 8006 }
 auto_vmid     = 201
 ```
 ### C. Connexion à la Machine Virtuelle
+Le fichier de configuration ne permet pas en état actuelle de se connecter sur la VM.
 
 ![image](https://github.com/MarcJaffre/Microsoft/assets/35907/72578770-9274-4934-90ad-c151d3d8618d)
 
+![image](https://github.com/MarcJaffre/Microsoft/assets/35907/a06d6c6c-249d-432a-a6a3-389811b19e38)
+
+### D. Information utiles
 ```
 type = spice
 proxy = http://proxmox.lan:3128
 host-subject = OU=PVE Cluster Node,O=Proxmox Virtual Environment,CN=Proxmox.lan
 ```
 
+### E. Résolution de l'erreur Graphique
+Sous la zone `[AdditionalParameters]`, copier la ligne commençant par `type = ` et `host-subject` relevé précédemment.
 
-
-
+Sous la zone `[SpiceProxyRedirect]` indiquer la valeur `Proxy` précédente relevée en supprimant `proxy = http://` puis indiquer l'adresse du serveur Proxmox.
 
 ```
 ################################################################################
@@ -100,9 +105,48 @@ host-subject = OU=PVE Cluster Node,O=Proxmox Virtual Environment,CN=Proxmox.lan
 proxmox.lan:3128 = 192.168.0.2
 
 [AdditionalParameters]
-type         = spice
 host-subject = OU=PVE Cluster Node,O=Proxmox Virtual Environment,CN=proxmox.lan
+type         = spice
 ################################################################################
+```
+
+
+### F. Code Final (Debug OFF)
+```
+[General]
+title         = Proxmox By Drthrax74
+theme         = LightBlue
+icon          = vdiicon.ico
+logo          = vdiclient.png
+kiosk         = False
+fullscreen    = False
+inidebug      = False
+guest_type    = qemu
+show_reset    = True
+
+[Hosts.Proxmox]
+auth_backend  = pve
+auth_totp     = false
+tls_verify    = false
+user          = VDI
+token_name    = TOKEN_VDI_PVE
+token_value   = 0cb62366-317f-489f-8da0-191378282e76
+hostpool      = { "192.168.0.2" : 8006 }
+auto_vmid     = 201
+################################################################################
+[SpiceProxyRedirect]
+proxmox.lan:3128 = 192.168.0.2
+
+[AdditionalParameters]
+host-subject      = OU=PVE Cluster Node,O=Proxmox Virtual Environment,CN=proxmox.lan
+type              = spice
+
+title             = Machine Virtuelle 201
+secure-attention  = Ctrl+Alt+Ins
+toggle-fullscreen = Shift+F11
+################################################################################
+
+
 
 
 # apt install python3-pip python3-tk virt-viewer git
