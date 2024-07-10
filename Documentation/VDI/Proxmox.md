@@ -40,16 +40,17 @@ Le Rôle `PVEVMUser` permet de gérer l'état de la machine, d'accéder à la co
 ![image](https://github.com/MarcJaffre/Microsoft/assets/35907/680288a6-1ae3-4e8a-a01b-a75040c8c431)
 
 
-
-
 <br />
+<br />
+
+
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## IV. Installation du client
 ### A. Télécharger le client
 Aller sur le github [joshpatten](https://github.com/joshpatten/PVE-VDIClient/releases) pour récupérer l'installateur `vdiclient-X.X.X-YY.msi`.
 
-### B. Configuration du client VDI
+### B. Configuration du client VDI (Partie 1)
 ```
 - Ouvrir le dossier C:\Program Files\VDIClient
 - Créer un fichier vdiclient.ini
@@ -69,29 +70,39 @@ inidebug      = True
 guest_type    = qemu
 show_reset    = True
 
-
 [Hosts.Proxmox]
 auth_backend  = pve
 auth_totp     = false
 tls_verify    = false
-user          = XXXXXXX
-token_name    = XXXXXXX
-token_value   = XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
-hostpool      = { "192.168.XXX.XXX" : 8006 }
-auto_vmid     = XXX
+user          = VDI
+token_name    = TOKEN_VDI_PVE
+token_value   = 0cb62366-317f-489f-8da0-191378282e76
+hostpool      = { "192.168.0.2" : 8006 }
+auto_vmid     = 201
+```
+### C. Connexion à la Machine Virtuelle
+
+![image](https://github.com/MarcJaffre/Microsoft/assets/35907/72578770-9274-4934-90ad-c151d3d8618d)
+
+```
+type = spice
+proxy = http://proxmox.lan:3128
+host-subject = OU=PVE Cluster Node,O=Proxmox Virtual Environment,CN=Proxmox.lan
+```
 
 
+
+
+
+```
+################################################################################
 [SpiceProxyRedirect]
-proxmox.mondomain:3128 = 192.168.XXX.XXX
+proxmox.lan:3128 = 192.168.0.2
 
 [AdditionalParameters]
 type         = spice
-host-subject = OU=PVE Cluster Node,O=Proxmox Virtual Environment,CN=proxmox.mondomain
-```
-
-
-
-```
+host-subject = OU=PVE Cluster Node,O=Proxmox Virtual Environment,CN=proxmox.lan
+################################################################################
 
 
 # apt install python3-pip python3-tk virt-viewer git
