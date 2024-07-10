@@ -27,7 +27,7 @@ Après avoir crée le groupe, il faut éditer l'utilisateur `VDI` pour qu'il rej
 ### D. Configuration des permissions
 Le scénario suivant est que le compte `VDI` pourras se connecter à la machine Virtuelle `201`
 
-#### 1. Permettre l'accès au Pool
+#### 1. Permettre du Groupe
 Le Rôle `PVEPoolUser` permet de voir le pool uniquement. (Pool.Audit)
 
 ![image](https://github.com/MarcJaffre/Microsoft/assets/35907/9e3bdee5-dad7-4d20-bbad-ada86c9b5595)
