@@ -53,8 +53,10 @@ Le Rôle `PVEVMUser` permet de gérer l'état de la machine, d'accéder à la co
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## IV. Installation du client
-### A. Télécharger le client
+### A. Télécharger le client et sa dépendance
 Aller sur le github [joshpatten](https://github.com/joshpatten/PVE-VDIClient/releases) pour récupérer l'installateur `vdiclient-X.X.X-YY.msi`.
+
+Aller sur le site [Virt-Manager](https://virt-manager.org/download.html) pour récupérer l'installateur `Win x64 MSI`.
 
 ### B. Configuration du client VDI (Partie 1)
 ```
@@ -63,6 +65,8 @@ Aller sur le github [joshpatten](https://github.com/joshpatten/PVE-VDIClient/rel
 - Editer le fichier avec le Bloc-Note
 - L'activation du mode Debug (inidebug = True), permet de relevé les informations importante pour la configuration du client
 ```
+
+
 
 ```
 [General]
