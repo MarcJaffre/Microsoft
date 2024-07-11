@@ -48,8 +48,9 @@ Le Rôle `PVEVMUser` permet de gérer l'état de la machine, d'accéder à la co
 ### A. Configuration de l'affichage en Spice
 ### B. Ajout du périphérique Audio Spice
 ### C. Ajout de matériel USB Spice
+### D. Installation Spice Space
 
-
+https://www.spice-space.org/download.html
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## IV. Installation du client
