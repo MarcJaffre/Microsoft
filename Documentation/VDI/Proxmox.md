@@ -48,9 +48,23 @@ Le Rôle `PVEVMUser` permet de gérer l'état de la machine, d'accéder à la co
 ### A. Configuration de l'affichage en Spice
 ### B. Ajout du périphérique Audio Spice
 ### C. Ajout de matériel USB Spice
-### D. Installation Spice Space
+### D. Installation Spice Space (Windows)
+Installer le programme `SPICE Guest Tools` ([ici](https://www.spice-space.org/download.html))
 
-https://www.spice-space.org/download.html
+### E. Installation Spice Space (Linux)
+Le paquet vdagent permet le glisser/déposer de lhôte vers l'invité.
+```bash
+clear;
+apt install spice-vdagent;
+```
+
+
+# spice-client-glib-usb-acl-helper
+# spice-client-gtk
+# spice-webdavd
+# spice-html5 
+
+
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## IV. Installation du client
@@ -66,8 +80,6 @@ Aller sur le site [Virt-Manager](https://virt-manager.org/download.html) pour r�
 - Editer le fichier avec le Bloc-Note
 - L'activation du mode Debug (inidebug = True), permet de relevé les informations importante pour la configuration du client
 ```
-
-
 
 ```
 [General]
