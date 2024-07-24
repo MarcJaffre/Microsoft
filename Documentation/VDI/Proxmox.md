@@ -146,14 +146,14 @@ Sous la zone `[AdditionalParameters]`, copier la ligne commençant par `type = `
 Sous la zone `[SpiceProxyRedirect]` indiquer la valeur `Proxy` précédente relevée en supprimant `proxy = http://` puis indiquer l'adresse du serveur Proxmox.
 
 ```
-################################################################################
+##############################################################################################
 [SpiceProxyRedirect]
 proxmox.lan:3128 = 192.168.0.2
 
 [AdditionalParameters]
 host-subject = OU=PVE Cluster Node,O=Proxmox Virtual Environment,CN=proxmox.lan
 type         = spice
-################################################################################
+##############################################################################################
 ```
 
 ### F. Code Final (Debug OFF)
@@ -178,8 +178,10 @@ token_name    = TOKEN_VDI_PVE
 token_value   = 0cb62366-317f-489f-8da0-191378282e76
 hostpool      = { "192.168.0.2" : 8006 }
 auto_vmid     = 201
-################################################################################
+
+##############################################################################################
 [SpiceProxyRedirect]
+# proxmox.lan:3128 = <LAN/WAN IP>
 proxmox.lan:3128 = 192.168.0.2
 
 [AdditionalParameters]
@@ -189,10 +191,14 @@ type              = spice
 title             = Machine Virtuelle 201
 secure-attention  = Ctrl+Alt+Ins
 toggle-fullscreen = Shift+F11
-################################################################################
+##############################################################################################
 ```
 
-### G. [Fix] XFCE (Dimension)
+### G. Ports Spice
+Le port est `3128` en TCP
+
+
+### Z. [Fix] XFCE (Dimension)
 ```
 https://dannyda.com/2020/10/22/how-to-fix-cant-resize-kali-linux-vm-screen-display-via-virt-viewer-running-on-proxmox-ve-pve-with-default-xfce4-desktop-environment/#google_vignette
 ```
