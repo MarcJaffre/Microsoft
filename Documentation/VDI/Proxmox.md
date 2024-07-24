@@ -49,7 +49,9 @@ Le Rôle `PVEVMUser` permet de gérer l'état de la machine, d'accéder à la co
 ### B. Ajout du périphérique Audio Spice
 ### C. Ajout de matériel USB Spice
 ### D. Installation Spice Space (Windows)
-Installer le programme `SPICE Guest Tools` ([ici](https://www.spice-space.org/download.html))
+Installer le programme `SPICE Guest Tools` ([ici](https://www.spice-space.org/download.html)) pour permettre une fluidité sur SPICE et éviter le capture de la souris.
+
+
 
 ### E. Installation Spice Space (Linux)
 Le paquet vdagent permet le glisser/déposer de lhôte vers l'invité.
