@@ -52,8 +52,27 @@ Le Rôle `PVEVMUser` permet de gérer l'état de la machine, d'accéder à la co
 Installer le programme [SPICE Guest Tools](https://www.spice-space.org/download/windows/spice-guest-tools/spice-guest-tools-latest.exe)  pour permettre une fluidité sur SPICE et éviter le capture de la souris.
 
 
+### E. Installation du pilote QXL
+Pour avoir l'accélération graphique, il faut choisir 
+```bash
+clear;
+apt install -y x11proto-core-dev x11proto-fonts-dev  xserver-xorg-dev;
+apt install -y libspice-protocol-dev;
+apt install -y xutils-dev;
+apt install -y git;
 
-### E. Installation Spice Space (Linux)
+https://gitlab.freedesktop.org/xorg/driver/xf86-video-qxl.git;
+cd xf86-video-qxl;
+./configure;
+make -j$(nproc);
+```
+
+![image](https://github.com/user-attachments/assets/0d6b9097-c0e0-4936-9db0-8788e4481396)
+
+
+
+
+### F. Installation Spice Space (Linux)
 Le paquet vdagent permet le glisser/déposer de lhôte vers l'invité.
 ```bash
 clear;
