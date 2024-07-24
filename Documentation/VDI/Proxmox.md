@@ -59,12 +59,14 @@ apt install spice-vdagent;
 ```
 
 
-# spice-client-glib-usb-acl-helper
-# spice-client-gtk
-# spice-webdavd
-# spice-html5 
+```
+spice-client-glib-usb-acl-helper
+spice-client-gtk
+spice-webdavd
+spice-html5 
+```
 
-
+<br />
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## IV. Installation du client
