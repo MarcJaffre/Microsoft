@@ -11,21 +11,21 @@ ECHO -------------- Utilitaires --------------
 ECHO.
 ECHO Menu 0 : Chocolatey
 ECHO Menu 1 : Autoruns
-ECHO Menu 2 : 
-ECHO Menu 3 : 
-ECHO Menu 4 : 
-ECHO Menu 5 : 
-ECHO Menu 6 : 
-ECHO Menu 7 : 
-ECHO Menu 8 : 
-ECHO Menu 9 : 
-ECHO Menu A :
-ECHO Menu B : 
-ECHO Menu C : 
-ECHO Menu D : 
-ECHO Menu E : 
-ECHO Menu F : 
-ECHO Menu G : 
+:: ECHO Menu 2 : 
+:: ECHO Menu 3 : 
+:: ECHO Menu 4 : 
+:: ECHO Menu 5 : 
+:: ECHO Menu 6 : 
+:: ECHO Menu 7 : 
+:: ECHO Menu 8 : 
+:: ECHO Menu 9 : 
+:: ECHO Menu A :
+:: ECHO Menu B : 
+:: ECHO Menu C : 
+:: ECHO Menu D : 
+:: ECHO Menu E : 
+:: ECHO Menu F : 
+:: ECHO Menu G : 
 :: ECHO.
 :: ECHO -------------- Divertissements -------------
 :: ECHO.
@@ -52,6 +52,9 @@ ECHO Menu G :
 :: ECHO Menu V : 
 :: ECHO Menu W : 
 :: ECHO Menu X : 
+ECHO.
+:: -------------------------------------------
+ECHO.
 ECHO Menu Y :
 ECHO Menu Z : Quitter
 ECHO.
