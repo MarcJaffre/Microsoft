@@ -53,7 +53,7 @@ ECHO Menu 1 : Autoruns
 :: ECHO Menu W : 
 :: ECHO Menu X : 
 ECHO.
-:: -------------------------------------------
+ECHO -------------------------------------------
 ECHO.
 ECHO Menu Y :
 ECHO Menu Z : Quitter
