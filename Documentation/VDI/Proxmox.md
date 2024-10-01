@@ -73,7 +73,7 @@ make -j$(nproc);
 
 
 ### F. Installation Spice Space (Linux)
-Le paquet vdagent permet le glisser/déposer de lhôte vers l'invité.
+Le paquet vdagent permet le glisser/déposer de l'hôte vers l'invité.
 ```bash
 clear;
 apt install spice-vdagent;
