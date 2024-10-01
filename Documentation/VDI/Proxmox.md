@@ -3,11 +3,9 @@
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## I. Présentation
-<p align='center'>
-  <img src='https://github.com/user-attachments/assets/1ddde4fb-bb83-4d42-a4ec-90d292f8370c' />
-</p>
-
 Le client VDI permet la connexion à la machine distante.
+
+<p align='center'>  <img src='https://github.com/user-attachments/assets/1ddde4fb-bb83-4d42-a4ec-90d292f8370c' /> </p>
 
 <br />
 
