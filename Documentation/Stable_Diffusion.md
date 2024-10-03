@@ -15,7 +15,7 @@ Permet de rendre accessible Stable Diffusion sur Internet
 set PYTHON=
 set GIT=
 set VENV_DIR=
-set COMMANDLINE_ARGS=--precision full --no-half --use-cpu all --skip-torch-cuda-test --listen --port 80
+set COMMANDLINE_ARGS=--skip-torch-cuda-test --use-directml --precision full --no-half --medvram --opt-split-attention --disable-nan-check --listen --port 80
 call webui.bat
 ```
 
@@ -29,6 +29,11 @@ Pour utiliser Stable Diffusion avec un GPU AMD RX 6700 XT, les options important
 --opt-split-attention      : Ces options peuvent améliorer les performances en optimisant les calculs d'attention.
 --opt-split-attention-v1   : Alternative
 --disable-nan-check        : Cette option peut parfois être nécessaire pour éviter certains problèmes de stabilité avec les GPU AMD.
+
+
+Note:
+--use-cpu all
+--listen --port 80
 ```
 
 <br />
@@ -93,7 +98,6 @@ usage: python launch.py -h
 | --hide-ui-dir-config                               | Cache la configuration du répertoire UI dans l'interface utilisateur.                       |
 
 ### Options de performance
-
 | Paramètre                                          | Description                                                                                   |
 |----------------------------------------------------|-----------------------------------------------------------------------------------------------|
 | **--hypernetwork-dir HYPERNETWORK_DIR**            | Chemin vers les réseaux hyper personnalisés à utiliser avec Stable Diffusion.                |
@@ -105,7 +109,6 @@ usage: python launch.py -h
 | **--lowvram**                                      | Réduit l'utilisation de la VRAM lors du traitement sur GPU, utile pour les cartes graphiques avec moins de mémoire vidéo.|
 
 ### Options liées aux modèles
-
 | Paramètre                                          | Description                                                                                   |
 |----------------------------------------------------|-----------------------------------------------------------------------------------------------|
 | **--max-batch-count MAX_BATCH_COUNT**              | Définit le nombre maximum d'images à traiter en une seule fois (batch size).                |
