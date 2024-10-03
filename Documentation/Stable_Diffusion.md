@@ -1,9 +1,12 @@
 ## Logiciel:
+```
 https://www.python.org/ftp/python/3.10.6/python-3.10.6-amd64.exe
 https://github.com/git-for-windows/git/releases/download/v2.46.2.windows.1/Git-2.46.2-64-bit.exe
-
+```
 ## Stable Diffusion
-https://github.com/AUTOMATIC1111/stable-diffusion-webui
+```
+https://github.com/lshqqytiger/stable-diffusion-webui-amdgpu
+```
 
 ## webui-user.bat (AMD)
 Permet de rendre accessible Stable Diffusion sur Internet
