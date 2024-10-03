@@ -19,131 +19,78 @@ set COMMANDLINE_ARGS=--precision full --no-half --use-cpu all --skip-torch-cuda-
 call webui.bat
 ```
 
-```
+## Configuration des arguments de lancement
 usage: python launch.py -h
---add-stop-route
---administrator
---allow-code
---always-batch-cond-uncond
---api
---api-auth API_AUTH
---api-log
---api-server-stop
---autolaunch
---bsrgan-models-path BSRGAN_MODELS_PATH
---ckpt CKPT
---ckpt-dir CKPT_DIR
---clip-models-path CLIP_MODELS_PATH
---codeformer-models-path CODEFORMER_MODELS_PATH
---config CONFIG
---cors-allow-origins CORS_ALLOW_ORIGINS
---cors-allow-origins-regex CORS_ALLOW_ORIGINS_REGEX
---data-dir DATA_DIR
---dat-models-path DAT_MODELS_PATH
---deepdanbooru
---device-id DEVICE_ID
---disable-all-extensions
---disable-console-progressbars
---disable-extra-extensions
---disable-model-loading-ram-optimization
---disable-nan-check
---disable-opt-split-attention
---disable-safe-unpickle
---disable-tls-verify
---do-not-download-clip
---dump-sysinfo
---embeddings-dir EMBEDDINGS_DIR
---enable-console-prompts
---enable-insecure-extension-access
---esrgan-models-path ESRGAN_MODELS_PATH
---filenames-max-length FILENAMES_MAX_LENGTH
---force-enable-xformers
---freeze-settings
---freeze-settings-in-sections FREEZE_SETTINGS_IN_SECTIONS
---freeze-specific-settings FREEZE_SPECIFIC_SETTINGS
---gfpgan-dir GFPGAN_DIR
---gfpgan-model GFPGAN_MODEL
---gfpgan-models-path GFPGAN_MODELS_PATH
---gradio-allowed-path GRADIO_ALLOWED_PATH
---gradio-auth GRADIO_AUTH
---gradio-auth-path GRADIO_AUTH_PATH
---gradio-debug
---gradio-img2img-tool GRADIO_IMG2IMG_TOOL
---gradio-inpaint-tool GRADIO_INPAINT_TOOL
---gradio-queue
---hide-ui-dir-config
---hypernetwork-dir HYPERNETWORK_DIR
---listen
---localizations-dir LOCALIZATIONS_DIR
---log-startup
---loglevel LOGLEVEL
---lowram
---lowvram
---max-batch-count MAX_BATCH_COUNT
---medvram
---medvram-sdxl
---models-dir MODELS_DIR
---ngrok NGROK
---ngrok-options NGROK_OPTIONS
---ngrok-region NGROK_REGION
---no-download-sd-model
---no-gradio-queue
---no-half
---no-half-vae
---no-hashing
---no-progressbar-hiding
---no-prompt-history
---nowebui
---opt-channelslast
---opt-sdp-attention
---opt-sdp-no-mem-attention
---opt-split-attention
---opt-split-attention-invokeai
---opt-split-attention-v1
---opt-sub-quad-attention
---port PORT
---precision {full,half,autocast}
---realesrgan-models-path REALESRGAN_MODELS_PATH
---reinstall-torch
---reinstall-xformers
---server-name SERVER_NAME
---share
---show-negative-prompt
---skip-install
---skip-load-model-at-start
---skip-ort
---skip-prepare-environment
---skip-python-version-check
---skip-torch-cuda-test
---skip-version-check
---styles-file STYLES_FILE
---sub-quad-chunk-threshold SUB_QUAD_CHUNK_THRESHOLD
---sub-quad-kv-chunk-size SUB_QUAD_KV_CHUNK_SIZE
---sub-quad-q-chunk-size SUB_QUAD_Q_CHUNK_SIZE
---subpath SUBPATH
---test-server
---textual-inversion-templates-dir TEXTUAL_INVERSION_TEMPLATES_DIR
---theme THEME
---timeout-keep-alive TIMEOUT_KEEP_ALIVE
---tls-certfile TLS_CERTFILE
---tls-keyfile TLS_KEYFILE
---ui-config-file UI_CONFIG_FILE
---ui-debug-mode
---ui-settings-file UI_SETTINGS_FILE
---unix-filenames-sanitization
---unload-gfpgan
---update-all-extensions
---update-check
---upcast-sampling
---use-cpu USE_CPU [USE_CPU ...]
---use-cpu-torch
---use-directml
---use-ipex
---use-textbox-seed
---use-zluda
---vae-dir VAE_DIR
---vae-path VAE_PATH
---xformers
---xformers-flash-attention
 
-```
+| Paramètre                                          | Description                                                                                   |
+|----------------------------------------------------|-----------------------------------------------------------------------------------------------|
+| --add-stop-route                                   | Ajoute une route pour arrêter le serveur.                                                   |
+| --administrator                                     | Exécute le programme avec des privilèges d'administrateur.                                  |
+| --allow-code                                       | Permet l'exécution de code personnalisé.                                                    |
+| --always-batch-cond-uncond                         | Force le traitement par lots pour les images conditionnelles et non conditionnelles.        |
+| --api                                              | Active l'API pour les requêtes externes.                                                   |
+| --api-auth API_AUTH                                | Définit un mot de passe pour l'API.                                                         |
+| --api-log                                          | Active la journalisation des requêtes API.                                                  |
+| --api-server-stop                                  | Arrête le serveur API.                                                                       |
+| --autolaunch                                       | Lance automatiquement l'interface après le démarrage.                                       |
+| --bsrgan-models-path BSRGAN_MODELS_PATH           | Spécifie le chemin pour les modèles BSRGAN.                                                 |
+| --ckpt CKPT                                       | Charge un modèle à partir d'un fichier de point de contrôle.                                |
+| --ckpt-dir CKPT_DIR                                | Indique le dossier contenant les fichiers de point de contrôle.                             |
+| --clip-models-path CLIP_MODELS_PATH               | Chemin vers les modèles CLIP.                                                                |
+| --codeformer-models-path CODEFORMER_MODELS_PATH   | Chemin vers les modèles CodeFormer.                                                          |
+| --config CONFIG                                    | Spécifie un fichier de configuration personnalisé.                                           |
+| --cors-allow-origins CORS_ALLOW_ORIGINS           | Définit les origines autorisées pour CORS.                                                 |
+| --cors-allow-origins-regex CORS_ALLOW_ORIGINS_REGEX | Utilise une expression régulière pour les origines autorisées.                             |
+| --data-dir DATA_DIR                                | Spécifie le répertoire des données.                                                          |
+| --dat-models-path DAT_MODELS_PATH                  | Chemin vers les modèles DAT.                                                                  |
+| --deepdanbooru                                     | Active l'utilisation de DeepDanbooru pour le taggage d'images.                             |
+| --device-id DEVICE_ID                              | Définit l'ID du périphérique à utiliser (GPU/CPU).                                         |
+| --disable-all-extensions                           | Désactive toutes les extensions installées.                                                 |
+| --disable-console-progressbars                     | Cache les barres de progression dans la console.                                            |
+| --disable-extra-extensions                         | Désactive certaines extensions supplémentaires.                                              |
+| --disable-model-loading-ram-optimization           | Désactive l'optimisation de la RAM lors du chargement des modèles.                          |
+| --disable-nan-check                               | Ignore les vérifications NaN (Not a Number).                                               |
+| --disable-opt-split-attention                      | Désactive l'attention optimisée par séparation.                                             |
+| --disable-safe-unpickle                           | Permet le dé-sérialisation non sécurisée des objets Python.                                 |
+| --do-not-download-clip                             | Ne télécharge pas le modèle CLIP automatiquement.                                           |
+| --dump-sysinfo                                     | Affiche des informations système au démarrage.                                              |
+| --embeddings-dir EMBEDDINGS_DIR                    | Chemin vers le répertoire d'embeddings personnalisés.                                      |
+| --enable-console-prompts                           | Active les invites dans la console pour interagir avec l'utilisateur.                       |
+| --enable-insecure-extension-access                 | Permet l'accès aux extensions non sécurisées.                                               |
+| --esrgan-models-path ESRGAN_MODELS_PATH           | Chemin vers les modèles ESRGAN (Enhanced Super Resolution).                                 |
+| --filenames-max-length FILENAMES_MAX_LENGTH       | Définit la longueur maximale des noms de fichiers générés.                                   |
+| --force-enable-xformers                            | Force l'activation de Xformers, même si cela échoue normalement.                           |
+| --freeze-settings                                   | Gèle les paramètres actuels pour éviter toute modification accidentelle.                    |
+| --freeze-settings-in-sections FREEZE_SETTINGS_IN_SECTIONS  | Gèle certains paramètres dans des sections spécifiques.                                    |
+| --freeze-specific-settings FREEZE_SPECIFIC_SETTINGS  | Gèle des paramètres spécifiques définis par l'utilisateur.                                  |
+| --gfpgan-dir GFPGAN_DIR                            | Spécifie le chemin vers GFPGAN (Generative Facial Prior).                                   |
+| --gfpgan-model GFPGAN_MODEL                        | Charge un modèle spécifique GFPGAN à partir du chemin donné.                                |
+| --gfpgan-models-path GFPGAN_MODELS_PATH           | Chemin vers plusieurs modèles GFPGAN à utiliser.                                            |
+| --gradio-allowed-path GRADIO_ALLOWED_PATH         | Définit un chemin autorisé pour Gradio (interface utilisateur).                             |
+| --gradio-auth GRADIO_AUTH                          | Définit une authentification pour Gradio si nécessaire.                                     |
+| --gradio-auth-path GRADIO_AUTH_PATH                | Spécifie le chemin du fichier d'authentification Gradio.                                   |
+| --gradio-debug                                     | Active le mode débogage pour Gradio, utile pour le développement et la résolution de problèmes.|
+| --gradio-img2img-tool GRADIO_IMG2IMG_TOOL        | Définit l'outil utilisé pour img2img dans Gradio.                                          |
+| --gradio-inpaint-tool GRADIO_INPAINT_TOOL        | Définit l'outil utilisé pour inpainting dans Gradio.                                       |
+| --gradio-queue                                     | Active la file d'attente pour gérer plusieurs requêtes simultanées dans Gradio.             |
+| --hide-ui-dir-config                               | Cache la configuration du répertoire UI dans l'interface utilisateur.                       |
+
+### Options de performance
+
+| Paramètre                                          | Description                                                                                   |
+|----------------------------------------------------|-----------------------------------------------------------------------------------------------|
+| **--hypernetwork-dir HYPERNETWORK_DIR**            | Chemin vers les réseaux hyper personnalisés à utiliser avec Stable Diffusion.                |
+| **--listen**                                       | Écoute sur toutes les interfaces réseau, pas seulement localhost (127.0.0.1).               |
+| **--localizations-dir LOCALIZATIONS_DIR**          | Spécifie le dossier contenant les fichiers de localisation (langues).                        |
+| **--log-startup**                                  | Journalise les informations au démarrage du programme.                                       |
+| **--loglevel LOGLEVEL**                            | Définit le niveau de journalisation (debug, info, warning, error).                           |
+| **--lowram**                                       | Optimise l'utilisation de la RAM, utile sur des systèmes avec peu de mémoire vive disponible.| 
+| **--lowvram**                                      | Réduit l'utilisation de la VRAM lors du traitement sur GPU, utile pour les cartes graphiques avec moins de mémoire vidéo.|
+
+### Options liées aux modèles
+
+| Paramètre                                          | Description                                                                                   |
+|----------------------------------------------------|-----------------------------------------------------------------------------------------------|
+| **--max-batch-count MAX_BATCH_COUNT**              | Définit le nombre maximum d'images à traiter en une seule fois (batch size).                |
+| **--medvram**                                      | Utilise une quantité moyenne de VRAM, ce qui peut aider à éviter des erreurs sur des cartes avec moins de mémoire vidéo disponible.| 
+| **--medvram-sdxl**                                 | Utilise une quantité moyenne de VRAM spécifiquement pour SDXL, une version améliorée du modèle Stable Diffusion.|
