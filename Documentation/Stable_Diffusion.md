@@ -6,12 +6,13 @@ https://github.com/git-for-windows/git/releases/download/v2.46.2.windows.1/Git-2
 https://github.com/AUTOMATIC1111/stable-diffusion-webui
 
 ## webui-user.bat (AMD)
+Permet de rendre accessible Stable Diffusion sur Internet
 ```
 @echo off
 set PYTHON=
 set GIT=
 set VENV_DIR=
-set COMMANDLINE_ARGS=--precision full --no-half --use-cpu all --skip-torch-cuda-test
+set COMMANDLINE_ARGS=--precision full --no-half --use-cpu all --skip-torch-cuda-test --listen --port 80
 call webui.bat
 ```
 
