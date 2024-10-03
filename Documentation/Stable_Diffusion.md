@@ -21,17 +21,13 @@ call webui.bat
 
 
 Pour utiliser Stable Diffusion avec un GPU AMD RX 6700 XT, les options importantes à considérer sont :
-
+```
 --use-directml : Cette option est cruciale car elle permet d'utiliser DirectML comme backend pour exécuter des opérations sur les GPU AMD compatibles DirectML, comme la série RX 6000.
-
 --precision full --no-half : Ces options sont généralement nécessaires pour les cartes AMD afin d'éviter les crashs ou les images noires. Elles forcent l'utilisation de la précision complète plutôt que la demi-précision.
-
 --medvram : Cette option peut être utile si vous rencontrez des problèmes de mémoire VRAM. Elle optimise l'utilisation de la VRAM pour les cartes avec une quantité moyenne de mémoire vidéo.
-
 --opt-split-attention ou --opt-split-attention-v1 : Ces options peuvent améliorer les performances en optimisant les calculs d'attention.
-
 --disable-nan-check : Cette option peut parfois être nécessaire pour éviter certains problèmes de stabilité avec les GPU AMD.
-
+```
 
 <br />
 
