@@ -67,6 +67,11 @@ Problème           : 0x0
 État du problème   : 0xC00000E5
 ```
 
+####  D. SBAT
+```
+Échec de la mise à jour de la valeur SBAT dans FW
+```
+
 <br />
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------
@@ -98,4 +103,20 @@ bcdboot C:\Windows /s C: /f ALL
 Effacer le module TPM
 ```
 tpm.msc
+```
+
+#### F. SBAT
+```
+@echo off
+title Fix Erreur
+::  (Defaut valeur 1)
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\SecureBoot\State" /v "UEFISecureBootEnabled" /t REG_DWORD /d 0 /f
+```
+
+#### G. Autre
+```
+@echo off
+exit
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v FeatureSettingsOverride     /t REG_DWORD /d 3 /f
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v FeatureSettingsOverrideMask /t REG_DWORD /d 3 /f
 ```
