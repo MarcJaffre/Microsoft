@@ -94,3 +94,8 @@ bootrec /rebuildbcd
 bcdboot C:\Windows /s C: /f ALL
 ```
 
+#### E. TPM
+Effacer le module TPM
+```
+tpm.msc
+```
