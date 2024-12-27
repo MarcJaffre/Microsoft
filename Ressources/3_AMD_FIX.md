@@ -115,3 +115,46 @@ reg add "HKLM\SYSTEM\CurrentControlSet\Control\SecureBoot\State" /v "UEFISecureB
 reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v FeatureSettingsOverride     /t REG_DWORD /d 3 /f
 reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v FeatureSettingsOverrideMask /t REG_DWORD /d 3 /f
 ```
+
+
+<br />
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+### III. Flash GPU
+#### A. ATI Flash
+Télécharger la version 3.31 !
+```
+https://www.techpowerup.com/download/ati-atiflash/
+```
+
+#### B. Bios
+```
+https://www.techpowerup.com/vgabios/231451/amd-rx6700xt-12288-210125
+```
+#### C. Flash
+```
+- Lancer AMDVBFlashDriverInstaller.exe : Activer pilote de Flashage
+- Lancer amdvbflashWin.exe             : Flasher le GPU
+- Lancer AMDVBFlashDriverInstaller.exe : Désactiver pilote de Flashage
+```
+
+```
+@echo off
+
+cls
+
+:: Aller dans le Disque D
+D:
+
+:: Aller dans le repertoire
+cd D:\Users\marc\Desktop\AMD_FLASH
+
+:: Installer le pilote 
+.\AMDVBFlashDriverInstaller.exe --install
+
+:: Demarrer le tool de flashage
+.\amdvbflashWin.exe
+
+:: Desinstaller le pilote 
+AMDVBFlashDriverInstaller.exe --uninstall
+```
