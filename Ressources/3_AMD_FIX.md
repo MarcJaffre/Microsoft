@@ -2,15 +2,17 @@
 ## <p align='center'> AMD GPU </p>
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------
+### I. Message d'erreur
+Si ces solutions logicielles ne fonctionnent pas, le problème pourrait être lié au matériel, notamment à la mémoire RAM ou au disque dur. 
 ```
 La bibliothèque Démarrage mesuré a rencontré un échec et est entrée dans un état précaire.
-InitState : 1, StatusCode : 0xC0000001
-Adresse de défaillance : 0xB15B6B
-Adresse de référence : 0xC5AF00
-Raison : 1.
+- InitState              : 1
+- StatusCode             : 0xC0000001
+- Adresse de défaillance : 0xB15B6B
+- Adresse de référence   : 0xC5AF00
+- Raison                 : 1
 ```
 
-Si ces solutions logicielles ne fonctionnent pas, le problème pourrait être lié au matériel, notamment à la mémoire RAM ou au disque dur. 
 
 
 
