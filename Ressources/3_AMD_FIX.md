@@ -92,5 +92,5 @@ bootrec /fixmbr
 bootrec /fixboot
 bootrec /rebuildbcd
 bcdboot C:\Windows /s C: /f ALL
-
+```
 
