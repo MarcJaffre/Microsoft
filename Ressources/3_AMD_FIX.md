@@ -4,6 +4,8 @@
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 ### I. Message d'erreur
 Si ces solutions logicielles ne fonctionnent pas, le problème pourrait être lié au matériel, notamment à la mémoire RAM ou au disque dur. 
+
+#### A. Erreur 1
 ```
 La bibliothèque Démarrage mesuré a rencontré un échec et est entrée dans un état précaire.
 - InitState              : 1
@@ -13,63 +15,63 @@ La bibliothèque Démarrage mesuré a rencontré un échec et est entrée dans u
 - Raison                 : 1
 ```
 
-
-
-
+#### B. Erreur 2
 ```
 L’environnement de démarrage Windows n’a pas pu initialiser l'appareil TPM. StatusCode : 0xC0000002, Position : 1.
 ```
 
-
+#### C. Erreur 3
 ```
 L'appareil PCI\VEN_1002&DEV_73DF&SUBSYS_0E361002&REV_C1\6&174d5041&0&00000019 a eu un problème de démarrage.
-Nom du pilote : oem8.inf
-GUID de classe : {4d36e968-e325-11ce-bfc1-08002be10318}
-Service : amduw23g
+Nom du pilote      : oem8.inf
+GUID de classe     : {4d36e968-e325-11ce-bfc1-08002be10318}
+Service            : amduw23g
 Filtres inférieurs : 
 Filtres supérieurs : 
-Problème : 0x0
-État du problème : 0xC00000E5
+Problème           : 0x0
+État du problème   : 0xC00000E5
 ```
-
 
 ```
 L'appareil ROOT\AMDLOG\0000 a eu un problème de démarrage.
-
-Nom du pilote : oem14.inf
-GUID de classe : {4d36e97d-e325-11ce-bfc1-08002be10318}
-Service : amdfendrmgr
+Nom du pilote      : oem14.inf
+GUID de classe     : {4d36e97d-e325-11ce-bfc1-08002be10318}
+Service            : amdfendrmgr
 Filtres inférieurs : 
 Filtres supérieurs : 
-Problème : 0x15
-État du problème : 0xC00000BB
+Problème           : 0x15
+État du problème   : 0xC00000BB
 ```
-
 
 ```
 L'appareil ROOT\AMDXE\0000 a eu un problème de démarrage.
 
-Nom du pilote : oem9.inf
-GUID de classe : {4d36e97d-e325-11ce-bfc1-08002be10318}
-Service : AMDXE
+Nom du pilote      : oem9.inf
+GUID de classe     : {4d36e97d-e325-11ce-bfc1-08002be10318}
+Service            : AMDXE
 Filtres inférieurs : 
 Filtres supérieurs : 
-Problème : 0x15
-État du problème : 0xC00000BB
+Problème           : 0x15
+État du problème   : 0xC00000BB
 ```
 
 ```
 L'appareil PCI\VEN_1002&DEV_73DF&SUBSYS_0E361002&REV_C1\6&174d5041&0&00000019 a eu un problème de démarrage.
 
-Nom du pilote : oem3.inf
-GUID de classe : {4d36e968-e325-11ce-bfc1-08002be10318}
-Service : amduw23g
+Nom du pilote      : oem3.inf
+GUID de classe     : {4d36e968-e325-11ce-bfc1-08002be10318}
+Service            : amduw23g
 Filtres inférieurs : 
 Filtres supérieurs : 
-Problème : 0x0
-État du problème : 0xC00000E5
+Problème           : 0x0
+État du problème   : 0xC00000E5
 ```
 
+<br />
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+### I. Message d'erreur
+Si ces solutions logicielles ne fonctionnent pas, le problème pourrait être lié au matériel, notamment à la mémoire RAM ou au disque dur. 
 
 ```
 sfc /scannow
