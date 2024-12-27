@@ -70,15 +70,23 @@ Problème           : 0x0
 <br />
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------
-### I. Message d'erreur
-Si ces solutions logicielles ne fonctionnent pas, le problème pourrait être lié au matériel, notamment à la mémoire RAM ou au disque dur. 
+### II. Solution
 
+#### A. Réparation de Microsoft Windows
 ```
 sfc /scannow
 DISM /Online /Cleanup-Image /RestoreHealth
+```
+#### B. Vérification de l'intégrité du disque
+```
 chkdsk C: /f /r
+```
+#### C. MémTest
+```
 mdsched
+```
 
+#### D. Réparer le BootRecorded
 ```
 bootrec /fixmbr
 bootrec /fixboot
