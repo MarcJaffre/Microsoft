@@ -4,7 +4,9 @@
 ### I. Installation
 #### A. Téléchargez 
 > Télécharger [Jade SD 10.5](https://civitai.com/models/71813?modelVersionId=76551#) (au format .safetensors ou .ckpt)
+> 
 > Placez le fichier téléchargé dans le dossier "stable-diffusion-webui/models/Stable-diffusion" de votre installation.
+> 
 > Lancez l'interface web Automatic1111 de Stable Diffusion.
 
 #### B. Configuration
