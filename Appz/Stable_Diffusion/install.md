@@ -13,6 +13,13 @@ https://github.com/lshqqytiger/stable-diffusion-webui-amdgpu
 https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/13245
 ```
 
+## Xformers (Experimental)
+```
+pip3 install -U xformers --index-url https://download.pytorch.org/whl/cu124
+python -m xformers.info
+```
+
+
 ## webui-user.bat (AMD)
 Permet de rendre accessible Stable Diffusion sur Internet
 ```
