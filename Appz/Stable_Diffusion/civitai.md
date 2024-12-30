@@ -9,11 +9,16 @@
 
 #### B. Configuration
 > Dans le menu en haut à gauche, choisir Jade SD 1.5.
+> 
 > Attendez que le modèle se charge.
+> 
 > Vous pouvez maintenant utiliser Jade SD 1.5 pour générer des images.
 
 #### C. Optimisation
 > Pour optimiser les résultats, il est recommandé d'utiliser un fichier VAE (Variational Auto-Encoder) approprié.
+> 
 > Vous pouvez télécharger "vae-ft-mse-840000-ema-pruned".
+> 
 > Placer dans le dossier "stable-diffusion-webui/models/VAE"
+> 
 > Puis le sélectionner dans les paramètres de l'interface.
