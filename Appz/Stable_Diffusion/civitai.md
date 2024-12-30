@@ -10,3 +10,5 @@
 - Choisissez le `modèle` que vous souhaitez et cliquez sur le bouton bleu `Download`.
 
 - Mettre le fichier `.ckpt` ou `.safetensors` dans `/models/Stable-diffusion`.
+
+- Settings > Clip skip > `2`
