@@ -8,6 +8,11 @@ https://github.com/git-for-windows/git/releases/download/v2.46.2.windows.1/Git-2
 https://github.com/lshqqytiger/stable-diffusion-webui-amdgpu
 ```
 
+## Fix Erreur (30/12/2024)
+```
+https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/13245
+```
+
 ## webui-user.bat (AMD)
 Permet de rendre accessible Stable Diffusion sur Internet
 ```
