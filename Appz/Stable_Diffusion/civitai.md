@@ -16,5 +16,4 @@
 > Pour optimiser les résultats, il est recommandé d'utiliser un fichier VAE (Variational Auto-Encoder) approprié.
 > Vous pouvez télécharger "vae-ft-mse-840000-ema-pruned".
 > Placer dans le dossier "stable-diffusion-webui/models/VAE"
-> Puis le sélectionner dans les paramètres de l'interface4.
-Si vous n'avez pas encore installé Stable Diffusion, assurez-vous d'abord d'installer Python 3.10.6, Git, et de cloner le dépôt stable-diffusion-webui depuis GitHub2.
+> Puis le sélectionner dans les paramètres de l'interface.
