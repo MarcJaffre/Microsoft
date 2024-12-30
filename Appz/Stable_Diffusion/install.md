@@ -16,6 +16,7 @@ https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/13245
 ## Xformers (Experimental)
 ```
 pip3 install -U xformers --index-url https://download.pytorch.org/whl/cu124
+pip uninstall xformers
 python -m xformers.info
 pip list
 ```
