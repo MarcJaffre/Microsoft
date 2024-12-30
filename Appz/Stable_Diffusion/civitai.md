@@ -14,3 +14,4 @@
 - Settings > Clip skip > `2`
 
 
+Dans l'onglet CheckPoint sélectionner `YiffyMix` puis dans Lora `Jade SD 1.5`.
