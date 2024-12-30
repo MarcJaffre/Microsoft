@@ -19,7 +19,6 @@ set COMMANDLINE_ARGS=--skip-torch-cuda-test --use-directml --precision full --no
 call webui.bat
 ```
 
-
 Pour utiliser Stable Diffusion avec un GPU AMD RX 6700 XT, les options importantes à considérer sont :
 ```
 --skip-torch-cuda-test     : GPU AMD
@@ -32,6 +31,7 @@ Pour utiliser Stable Diffusion avec un GPU AMD RX 6700 XT, les options important
 
 
 Note:
+--xformers
 --use-cpu all
 --listen --port 80
 ```
