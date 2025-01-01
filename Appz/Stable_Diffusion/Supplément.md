@@ -15,5 +15,3 @@ Pour le lora, il suffit d'aller `Lora` et sélectionner le `Lora`.
 
 Un Lora est visible dans la commande du prompt.
 <br />
-
-
