@@ -10,7 +10,7 @@
 
 - Choisissez le `modèle` que vous souhaitez et cliquez sur le bouton bleu `Download`.
 
-##### 2.  ([Exemple](https://civitai.com/models/24149/mistoonanime?modelVersionId=348981))
+##### 2. [Mistoonanime](https://civitai.com/models/24149/mistoonanime?modelVersionId=348981)
 
 - Mettre le fichier `.ckpt` ou `.safetensors` dans `/models/Stable-diffusion`.
 
