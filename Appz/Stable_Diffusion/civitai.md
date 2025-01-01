@@ -2,7 +2,7 @@
 ## <p align='center'> installer un modèle pour Stable Diffusion</p> 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### I. Installation d'un modèle en général
-#### A. Télécharger et installer un modèle
+#### A. Télécharger et installer un modèle en général
 ##### 1. civitai.com 
 - Allez sur https://civitai.com/models
 
@@ -17,4 +17,3 @@
 - Settings > Clip skip > `2`
 
 
-Dans l'onglet CheckPoint sélectionner `YiffyMix` puis dans Lora `Jade SD 1.5`.
