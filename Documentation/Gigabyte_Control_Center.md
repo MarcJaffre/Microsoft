@@ -11,13 +11,15 @@ Lancer `Gigabyte Control Center`. Les ventilateurs de droite scintille.
 ![image](https://github.com/user-attachments/assets/4b51be07-a1d8-4c1a-aca6-44927f1ad997)
 
 #### 1. Désynchronisation
-Décocher les Case `Sync`. Puis cliquer sur `Dynamic Lightning`. 
+Décocher les Case `Sync`.
 
 ![image](https://github.com/user-attachments/assets/60f68c36-2f6d-43da-a756-204fe1046ae2)
 
+#### 2. Fix Scintillement
+Cliquer sur `Dynamic Lightning` et cocher la case `Utiliser l'éclairage dybmatique sur mes appareils`
+
 ![image](https://github.com/user-attachments/assets/690fe663-6ef3-4299-a228-b0fdbbebb776)
 
-Puis cocher la case `Utiliser l'éclairage dybmatique sur mes appareils`
 
 <br />
 
