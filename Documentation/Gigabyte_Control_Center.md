@@ -35,6 +35,15 @@ Sélectionner `LED_C`. Toute les LED sauf le GPU sont éteintes. La lumière du 
 #### 2. FAN
 Sélectionner `ARGB_V2_1`. Toute les LED sauf les FAN sont éteintes. La lumière des FAN est Bleu.
 
+![image](https://github.com/user-attachments/assets/1a94866b-a525-4ce1-8807-23b03b43097b)
+
+Les FANS passent en ROUGE, choisir ROUGE.
+
+![image](https://github.com/user-attachments/assets/473c246e-51f2-4c58-9267-66a92c3d62c5)
+
+Les FANS passent en VERT, choisir VERT.
+
+![image](https://github.com/user-attachments/assets/bf28bb86-8eda-4f2f-b847-d3c1fb7a039b)
 
 
 <br />
