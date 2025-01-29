@@ -45,7 +45,11 @@ Les FANS passent en VERT, choisir VERT.
 
 ![image](https://github.com/user-attachments/assets/bf28bb86-8eda-4f2f-b847-d3c1fb7a039b)
 
+<br />
+
+### D. Activation de la synchronisation
+![image](https://github.com/user-attachments/assets/05383bb9-705b-4dfb-83e9-7487dcfe18f3)
 
 <br />
 
-### D.
+
