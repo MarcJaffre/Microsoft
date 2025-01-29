@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------------
 # <p align='center'> 
 ------------------------------------------------------------------------------------------------------------------------------
-## I. Premier Lancement
+## I. Installation et configuration
 ### A. Fixer scintillement
 Lancer Gigabyte Control Center puis désactiver la Synchronisation. Cliquer sur la Carte-mère.
 
