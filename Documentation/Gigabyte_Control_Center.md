@@ -22,7 +22,10 @@ Cliquer sur `Dynamic Lightning` et cocher la case `Les applications compatibles 
 
 <br />
 
-### B. Calibration
+### B. Boitier
+Le boitier à souvent synchroniser, désynchroniser. Il faut trouver le bon lors des étapes suivantes.
+
+### C. Calibration
 Dans le logiciel `Gigabyte Control Center` > Carte-mère > `Calibration`.
 #### 1. GPU
 Sélectionner `LED_C`. Toute les LED sauf le GPU sont éteintes. La lumière du GPU est Bleu.
