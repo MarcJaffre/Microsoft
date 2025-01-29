@@ -2,12 +2,13 @@
 # <p align='center'> 
 ------------------------------------------------------------------------------------------------------------------------------
 ## I. Installation et configuration
-### A. Fixer scintillement
+### A. Installation
+Télécharger et installer `Gigabyte Control Center`.
+
+### B. Fixer scintillement
 Lancer Gigabyte Control Center puis désactiver la Synchronisation. Cliquer sur la Carte-mère.
 
 Décocher la case `Dynamic Lightning` et cliquer sur le bouton `Dynamic Lightning`.
-
-Cocher la case `Utiliser l'éclairage dynamique sur mes appareils`.
 
 ![image](https://github.com/user-attachments/assets/92fac8c2-35cd-4e16-85e6-2ab03935d4cf)
 
