@@ -16,8 +16,8 @@ Décocher la case `Dynamic Lightning` et cliquer sur le bouton `Dynamic Lightnin
 
 ### B. Calibration
 Dans le logiciel `Gigabyte Control Center` > Carte-mère > `Calibration`.
-#### 1. Led_C
-Sélectionner `LED_C` puis on cliquer sur le bouton `Bleu` car on peut voir la couleur de la LED du GPU est BLEU.
+#### 1. GPU
+Sélectionner `LED_C`. On peut voir que seul le GPU est actif et qu'il est de couleur BLEU. On appuie sur le bouton Bleu.
 
 ![image](https://github.com/user-attachments/assets/8f3fd384-55d4-43cc-9d3f-76417e5a98e0)
 
