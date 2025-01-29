@@ -14,6 +14,8 @@ Décocher la case `Dynamic Lightning` et cliquer sur le bouton `Dynamic Lightnin
 
 ![image](https://github.com/user-attachments/assets/9b094587-d5d9-4d9f-8ecd-cd2c4f8ade33)
 
+<br />
+
 ### B. Calibration
 Dans le logiciel `Gigabyte Control Center` > Carte-mère > `Calibration`.
 #### 1. GPU
