@@ -30,9 +30,12 @@ Dans le logiciel `Gigabyte Control Center` > Carte-mère > `Calibration`.
 #### 1. GPU
 Sélectionner `LED_C`. Toute les LED sauf le GPU sont éteintes. La lumière du GPU est Bleu.
 
-![image](https://github.com/user-attachments/assets/8f3fd384-55d4-43cc-9d3f-76417e5a98e0)
+![image](https://github.com/user-attachments/assets/f013b728-8e90-4420-9284-e28b74bff15e)
 
-#### 2.
+#### 2. FAN
+Sélectionner `ARGB_V2_1`. Toute les LED sauf les FAN sont éteintes. La lumière des FAN est Bleu.
+
+
 
 <br />
 
