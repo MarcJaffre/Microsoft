@@ -53,9 +53,8 @@ Les FANS passent en VERT, choisir VERT.
 
 ![image](https://github.com/user-attachments/assets/86de3a94-7f5f-4f6c-aa4b-980d1b7734cd)
 
-
 <br />
 
 ------------------------------------------------------------------------------------------------------------------------------
 ## II. Mémoire-vive
-
+### A. Installation Corsaire Icue
