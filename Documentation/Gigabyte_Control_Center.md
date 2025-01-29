@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/b4490cc8-2a0d-41f1-b91b-5250ee2779ec)------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------
 # <p align='center'> 
 ------------------------------------------------------------------------------------------------------------------------------
 ## I. Installation et configuration
@@ -6,14 +6,16 @@
 Télécharger et installer `Gigabyte Control Center`.
 
 ### B. Premier Lancement
-Les ventilateurs de droite scintille.
+Lancer `Gigabyte Control Center`. Les ventilateurs de droite scintille.
 ![image](https://github.com/user-attachments/assets/4b51be07-a1d8-4c1a-aca6-44927f1ad997)
 
 
-#### 1. Fixer scintillement
+#### 1. Désynchronisation
+Décocher les Case `Sync`. Puis cliquer sur `Dynamic Lightning`
 
-`Gigabyte Control Center`
-`Dynamic Lightning`
+![image](https://github.com/user-attachments/assets/60f68c36-2f6d-43da-a756-204fe1046ae2)
+
+
 
 
 <br />
