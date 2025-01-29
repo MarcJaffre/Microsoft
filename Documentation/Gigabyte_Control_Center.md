@@ -48,8 +48,14 @@ Les FANS passent en VERT, choisir VERT.
 <br />
 
 ### D. Activation de la synchronisation
-![image](https://github.com/user-attachments/assets/05383bb9-705b-4dfb-83e9-7487dcfe18f3)
+
+![image](https://github.com/user-attachments/assets/8dfc602b-8cbf-4b13-a8f0-611655086ab3)
+
+![image](https://github.com/user-attachments/assets/86de3a94-7f5f-4f6c-aa4b-980d1b7734cd)
+
 
 <br />
 
+------------------------------------------------------------------------------------------------------------------------------
+## II. Mémoire-vive
 
