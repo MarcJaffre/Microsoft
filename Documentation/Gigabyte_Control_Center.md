@@ -15,7 +15,7 @@ Décocher les Case `Sync`.
 
 ![image](https://github.com/user-attachments/assets/60f68c36-2f6d-43da-a756-204fe1046ae2)
 
-Cliquer sur `Dynamic Lightning` et cocher la case `Utiliser l'éclairage dybmatique sur mes appareils`
+Cliquer sur `Dynamic Lightning` et cocher la case `Les applications compatibles au premier plan contrôlent toujours l'éclairage`.
 
 ![image](https://github.com/user-attachments/assets/690fe663-6ef3-4299-a228-b0fdbbebb776)
 
