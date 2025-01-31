@@ -6,6 +6,14 @@ marc,jaffre,teste@SupremeAuto.fr,marc
 ```
 
 ### PowerShell
+Le nom de domaine est `SupremeAuto.fr`. 
+
+Crée l'arborescence EN OU `SupremeAuto.fr\Utilisateurs\SA-Lille`.
+
+Puis un Groupe Global `GG-Users-Lille`.
+
+
+
 ```ps
 # Importer le module Active Directory
 Import-Module ActiveDirectory
