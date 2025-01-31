@@ -1,6 +1,8 @@
 ######################################################################
-# Information: Script d'activation de Microsoft Windows
-# 
+# Auteur         : Marc Jaffre
+# Pré-requis     : Conteneur KMS actif
+# Description    : Script d'activation de Microsoft Windows 
+# Fonctionnement :
 ######################################################################
 
 clear
@@ -20,4 +22,10 @@ if ($versionWindows = "Microsoft Windows 11 Professionnel" ) {
  C:\Windows\system32\slmgr.vbs /dlv
 } 
 
-
+#services:
+# KMS:
+#  image: 'mikolatero/vlmcsd'
+#  container_name: 'KMS'
+#  network_mode: 'bridge'
+#  ports:
+#   - '1688:1688'
