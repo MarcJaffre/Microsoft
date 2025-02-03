@@ -72,6 +72,5 @@ foreach ($utilisateur in $Utilisateurs) {
     Write-Host "Erreur lors de la création de l'utilisateur '$NomUtilisateur' : $_" -ForegroundColor Red
     }
  }
-
 }
 ```
