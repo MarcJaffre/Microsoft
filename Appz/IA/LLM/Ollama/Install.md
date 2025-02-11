@@ -6,6 +6,7 @@
 ### A. Présentation
 
 ### B. Pré-requis
+
 ### C. Téléchargement
 Télécharger le setup [OllamaSetup.exe](https://ollama.com/download/OllamaSetup.exe)
 ### D. Installation
@@ -20,8 +21,6 @@ Ce tableau décrit les options disponibles pour l'installation d'`OllamaSetup.ex
 ```
 https://jrsoftware.org/ishelp/index.php?topic=setupcmdline
 ```
-
-# Options d'installation pour OllamaSetup.exe
 
 Ce tableau liste les différentes options disponibles pour l'installation d'`OllamaSetup.exe` via la ligne de commande sous Windows.
 
@@ -70,8 +69,6 @@ set PARM5=/GROUP="OLLAMA Tools"
 set PARM6=/SILENT
 start /wait %DOSSIER%\OllamaSetup.exe %PARM1% %PARM2% %PARM3% %PARM4% %PARM5% %PARM6%
 ```
-
-
 
 
 ### E. Utilisation
