@@ -17,6 +17,8 @@ wsl.exe --update
 wsl.exe --install --no-distribution
 ```
 
+<br />
+
 #### C. Téléchargement
 Télécharger le setup [OllamaSetup.exe](https://ollama.com/download/OllamaSetup.exe)
 
