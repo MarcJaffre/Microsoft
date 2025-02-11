@@ -6,6 +6,14 @@
 ### A. Présentation
 
 ### B. Pré-requis
+#### 1. Installation WSL2
+Il est nécessaire d'installer WSL2 via la commande `wsl.exe --install --no-distribution`.
+#### 2. Gestion des ressources
+WSL2 permet de définir les ressources que Docker utilisera.
+```
+wsl --shutdown
+wsl.exe --install --no-distribution
+```
 
 ### C. Téléchargement
 Télécharger le setup [OllamaSetup.exe](https://ollama.com/download/OllamaSetup.exe)
