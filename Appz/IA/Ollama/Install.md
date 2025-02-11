@@ -53,6 +53,22 @@ Ce tableau liste les différentes options disponibles pour l'installation d'`Oll
 ## Exemple combiné
 Pour une installation silencieuse, sans redémarrage, dans un répertoire spécifique avec journalisation :
 
+```bash
+@echo off
+
+cls
+set DOSSIER=D:\OLLAMA
+set PARM1=/LOG
+set PARM2=/LOG="Install.log"
+set PARM3=/LANG=fr-FR
+set PARM4=/DIR="D:\OLLAMA\"
+set PARM5=/GROUP="OLLAMA Tools"
+set PARM6=/SILENT
+start /wait %DOSSIER%\OllamaSetup.exe %PARM1% %PARM2% %PARM3% %PARM4% %PARM5% %PARM6%
+```
+
+
+
 
 
 
