@@ -3,7 +3,10 @@
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 ## I. Installation
 ### A. WSL2
+#### 1. Installation
 Il est nécessaire d'installer WSL2 via la commande `wsl.exe --install --no-distribution`.
+#### 2. Gestion des ressources
+WSL2 permet de définir les ressources que Docker utilisera.
 
 
 ### B. Docker Desktop
