@@ -48,6 +48,12 @@ netsh advfirewall firewall delete rule name="Ollama-API"
 ### B. Conteneur
 ```
 docker container rm -f open-webui
+docker image rm -f  ghcr.io/open-webui/open-webui:main
+```
+
+#### C. Volume
+```
+docker volume rm -f open-webui
 ```
 
 ### C. Distribution
