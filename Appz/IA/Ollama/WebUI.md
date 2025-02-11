@@ -25,7 +25,7 @@ netsh advfirewall firewall add rule name="Ollama" dir=in action=allow protocol=T
 ```
 
 ### B. WSL2 (Déconseillé)
-Il est nécessaire d'installer WSL2 via la commande `wsl --install`.
+Il est nécessaire d'installer WSL2 via la commande `wsl.exe --install --no-distribution`.
 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
