@@ -2,17 +2,13 @@
 # <p align='center'> Installation de l'Intelligence Artificielle OLLAMA</p>
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-## I. Installation
-### A. Présentation
-
-<br />
-
-### B. Pré-requis
-#### 1. Installation WSL2
+### I. Installation
+#### A. Présentation
+#### B. Pré-requis
+##### 1. Installation WSL2
 Il est nécessaire d'installer WSL2 via la commande `wsl.exe --install --no-distribution`.
-#### 2. Gestion des ressources (CPU, RAM)
+##### 2. Gestion des ressources (CPU, RAM)
 Ouvrir le menu `Démarrer` >  `WSL Settings`
-
 ```
 wsl.exe --uninstall
 wsl.exe --shutdown
@@ -21,19 +17,45 @@ wsl.exe --update
 wsl.exe --install --no-distribution
 ```
 
-<br />
-
-### C. Téléchargement
+#### C. Téléchargement
 Télécharger le setup [OllamaSetup.exe](https://ollama.com/download/OllamaSetup.exe)
 
 <br />
 
-### D. Installation
+#### D. Installation
 #### 1. Mode simple
 Il suffit de lancer le setup et l'installation se fait dans le disque C.
 
-#### 2. Mode avancée
-# Paramètres d'installation pour OllamaSetup.exe
+##### 2. Mode avancée
+`start /wait %USERPROFILE%\Downloads\OllamaSetup.exe /DIR="D:\IA\OLLAMA" /LANG=fr-FR /GROUP="OLLAMA Tools" /VERYSILENT /LOG /LOG="%USERPROFILE%\Downloads\Install.log"`
+
+<br />
+
+#### E. Utilisation
+##### 1. CMD
+Lancer la commande `ollama` pour afficher le résumé des commandes.
+```
+ollama [flags]
+ollama [command]
+
+Available Commands:
+  serve       Start ollama
+  create      Create a model from a Modelfile
+  show        Show information for a model
+  run         Run a model
+  stop        Stop a running model
+  pull        Pull a model from a registry
+  push        Push a model to a registry
+  list        List models
+  ps          List running models
+  cp          Copy a model
+  rm          Remove a model
+  help        Help about any command
+```
+
+
+------------------------------------
+
 
 Ce tableau décrit les options disponibles pour l'installation d'`OllamaSetup.exe` via la ligne de commande sous Windows.
 
@@ -47,6 +69,7 @@ Ce tableau liste les différentes options disponibles pour l'installation d'`Oll
 |---------------------------------- | ------------------------------------------------------ | ---------------------------------------------- |
 | `/?`                              | Afficher les paramètres de l'installation              | `OllamaSetup.exe /?`                           |
 | `/SILENT`                         | Installation en mode silencieux                        | `OllamaSetup.exe /SILENT`                      |
+| `/VERYSILENT`                     | Installation en mode vraiment silencieux               | `OllamaSetup.exe /VERYSILENT`                  |
 | `/SUPPRESSMSGBOXES`               | Supprimer les boîtes de dialogue                       | `OllamaSetup.exe /SUPPRESSMSGBOXES`            |
 | `/LOG`                            | Activer la journalisation (log)                        | `OllamaSetup.exe /LOG`                         |
 | `/LOG="filename"`                 | Spécifier un fichier de log                            | `OllamaSetup.exe /LOG="install.log"`           |
@@ -71,10 +94,10 @@ Ce tableau liste les différentes options disponibles pour l'installation d'`Oll
 | `/MERGETASKS=""`                  | Fusionner des tâches avec celles par défaut            | `OllamaSetup.exe /MERGETASKS="desktopIcon"`    |
 | `/PASSWORD=password`              | Fournir un mot de passe pour l'installation            | `OllamaSetup.exe /PASSWORD=secure1234!`        |
 
+
+
 ## Exemple combiné
 Pour une installation silencieuse, sans redémarrage, dans un répertoire spécifique avec journalisation :
-
-`start /wait D:\OLLAMA\OllamaSetup.exe /DIR="D:\OLLAMA\" /LANG=fr-FR /LOG /LOG="Install.log" /GROUP="OLLAMA Tools" /PASSWORD=admin /SILENT`
 
 ```bash
 @echo off
@@ -89,26 +112,3 @@ set PARM6=/SILENT
 start /wait %DOSSIER%\OllamaSetup.exe %PARM1% %PARM2% %PARM3% %PARM4% %PARM5% %PARM6%
 ```
 
-<br />
-
-### E. Utilisation
-#### 1. CMD
-Lancer la commande `ollama` pour afficher le résumé des commandes.
-```
-ollama [flags]
-ollama [command]
-
-Available Commands:
-  serve       Start ollama
-  create      Create a model from a Modelfile
-  show        Show information for a model
-  run         Run a model
-  stop        Stop a running model
-  pull        Pull a model from a registry
-  push        Push a model to a registry
-  list        List models
-  ps          List running models
-  cp          Copy a model
-  rm          Remove a model
-  help        Help about any command
-```
