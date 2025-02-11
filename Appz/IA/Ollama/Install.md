@@ -21,35 +21,30 @@ D:\OLLAMA\OllamaSetup.exe
 |------------------------------ |------------------------------------------------------------------------------------------------- |---------------------------------------------- |
 | `/?`                          | Afficher les paramètres de l'installation                                                        | `OllamaSetup.exe /?`                          |
 | `/SILENT`                     | Installation en mode silencieuse                                                                 | `OllamaSetup.exe /SILENT`                     |
-| `/SUPPRESSMSGBOXES`           | 
-| `/LOG`                        | 
-| `/LOG="filename"`             | 
-| `/NOCANCEL`                   | 
-| `/NORESTART`                  | 
-| `/RESTARTEXITCODE=exit code`  | 
-| `/CLOSEAPPLICATIONS`          | 
-| `/NOCLOSEAPPLICATIONS`        | 
-| `/FORCECLOSEAPPLICATIONS`     | 
-| `/FORCENOCLOSEAPPLICATIONS`   | 
-| `/LOGCLOSEAPPLICATIONS`       | 
-| `/RESTARTAPPLICATIONS`        | 
-| `/NORESTARTAPPLICATIONS`      | 
-| `/LOADINF="filename"`         | 
-| `/SAVEINF="filename"`         | 
-| `/LANG=language`              | 
-| `/DIR="x:\dirname"`           | 
-| `/GROUP="folder name"`        | 
-| `/NOICONS`                    | 
-| `/TYPE=type name`             | 
-| `/COMPONENTS=""`              | 
-| `/TASKS=""`                   | 
-| `/MERGETASKS=""`              | 
-| `/PASSWORD=password`          | 
-| ``
-| ``
-| ``
-| ``
-
+| `/SUPPRESSMSGBOXES`           | Supprimer les boîtes de dialogue                                                                 | `OllamaSetup.exe /`
+| `/LOG`                        | XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   | `OllamaSetup.exe /LOG` |
+| `/LOG="filename"`             | XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   | `OllamaSetup.exe /LOG="filename"` |
+| `/NOCANCEL`                   | XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   | `OllamaSetup.exe /NOCANCEL` |
+| `/NORESTART`                  | XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   | `OllamaSetup.exe /NORESTART` |
+| `/RESTARTEXITCODE=exit code`  | XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   | `OllamaSetup.exe /RESTARTEXITCODE=exit code` |
+| `/CLOSEAPPLICATIONS`          | XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   | `OllamaSetup.exe /CLOSEAPPLICATIONS` |
+| `/NOCLOSEAPPLICATIONS`        | XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   | `OllamaSetup.exe /NOCLOSEAPPLICATIONS` |
+| `/FORCECLOSEAPPLICATIONS`     | XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   | `OllamaSetup.exe /FORCECLOSEAPPLICATIONS` |
+| `/FORCENOCLOSEAPPLICATIONS`   | XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   | `OllamaSetup.exe /FORCENOCLOSEAPPLICATIONS` |
+| `/LOGCLOSEAPPLICATIONS`       | XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   | `OllamaSetup.exe /LOGCLOSEAPPLICATIONS` |
+| `/RESTARTAPPLICATIONS`        | XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   | `OllamaSetup.exe /RESTARTAPPLICATIONS` |
+| `/NORESTARTAPPLICATIONS`      | XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   | `OllamaSetup.exe /NORESTARTAPPLICATIONS` |
+| `/LOADINF="filename"`         | XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   | `OllamaSetup.exe /LOADINF="filename"` |
+| `/SAVEINF="filename"`         | XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   | `OllamaSetup.exe /SAVEINF="filename"` |
+| `/LANG=language`              | XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   | `OllamaSetup.exe /LANG=fr-FR` |
+| `/DIR="x:\dirname"`           | XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   | `OllamaSetup.exe /DIR="D:\OLLAMA\"` |
+| `/GROUP="folder name"`        | XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   | `OllamaSetup.exe /GROUP="folder name"` |
+| `/NOICONS`                    | XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   | `OllamaSetup.exe /NOICONS` |
+| `/TYPE=type name`             | XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   | `OllamaSetup.exe /TYPE=type name` |
+| `/COMPONENTS=""`              | XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   | `OllamaSetup.exe /COMPONENTS=""` |
+| `/TASKS=""`                   | XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   | `OllamaSetup.exe /TASKS=""` |
+| `/MERGETASKS=""`              | XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   | `OllamaSetup.exe /MERGETASKS=""` |
+| `/PASSWORD=password`          | XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   | `OllamaSetup.exe /PASSWORD=password` |
 
 ```
 https://jrsoftware.org/ishelp/index.php?topic=setupcmdline
