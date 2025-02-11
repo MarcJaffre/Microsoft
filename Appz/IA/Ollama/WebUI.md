@@ -31,7 +31,8 @@ Cliquer sur l'icône des `paramètres` > `Modèles` > Logo Download
 
 ### C. Création d'une règle de Pare-Feu
 ```
-netsh advfirewall firewall add rule name="Ollama" dir=in action=allow protocol=TCP localport=3000
+netsh advfirewall firewall add rule name="Ollama"     dir=in action=allow protocol=TCP localport=3000
+netsh advfirewall firewall add rule name="Ollama-API" dir=in action=allow protocol=TCP localport=11434
 ```
 
 <br />
@@ -41,6 +42,7 @@ netsh advfirewall firewall add rule name="Ollama" dir=in action=allow protocol=T
 ### A. Pare-feu
 ```
 netsh advfirewall firewall delete rule name="Ollama"
+netsh advfirewall firewall delete rule name="Ollama-API"
 ```
 
 ### B. Conteneur
