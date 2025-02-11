@@ -2,9 +2,8 @@
 # <p align='center'> Installation d'une interface Web pour OLLAMA</p>
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 ## I. Installation
-### A. Pré-requis
-Il est nécessaire d'activer la fonctionnalité WSL2.
-
+### A. WSL2
+Il est nécessaire d'installer WSL2 via la commande `wsl --install`.
 ### B. Docker Desktop
 #### 1. Télécharger
 Il est nécessaire de télécharger [Docker-Desktop](https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe).
