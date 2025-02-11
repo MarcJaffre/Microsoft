@@ -4,6 +4,7 @@
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### I. Installation
 #### A. Présentation
+
 #### B. Pré-requis
 ##### 1. Installation WSL2
 Il est nécessaire d'installer WSL2 via la commande `wsl.exe --install --no-distribution`.
@@ -33,7 +34,23 @@ Il suffit de lancer le setup et l'installation se fait dans le disque C.
 
 <br />
 
-#### E. Utilisation
+#### E. OLLAMA_MODELS
+La variable `OLLAMA_MODELS` permet de définir l'emplacement de stockage des modèles.
+
+```
+- Crée le dossier D:\IA\OLLAMA\Models
+- Variables d'environnement
+- Crée une nouvelle variable utilisateur
+- Nom    : OLLAMA_MODELS
+- Valeur : D:\IA\OLLAMA\Models  
+```
+
+```
+move C:\Users\%username%\.ollama\models C:\Users\%username%\.ollama\models.old
+mklink /D "C:\Users\%username%\.ollama\models" "D:\IA\OLLAMA\Models"
+```
+
+#### F. Utilisation
 ##### 1. CMD
 Lancer la commande `ollama` pour afficher le résumé des commandes.
 ```
@@ -54,6 +71,14 @@ Available Commands:
   rm          Remove a model
   help        Help about any command
 ```
+
+
+
+
+
+
+
+
 
 
 ------------------------------------
