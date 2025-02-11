@@ -2,18 +2,7 @@
 # <p align='center'> Interface Web via le conteneur Open-Webui </p>
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 ## I. Installation
-### A. WSL2
-#### 1. Installation
-Il est nécessaire d'installer WSL2 via la commande `wsl.exe --install --no-distribution`.
-#### 2. Gestion des ressources
-WSL2 permet de définir les ressources que Docker utilisera.
-
-```
-wsl --shutdown
-wsl.exe --install --no-distribution
-```
-
-### B. Docker Desktop
+### A. Docker Desktop
 #### 1. Télécharger
 Il est nécessaire de télécharger [Docker-Desktop](https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe).
 
@@ -36,13 +25,13 @@ Cliquer sur l'icône des `paramètres` > `Modèles` > Logo Download
 (exemple : text, llama2:7b ....)
 
 
-### C. Création d'une règle de Pare-Feu
+### B. Création d'une règle de Pare-Feu
 ```
 netsh advfirewall firewall add rule name="Ollama"     dir=in action=allow protocol=TCP localport=3000
 netsh advfirewall firewall add rule name="Ollama-API" dir=in action=allow protocol=TCP localport=11434
 ```
 
-### D. Docker
+### C. Docker
 ```
 \\wsl.localhost\docker-desktop\mnt\docker-desktop-disk\data\docker\
 ```
