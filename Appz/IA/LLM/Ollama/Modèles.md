@@ -2,15 +2,15 @@
 # <p align='center'> Modèles pour OLLAMA </p>
 ----------------------------------------------------------------------------------------------------------------------------------
 ## I. Française
-### A. [Mistral](https://ollama.com/library/mistral)
-```bash
-ollama run mistral
-```
-
-### B.  [dolphin-mistral](https://ollama.com/library/mistral)
+### A.  [Dolphin-mistral](https://ollama.com/library/mistral)
 Le modèle Dolphin non censuré basé sur Mistral qui **excelle dans les tâches de codage**. 
 ```bash
 ollama run dolphin-mistral
+```
+
+### B. [Mistral](https://ollama.com/library/mistral)
+```bash
+ollama run mistral
 ```
 
 <br />
