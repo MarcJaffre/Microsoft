@@ -34,9 +34,24 @@ Il suffit de lancer le setup et l'installation se fait dans le disque C.
 
 <br />
 
-#### E. OLLAMA_MODELS
-La variable `OLLAMA_MODELS` permet de définir l'emplacement de stockage des modèles.
+#### E. Variable d'environnement
+```
+ollama        --help
+ollama serve  --help
+ollama create --help
+ollama show   --help
+ollama run    --help
+ollama stop   --help
+ollama pull   --help
+ollama push   --help
+ollama list   --help
+ollama ps     --help
+ollama cp     --help
+ollama rm     --help
+```
 
+##### 1. OLLAMA_MODELS
+La variable `OLLAMA_MODELS` permet de définir l'emplacement de stockage des modèles.
 ```
 - Crée le dossier D:\IA\OLLAMA\Models
 - Variables d'environnement
