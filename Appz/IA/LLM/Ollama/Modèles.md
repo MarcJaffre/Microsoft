@@ -3,6 +3,24 @@
 ----------------------------------------------------------------------------------------------------------------------------------
 ## I. Française
 ### A. Mistral
+```bash
+ollama run mistral
 ```
-ollama run Mistral
+
+### B. Mistral - Programmation / Coding
+```bash
+ollama run dolphin-mistral
+```
+
+<br />
+
+----------------------------------------------------------------------------------------------------------------------------------
+## II. Etrangère
+### A. IA Meta/facebook
+```
+ollama run llama2
+```
+### B. Alibaba Cloud
+```
+ollama run qwen
 ```
