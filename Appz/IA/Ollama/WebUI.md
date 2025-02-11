@@ -25,14 +25,16 @@ http://localhost:3000
 ```
 
 #### 5. Installation de modèle
-Cliquer sur l'icône des `paramètres` (en haut à droite) et `téléchargez les modèles souhaités` (exemple : text, llama2:7b ....)
+Cliquer sur l'icône des `paramètres` > `Modèles` > Logo Download
+(exemple : text, llama2:7b ....)
 
 
-#### 6. Création d'une règle de Pare-Feu
+### C. Création d'une règle de Pare-Feu
 ```
 netsh advfirewall firewall add rule name="Ollama" dir=in action=allow protocol=TCP localport=3000
 ```
 
+<br />
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 ## II. Suppression
