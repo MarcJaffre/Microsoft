@@ -10,10 +10,14 @@
 ### B. Pré-requis
 #### 1. Installation WSL2
 Il est nécessaire d'installer WSL2 via la commande `wsl.exe --install --no-distribution`.
-#### 2. Gestion des ressources
-WSL2 permet de définir les ressources que Docker utilisera.
+#### 2. Gestion des ressources (CPU, RAM)
+Ouvrir le menu `Démarrer` >  `WSL Settings`
+
 ```
-wsl --shutdown
+wsl.exe --uninstall
+wsl.exe --shutdown
+wsl.exe --status
+wsl.exe --update
 wsl.exe --install --no-distribution
 ```
 
