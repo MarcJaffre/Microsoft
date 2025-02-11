@@ -5,6 +5,8 @@
 ## I. Installation
 ### A. Présentation
 
+<br />
+
 ### B. Pré-requis
 #### 1. Installation WSL2
 Il est nécessaire d'installer WSL2 via la commande `wsl.exe --install --no-distribution`.
@@ -15,8 +17,13 @@ wsl --shutdown
 wsl.exe --install --no-distribution
 ```
 
+<br />
+
 ### C. Téléchargement
 Télécharger le setup [OllamaSetup.exe](https://ollama.com/download/OllamaSetup.exe)
+
+<br />
+
 ### D. Installation
 #### 1. Mode simple
 Il suffit de lancer le setup et l'installation se fait dans le disque C.
@@ -78,6 +85,7 @@ set PARM6=/SILENT
 start /wait %DOSSIER%\OllamaSetup.exe %PARM1% %PARM2% %PARM3% %PARM4% %PARM5% %PARM6%
 ```
 
+<br />
 
 ### E. Utilisation
 #### 1. CMD
