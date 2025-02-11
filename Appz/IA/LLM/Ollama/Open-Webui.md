@@ -11,8 +11,13 @@ Installez-le et assurez-vous qu'il est configuré pour fonctionner avec WSL2.
 
 #### 3. Création du conteneur
 ```
-docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
+# CPU
+docker run -d -p 3000:8080            --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
+# GPU
+docker run -d -p 3000:8080 --gpus all --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:cuda
 ```
+
+
 
 #### 4. Accéder au panel web
 Inscrivez-vous en cliquant sur "Sign up".
