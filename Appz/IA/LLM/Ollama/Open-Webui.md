@@ -94,7 +94,7 @@ docker volume rm -f open-webui
 ```
 
 ### B. Start
-Le script crée le conteneur et les règles de pare-feu
+Le script crée le conteneur avec les règles de pare-feu.
 ```bash
 @echo off
 
