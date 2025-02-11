@@ -11,3 +11,10 @@ Télécharger le setup [OllamaSetup.exe](https://ollama.com/download/OllamaSetup
 Il suffit de lancer le setup et l'installation se fait dans le disque C.
 
 #### 2. Mode avancée
+```
+/SP-
+/SILENT, /VERYSILENT
+/SUPPRESSMSGBOXES
+/LOG
+```
+
