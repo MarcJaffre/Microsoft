@@ -30,7 +30,7 @@ Il est nécessaire d'installer WSL2 via la commande `wsl.exe --install --no-dist
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 ## II. Suppression
-### A. PAre-feu
+### A. Pare-feu
 ```
 netsh advfirewall firewall delete rule name="Ollama"
 ```
@@ -39,3 +39,9 @@ netsh advfirewall firewall delete rule name="Ollama"
 ```
 docker container rm -f open-webui
 ```
+
+### C. Distribution
+```
+%AppData%\..\Local\Packages\<nom de distrib>
+```
+
