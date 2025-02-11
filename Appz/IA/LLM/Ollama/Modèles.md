@@ -24,3 +24,8 @@ ollama run llama2
 ```
 ollama run qwen
 ```
+### C. travelplanningbooking
+Suggérer des itinéraires personnalisés, réserver des vols et des hôtels, et fournir des mises à jour de voyage en temps réel.
+```
+ollama run ALIENTELLIGENCE/travelplanningbooking
+```
