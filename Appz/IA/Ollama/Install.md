@@ -99,21 +99,18 @@ Available Commands:
 ```bash
 ollama run mistral
 ```
+
 #### 3. Programmation / Coding
 ```bash
 ollama run dolphin-mistral
 ```
+
 #### 4. IA Meta/facebook
 ```
 ollama run llama2
 ```
+
 #### 5. Alibaba Cloud
 ```
 ollama run qwen
 ```
-
-
-
-
-
-
