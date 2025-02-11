@@ -4,7 +4,10 @@
 ## I. Intégration
 ### A. Pré-requis
 L'application OLLAMA et le conteneur Open-Webui est fonctionnels
+### B. 
 
+
+\\wsl.localhost\docker-desktop\mnt\docker-desktop-disk\data\docker
 
 
 
