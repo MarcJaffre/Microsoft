@@ -3,10 +3,12 @@
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## I. Installation
-### A. Pré-requis
-### B. Téléchargement
+### A. Préentation
+
+### B. Pré-requis
+### C. Téléchargement
 Télécharger le setup [OllamaSetup.exe](https://ollama.com/download/OllamaSetup.exe)
-### C. Installation
+### D. Installation
 #### 1. Mode simple
 Il suffit de lancer le setup et l'installation se fait dans le disque C.
 
@@ -15,8 +17,9 @@ Il suffit de lancer le setup et l'installation se fait dans le disque C.
 
 Ce tableau décrit les options disponibles pour l'installation d'`OllamaSetup.exe` via la ligne de commande sous Windows.
 
-D:\OLLAMA\OllamaSetup.exe 
-
+```
+https://jrsoftware.org/ishelp/index.php?topic=setupcmdline
+```
 
 # Options d'installation pour OllamaSetup.exe
 
@@ -70,8 +73,46 @@ start /wait %DOSSIER%\OllamaSetup.exe %PARM1% %PARM2% %PARM3% %PARM4% %PARM5% %P
 
 
 
+### E. Utilisation
+#### 1. CMD
+Lancer la commande `ollama` pour afficher le résumé des commandes.
+```
+ollama [flags]
+ollama [command]
+
+Available Commands:
+  serve       Start ollama
+  create      Create a model from a Modelfile
+  show        Show information for a model
+  run         Run a model
+  stop        Stop a running model
+  pull        Pull a model from a registry
+  push        Push a model to a registry
+  list        List models
+  ps          List running models
+  cp          Copy a model
+  rm          Remove a model
+  help        Help about any command
+```
+#### 2. IA Mistral (IA française très performante)
+```bash
+ollama run mistral
+```
+#### 3. Programmation / Coding
+```bash
+ollama run dolphin-mistral
+```
+#### 4. IA Meta/facebook
+```
+ollama run llama2
+```
+#### 5. Alibaba Cloud
+```
+ollama run qwen
+```
 
 
-```
-https://jrsoftware.org/ishelp/index.php?topic=setupcmdline
-```
+
+
+
+
