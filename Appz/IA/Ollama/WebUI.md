@@ -2,9 +2,7 @@
 # <p align='center'> Installation d'une interface Web pour OLLAMA</p>
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 ## I. Installation
-### A. WSL2
-Il est nécessaire d'installer WSL2 via la commande `wsl --install`.
-### B. Docker Desktop
+### A. Docker Desktop
 #### 1. Télécharger
 Il est nécessaire de télécharger [Docker-Desktop](https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe).
 #### 2. Configuration
@@ -25,6 +23,10 @@ Cliquer sur l'icône des `paramètres` (en haut à droite) et `téléchargez les
 ```
 netsh advfirewall firewall add rule name="Ollama" dir=in action=allow protocol=TCP localport=3000
 ```
+
+### B. WSL2 (Déconseillé)
+Il est nécessaire d'installer WSL2 via la commande `wsl --install`.
+
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 ## II. Suppression
