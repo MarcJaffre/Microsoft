@@ -42,6 +42,14 @@ netsh advfirewall firewall add rule name="Ollama"     dir=in action=allow protoc
 netsh advfirewall firewall add rule name="Ollama-API" dir=in action=allow protocol=TCP localport=11434
 ```
 
+### D. Docker
+```
+\\wsl.localhost\docker-desktop\mnt\docker-desktop-disk\data\docker\
+```
+
+
+
+
 <br />
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
