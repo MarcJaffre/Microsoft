@@ -1,6 +1,5 @@
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # <p align='center'> Installation de l'Intelligence Artificielle OLLAMA</p>
-
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### I. Installation
 #### A. Présentation
@@ -87,18 +86,6 @@ Available Commands:
   help        Help about any command
 ```
 
-
-
-
-
-
-
-
-
-
-------------------------------------
-
-
 Ce tableau décrit les options disponibles pour l'installation d'`OllamaSetup.exe` via la ligne de commande sous Windows.
 
 ```
@@ -153,4 +140,9 @@ set PARM5=/GROUP="OLLAMA Tools"
 set PARM6=/SILENT
 start /wait %DOSSIER%\OllamaSetup.exe %PARM1% %PARM2% %PARM3% %PARM4% %PARM5% %PARM6%
 ```
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+### II. Désinstallation
+#### A. Programmes et Fonctionnalités
+Désinstaller le logiciel 
 
