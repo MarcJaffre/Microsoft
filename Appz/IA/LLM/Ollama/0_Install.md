@@ -9,11 +9,13 @@
 >
 > Ollama est compatible avec plusieurs modèles populaires tels que LLaMA-2, CodeLLaMA, Falcon, Mistral, et GPT-3.5, et permet leur personnalisation pour des besoins spécifiques
 
+#### B. Pagination Système
+Pour optimiser OLLAMA, configurer la pagination système entre 6 Go et 8 Go.
 
-#### B. WSL2
+#### C. WSL2
 Il est nécessaire d'installer WSL2 via la commande `wsl.exe --install --no-distribution`.
 
-#### C. Gestion des ressources (CPU, RAM, NET, GPU)
+#### D. Gestion des ressources (CPU, RAM, NET, GPU)
 Ouvrir le menu `Démarrer` >  `WSL Settings`
 ##### 1. Liste des commandes
 ```
