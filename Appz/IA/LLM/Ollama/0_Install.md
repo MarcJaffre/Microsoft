@@ -40,6 +40,9 @@ Il suffit de lancer le setup et l'installation se met dans `%APPDATA%\..\LOCAL\O
 %USERPROFILE%\Downloads\OllamaSetup.exe /DIR="D:\IA\OLLAMA" /LANG=fr-FR /GROUP="OLLAMA Tools" /VERYSILENT /LOG /LOG="D:\IA\OLLAMA\Install.log"
 ```
 
+<br />
+
+
 | **Option**                        | **Description**                                        | **Exemple**                                    |
 |---------------------------------- | ------------------------------------------------------ | ---------------------------------------------- |
 | `/?`                              | Afficher les paramètres de l'installation              | `OllamaSetup.exe /?`                           |
