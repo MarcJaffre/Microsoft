@@ -120,4 +120,8 @@ Available Commands:
   help        Help about any command
 ```
 
-
+### B. Nvidia
+Afficher la charger GPU
+```
+nvidia-smi -l 3
+```
