@@ -144,5 +144,10 @@ start /wait %DOSSIER%\OllamaSetup.exe %PARM1% %PARM2% %PARM3% %PARM4% %PARM5% %P
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### II. Désinstallation
 #### A. Programmes et Fonctionnalités
-Désinstaller le logiciel 
-
+```
+D:\IA\OLLAMA\unins000.exe
+```
+#### B.. Utilisateur
+```
+rmdir /S /Q %userprofile%\.ollama
+```
