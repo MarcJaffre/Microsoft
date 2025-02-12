@@ -30,4 +30,7 @@ Il est nécessaire d'installer le pilote Graphique et Nvidia Cuda ToolKit.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## II. Installation de OLLAMA
 ### A. Téléchargement
-### B. Installation
+Télécharger le setup [OllamaSetup.exe](https://ollama.com/download/OllamaSetup.exe)
+### B. Installation (Simple)
+Il suffit de lancer le setup et l'installation se met dans `%APPDATA%\..\LOCAL\Ollama`.
+
