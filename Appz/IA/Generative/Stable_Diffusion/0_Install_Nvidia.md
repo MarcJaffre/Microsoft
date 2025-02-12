@@ -53,9 +53,7 @@ Moteur de génération d'images                    : Automatic1111
 URL de base AUTOMATIC1111                        : http://192.168.0.30:7860/
 AUTOMATIC1111 Chaîne d'authentification de l'API : marc:admin
 ...
-...
+
 ```
-
-
 
 
