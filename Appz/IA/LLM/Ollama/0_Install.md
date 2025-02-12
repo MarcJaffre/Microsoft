@@ -24,3 +24,10 @@ Il est nécessaire d'installer le Pilote graphique.
 ##### 1. AMD
 ##### 2. Nvidia
 Il est nécessaire d'installer le pilote Graphique et Nvidia Cuda ToolKit.
+
+<br />
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## II. Installation de OLLAMA
+### A. Téléchargement
+### B. Installation
