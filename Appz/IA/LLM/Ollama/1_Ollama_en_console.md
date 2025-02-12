@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------------------------------------------------------
-# <p align='center'> Modèles pour OLLAMA </p>
+# <p align='center'> Utilisation des Modèles OLLAMA dans un terminal Windows</p>
 ----------------------------------------------------------------------------------------------------------------------------------
 ## I. Française
 ### A.  [Dolphin-mistral](https://ollama.com/library/mistral)
