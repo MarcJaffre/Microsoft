@@ -1,12 +1,13 @@
-----------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # <p align='center'> Utilisation des Modèles OLLAMA dans un terminal Windows</p>
-----------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## I. Modèles
-| Modèles | Nombre de paramètres       | RAM | VRAM | Description                      | Objectif de la taille du modèle                                | 
-| ------- | -------------------------- | --- | ---- | -------------------------------- | -------------------------------------------------------------- |
-| 7b      | 7  milliards de paramètres | XXX | XXXX | Appelé "Mega" ou "Turing-NLG-001 | Tâches de traduction, la synthèse de texte, et le raisonnement |
-| 12b     | 12 milliards de paramètres | XXX | XXXX | BigScience-M" ou "Turing-NLG-002 | Plus large de tâches linguistiques                             |
-| 16b     | 16 milliards de paramètres | XXX | XXXX | Turing-NLG-003                   | Tâches de traitement du langage naturel                        |
+| Modèles | Nombre de paramètres       | RAM | VRAM  | Description                      | Objectif de la taille du modèle                                | 
+| ------- | -------------------------- | --- | ----- | -------------------------------- | -------------------------------------------------------------- |
+| 7b      | 7  milliards de paramètres | XXX | 08-16 | Appelé "Mega" ou "Turing-NLG-001 | Tâches de traduction, la synthèse de texte, et le raisonnement |
+| 12b     | 12 milliards de paramètres | XXX | 12-16 | BigScience-M" ou "Turing-NLG-002 | Plus large de tâches linguistiques                             |
+| 16b     | 16 milliards de paramètres | XXX | 16-24 | Turing-NLG-003                   | Tâches de traitement du langage naturel                        |
+
 
 ----------------------------------------------------------------------------------------------------------------------------------
 ## II. Française
