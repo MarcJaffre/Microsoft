@@ -41,9 +41,13 @@ setx OLLAMA_MULTIUSER_CACHE 'false'
 setx OLLAMA_NOHISTORY 'false'
 setx OLLAMA_NOPRUNE 'false'
 setx OLLAMA_NUM_PARALLEL '0'
-setx OLLAMA_ORIGINS '[http://localhost https://localhost http://localhost:* https://localhost:* http://127.0.0.1 https://127.0.0.1 http://127.0.0.1:* https://127.0.0.1:* http://0.0.0.0 https://0.0.0.0 http://0.0.0.0:* https://0.0.0.0:* app://* file://* tauri://* vscode-webview://*] OLLAMA_SCHED_SPREAD:false ROCR_VISIBLE_DEVICES:]'
+setx ROCR_VISIBLE_DEVICES ''
+setx OLLAMA_SCHED_SPREAD 'false'
 
-setx OLLAMA_SCHED_SPREAD
+setx OLLAMA_ORIGINS ''
+[http://localhost https://localhost http://localhost:* https://localhost:* http://127.0.0.1 https://127.0.0.1 http://127.0.0.1:* https://127.0.0.1:* http://0.0.0.0 https://0.0.0.0 http://0.0.0.0:* https://0.0.0.0:* app://* file://* tauri://* vscode-webview://*]
+
+
 
 
 setx CUDA_VISIBLE_DEVICES
