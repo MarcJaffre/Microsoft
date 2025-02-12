@@ -27,7 +27,7 @@
 ```
 setx OLLAMA_DEBUG 'false'
 setx OLLAMA_FLASH_ATTENTION 'false'
-setx OLLAMA_GPU_OVERHEAD '5242880'
+setx OLLAMA_GPU_OVERHEAD '2G'
 setx OLLAMA_HOST 'http://127.0.0.1:11434'
 setx OLLAMA_INTEL_GPU 'false'
 setx OLLAMA_KEEP_ALIVE '5m0s'
@@ -43,10 +43,7 @@ setx OLLAMA_NOPRUNE 'false'
 setx OLLAMA_NUM_PARALLEL '0'
 setx ROCR_VISIBLE_DEVICES ''
 setx OLLAMA_SCHED_SPREAD 'false'
-
-setx OLLAMA_ORIGINS ''
-[http://localhost https://localhost http://localhost:* https://localhost:* http://127.0.0.1 https://127.0.0.1 http://127.0.0.1:* https://127.0.0.1:* http://0.0.0.0 https://0.0.0.0 http://0.0.0.0:* https://0.0.0.0:* app://* file://* tauri://* vscode-webview://*]
-
+setx OLLAMA_ORIGINS "[http://localhost https://localhost http://localhost:* https://localhost:* http://127.0.0.1 https://127.0.0.1 http://127.0.0.1:* https://127.0.0.1:* http://0.0.0.0 https://0.0.0.0 http://0.0.0.0:* https://0.0.0.0:* app://* file://* tauri://* vscode-webview://*]"
 
 
 
