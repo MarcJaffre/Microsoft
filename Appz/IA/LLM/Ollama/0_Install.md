@@ -34,14 +34,13 @@ Télécharger le setup [OllamaSetup.exe](https://ollama.com/download/OllamaSetup
 ### B. Installation (Simple)
 Il suffit de lancer le setup et l'installation se met dans `%APPDATA%\..\LOCAL\Ollama`.
 
-### C. Instalaltion (Avancée)
-
+### C. Installation (Avancée)
+L'installateur va installer dans un autre dossier OLLAMA. ([DOC](https://jrsoftware.org/ishelp/index.php?topic=setupcmdline))
+#### 1. Installation
 ```bash
 %USERPROFILE%\Downloads\OllamaSetup.exe /DIR="D:\IA\OLLAMA" /LANG=fr-FR /GROUP="OLLAMA Tools" /VERYSILENT /LOG /LOG="D:\IA\OLLAMA\Install.log"
 ```
-
 <br />
-
 
 | **Option**                        | **Description**                                        | **Exemple**                                    |
 |---------------------------------- | ------------------------------------------------------ | ---------------------------------------------- |
@@ -72,8 +71,8 @@ Il suffit de lancer le setup et l'installation se met dans `%APPDATA%\..\LOCAL\O
 | `/MERGETASKS=""`                  | Fusionner des tâches avec celles par défaut            | `OllamaSetup.exe /MERGETASKS="desktopIcon"`    |
 | `/PASSWORD=password`              | Fournir un mot de passe pour l'installation            | `OllamaSetup.exe /PASSWORD=secure1234!`        |
 
+#### 2. Lien Symbolic
 ```
-https://jrsoftware.org/ishelp/index.php?topic=setupcmdline
+rmdi /S /Q C:\Users\%username%\.ollama\models
+mklink /D "C:\Users\%username%\.ollama\models" "D:\IA\OLLAMA\Models"
 ```
-
-
