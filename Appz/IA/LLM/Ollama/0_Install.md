@@ -71,6 +71,9 @@ L'installateur va installer dans un autre dossier OLLAMA. ([DOC](https://jrsoftw
 | `/MERGETASKS=""`                  | Fusionner des tâches avec celles par défaut            | `OllamaSetup.exe /MERGETASKS="desktopIcon"`    |
 | `/PASSWORD=password`              | Fournir un mot de passe pour l'installation            | `OllamaSetup.exe /PASSWORD=secure1234!`        |
 
+
+<br />
+
 #### 2. Lien Symbolic
 ```
 rmdi /S /Q C:\Users\%username%\.ollama\models
