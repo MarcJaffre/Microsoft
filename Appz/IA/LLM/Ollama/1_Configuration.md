@@ -3,35 +3,38 @@
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## I. Variables d'environnement
 ### A. Gestion de l'IP
-| **Variable**                  | **Description (Français)**                                                                 | **Valeur par défaut**          |
-|-------------------------------|--------------------------------------------------------------------------------------------|--------------------------------|
-| `OLLAMA_HOST`                 | Adresse IP du serveur Ollama (par défaut `127.0.0.1:11434`).                               | `127.0.0.1:11434`              |
-
 ```
 setx OLLAMA_HOST=0.0.0.0:11434
 ```
 
+| **Variable**                  | **Description (Français)**                                                                 | **Valeur par défaut**          |
+|-------------------------------|--------------------------------------------------------------------------------------------|--------------------------------|
+| `OLLAMA_HOST`                 | Adresse IP du serveur Ollama (par défaut `127.0.0.1:11434`).                               | `127.0.0.1:11434`              |
+
+
 <br />
 
 ### B. Gestion du GPU
-| **Variable**                  | **Description (Français)**                                                                 | **Valeur par défaut**          |
-|-------------------------------|--------------------------------------------------------------------------------------------|--------------------------------|
-| `OLLAMA_GPU_OVERHEAD`         | Réserve une portion de VRAM par GPU (en octets).                                           | Non spécifié                   |
-
 ```
 setx OLLAMA_GPU_OVERHEAD=
 ```
 
+| **Variable**                  | **Description (Français)**                                                                 | **Valeur par défaut**          |
+|-------------------------------|--------------------------------------------------------------------------------------------|--------------------------------|
+| `OLLAMA_GPU_OVERHEAD`         | Réserve une portion de VRAM par GPU (en octets).                                           | Non spécifié                   |
+
+
 <br />
 
 ### C. Gestion du stockage
+```
+setx OLLAMA_MODELS=D:\IA\OLLAMA\Models
+```
+
 | **Variable**                  | **Description (Français)**                                                                 | **Valeur par défaut**          |
 |-------------------------------|--------------------------------------------------------------------------------------------|--------------------------------|
 | `OLLAMA_MODELS`               | Chemin vers le répertoire contenant les modèles.                                           | Non spécifié                   |
 
-```
-setx OLLAMA_MODELS=D:\IA\OLLAMA\Models
-```
 
 <br />
 <br />
