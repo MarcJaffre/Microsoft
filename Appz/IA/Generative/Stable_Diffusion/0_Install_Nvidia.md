@@ -36,8 +36,7 @@ pip list
 set PYTHON=
 set GIT=
 set VENV_DIR=
-set COMMANDLINE_ARGS=--device-id 0 --disable-console-progressbars --disable-model-loading-ram-optimization --disable-nan-check --listen --api --api-auth marc:admin --lowram
-
+set COMMANDLINE_ARGS=--device-id 0 --disable-console-progressbars --disable-model-loading-ram-optimization --lowram --lowram --disable-nan-check --listen --api --api-auth marc:admin
 call webui.bat
 ```
 
