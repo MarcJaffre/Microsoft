@@ -28,7 +28,7 @@ Il est nécessaire d'installer le pilote Graphique et Nvidia Cuda ToolKit.
 <br />
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-## II. Installation de OLLAMA
+## II. Installation / Désinstallation de OLLAMA
 ### A. Téléchargement
 Télécharger le setup [OllamaSetup.exe](https://ollama.com/download/OllamaSetup.exe)
 ### B. Installation (Simple)
@@ -78,3 +78,39 @@ L'installateur va installer dans un autre dossier OLLAMA. ([DOC](https://jrsoftw
 rmdi /S /Q C:\Users\%username%\.ollama\models
 mklink /D "C:\Users\%username%\.ollama\models" "D:\IA\OLLAMA\Models"
 ```
+
+<br />
+
+#### B. Désinstallation
+```
+D:\IA\OLLAMA\unins000.exe
+rmdir /S /Q %USERPROFILE%\.ollama
+rmdir /S /Q %APPDATA%\..\Local\Ollama
+```
+
+<br />
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## III. Guide d'utilisation
+### A. Commande de base
+Lancer la commande `ollama` pour afficher le résumé des commandes.
+```
+ollama [flags]
+ollama [command]
+
+Available Commands:
+  serve       Start ollama
+  create      Create a model from a Modelfile
+  show        Show information for a model
+  run         Run a model
+  stop        Stop a running model
+  pull        Pull a model from a registry
+  push        Push a model to a registry
+  list        List models
+  ps          List running models
+  cp          Copy a model
+  rm          Remove a model
+  help        Help about any command
+```
+
+
