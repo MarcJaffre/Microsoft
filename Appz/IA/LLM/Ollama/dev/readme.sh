@@ -59,7 +59,6 @@ ollama run  <MODEL>
 ollama stop <MODEL>
 ollama ls
 
-
 ###########################################################################################################################################################################################################
 # Conteneur #
 #############
@@ -80,6 +79,9 @@ docker system df
 
 ###########################################################################################################################################################################################################
 Pourrais tu me trouver un vol genève-paris pour demain à 8h le moins chère possible.
+
+
+
 
 
 unable to load amdhip64_6.dll, please make sure to upgrade to the latest amd driver: Le module spécifié est introuvable.
