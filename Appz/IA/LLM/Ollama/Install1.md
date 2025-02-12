@@ -33,38 +33,7 @@ Il suffit de lancer le setup et l'installation se fait dans le disque C.
 
 <br />
 
-#### E. Variable d'environnement
-```
-ollama        --help
-ollama serve  --help
-ollama create --help
-ollama show   --help
-ollama run    --help
-ollama stop   --help
-ollama pull   --help
-ollama push   --help
-ollama list   --help
-ollama ps     --help
-ollama cp     --help
-ollama rm     --help
-```
-
-##### 1. OLLAMA_MODELS
-La variable `OLLAMA_MODELS` permet de définir l'emplacement de stockage des modèles.
-```
-- Crée le dossier D:\IA\OLLAMA\Models
-- Variables d'environnement
-- Crée une nouvelle variable utilisateur
-- Nom    : OLLAMA_MODELS
-- Valeur : D:\IA\OLLAMA\Models  
-```
-
-```
-move C:\Users\%username%\.ollama\models C:\Users\%username%\.ollama\models.old
-mklink /D "C:\Users\%username%\.ollama\models" "D:\IA\OLLAMA\Models"
-```
-
-#### F. Utilisation
+#### E. Utilisation
 ##### 1. CMD
 Lancer la commande `ollama` pour afficher le résumé des commandes.
 ```
@@ -140,6 +109,51 @@ set PARM5=/GROUP="OLLAMA Tools"
 set PARM6=/SILENT
 start /wait %DOSSIER%\OllamaSetup.exe %PARM1% %PARM2% %PARM3% %PARM4% %PARM5% %PARM6%
 ```
+
+
+
+
+#### F. Variable d'environnement
+```
+ollama        --help
+ollama serve  --help
+ollama create --help
+ollama show   --help
+ollama run    --help
+ollama stop   --help
+ollama pull   --help
+ollama push   --help
+ollama list   --help
+ollama ps     --help
+ollama cp     --help
+ollama rm     --help
+```
+
+##### 1. OLLAMA_MODELS
+La variable `OLLAMA_MODELS` permet de définir l'emplacement de stockage des modèles.
+```
+- Crée le dossier D:\IA\OLLAMA\Models
+- Variables d'environnement
+- Crée une nouvelle variable utilisateur
+- Nom    : OLLAMA_MODELS
+- Valeur : D:\IA\OLLAMA\Models  
+```
+
+```
+move C:\Users\%username%\.ollama\models C:\Users\%username%\.ollama\models.old
+mklink /D "C:\Users\%username%\.ollama\models" "D:\IA\OLLAMA\Models"
+```
+
+
+
+
+
+
+
+
+
+
+
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### II. Désinstallation
