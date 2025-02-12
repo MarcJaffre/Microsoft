@@ -1,7 +1,15 @@
 ----------------------------------------------------------------------------------------------------------------------------------
 # <p align='center'> Utilisation des Modèles OLLAMA dans un terminal Windows</p>
 ----------------------------------------------------------------------------------------------------------------------------------
-## I. Française
+## I. Modèles
+| Modèles | Nombre de paramètres       | RAM | VRAM | Description                      | Objectif de la taille du modèle                                | 
+| ------- | -------------------------- | --- | ---- | -------------------------------- | -------------------------------------------------------------- |
+| 7b      | 7  milliards de paramètres | XXX | XXXX | Appelé "Mega" ou "Turing-NLG-001 | Tâches de traduction, la synthèse de texte, et le raisonnement |
+| 12b     | 12 milliards de paramètres | XXX | XXXX | BigScience-M" ou "Turing-NLG-002 | Plus large de tâches linguistiques                             |
+| 16b     | 16 milliards de paramètres | XXX | XXXX | Turing-NLG-003                   | Tâches de traitement du langage naturel                        |
+
+----------------------------------------------------------------------------------------------------------------------------------
+## II. Française
 ### A.  [Dolphin-mistral](https://ollama.com/library/mistral)
 Le modèle Dolphin non censuré basé sur Mistral qui **excelle dans les tâches de codage**. 
 ```bash
@@ -16,7 +24,7 @@ ollama run mistral
 <br />
 
 ----------------------------------------------------------------------------------------------------------------------------------
-## II. Etrangère
+## III. Etrangère
 ### X. [Gemma](https://ollama.com/library/gemma)
 Gemma est un nouveau modèle ouvert développé par Google et son équipe DeepMind. Il est inspiré des modèles Gemini de Google.
 ```
