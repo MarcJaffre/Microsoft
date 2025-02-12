@@ -2,8 +2,16 @@
 # <p align='center'> Installation de Stable Diffusion </p>
 ---------------------------------------------------------------------------------------------------------------------
 ## I. Installation
+### A. Python
+Cocher la case `PATH`.
+```
+https://www.python.org/ftp/python/3.10.6/python-3.10.6-amd64.exe
+```
+
 ### A. GIt
-### B. Python
+```
+https://github.com/git-for-windows/git/releases/download/v2.46.2.windows.1/Git-2.46.2-64-bit.exe
+```
 
 ### D. Télécharger Stable Diffusion
 Télécharger et extraire le fichier compresser [isi](https://codeload.github.com/AUTOMATIC1111/stable-diffusion-webui/zip/refs/heads/master)
