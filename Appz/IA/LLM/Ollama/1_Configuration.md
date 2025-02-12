@@ -2,18 +2,7 @@
 # <p align='center'> Configuration de OLLAMA </p>
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## I. Variables d'environnement
-### A. Gestion du stockage
-| **Variable**                  | **Description (Français)**                                                                 | **Valeur par défaut**          |
-|-------------------------------|--------------------------------------------------------------------------------------------|--------------------------------|
-| `OLLAMA_MODELS`               | Chemin vers le répertoire contenant les modèles.                                           | Non spécifié                   |
-
-```
-setx OLLAMA_MODELS=D:\IA\OLLAMA\Models
-```
-
-<br />
-
-### B. Gestion de l'IP
+### A. Gestion de l'IP
 | **Variable**                  | **Description (Français)**                                                                 | **Valeur par défaut**          |
 |-------------------------------|--------------------------------------------------------------------------------------------|--------------------------------|
 | `OLLAMA_HOST`                 | Adresse IP du serveur Ollama (par défaut `127.0.0.1:11434`).                               | `127.0.0.1:11434`              |
@@ -24,7 +13,7 @@ setx OLLAMA_HOST=0.0.0.0:11434
 
 <br />
 
-### X. Gestion du GPU
+### B. Gestion du GPU
 | **Variable**                  | **Description (Français)**                                                                 | **Valeur par défaut**          |
 |-------------------------------|--------------------------------------------------------------------------------------------|--------------------------------|
 | `OLLAMA_GPU_OVERHEAD`         | Réserve une portion de VRAM par GPU (en octets).                                           | Non spécifié                   |
@@ -33,6 +22,18 @@ setx OLLAMA_HOST=0.0.0.0:11434
 setx OLLAMA_GPU_OVERHEAD=
 ```
 
+<br />
+
+### C. Gestion du stockage
+| **Variable**                  | **Description (Français)**                                                                 | **Valeur par défaut**          |
+|-------------------------------|--------------------------------------------------------------------------------------------|--------------------------------|
+| `OLLAMA_MODELS`               | Chemin vers le répertoire contenant les modèles.                                           | Non spécifié                   |
+
+```
+setx OLLAMA_MODELS=D:\IA\OLLAMA\Models
+```
+
+<br />
 <br />
 
 ### X. Gestion de la File
