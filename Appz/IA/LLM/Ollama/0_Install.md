@@ -157,8 +157,8 @@ rmdir /S /Q %APPDATA%\..\Local\Ollama
 <br />
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-## III. Guide d'utilisation
-### A. Commande de base
+## III. Vérification de fonctionnement
+### A. Vérifier OLLAMA
 Lancer la commande `ollama` pour afficher le résumé des commandes.
 ```
 ollama [flags]
@@ -179,7 +179,7 @@ Available Commands:
   help        Help about any command
 ```
 
-### B. Nvidia
+### B. Vérifier Nvidia
 Afficher la charger GPU
 ```
 nvidia-smi -l 3
