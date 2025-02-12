@@ -25,21 +25,35 @@
 
 
 ```
-setx OLLAMA_HOST=0.0.0.0:11434
-setx OLLAMA_GPU_OVERHEAD=
-setx OLLAMA_MODELS=D:\IA\OLLAMA\Models
-setx OLLAMA_MAX_LOADED_MODELS=
-setx OLLAMA_MAX_QUEUE=
-setx OLLAMA_HOST=
-setx OLLAMA_FLASH_ATTENTION=
-setx OLLAMA_KEEP_ALIVE=
-setx OLLAMA_KV_CACHE_TYPE=
-setx OLLAMA_LLM_LIBRARY=
-setx OLLAMA_LOAD_TIMEOUT=
-setx OLLAMA_NOHISTORY=
-setx OLLAMA_NOPRUNE=
-setx OLLAMA_NUM_PARALLEL=
-setx OLLAMA_ORIGINS=
-setx OLLAMA_SCHED_SPREAD=
-setx OLLAMA_DEBUG=
+setx OLLAMA_DEBUG 'false'
+setx OLLAMA_FLASH_ATTENTION 'false'
+setx OLLAMA_GPU_OVERHEAD '5242880'
+setx OLLAMA_HOST 'http://127.0.0.1:11434'
+setx OLLAMA_INTEL_GPU 'false'
+setx OLLAMA_KEEP_ALIVE '5m0s'
+setx OLLAMA_KV_CACHE_TYPE ''
+setx OLLAMA_LLM_LIBRARY ''
+setx OLLAMA_LOAD_TIMEOUT '5m0s'
+setx OLLAMA_MAX_LOADED_MODELS '0'
+setx OLLAMA_MAX_QUEUE '512'
+setx OLLAMA_MODELS 'D:\\IA\\OLLAMA\\Models'
+setx OLLAMA_MULTIUSER_CACHE 'false'
+setx OLLAMA_NOHISTORY 'false'
+setx OLLAMA_NOPRUNE 'false'
+setx OLLAMA_NUM_PARALLEL '0'
+setx OLLAMA_ORIGINS '[http://localhost https://localhost http://localhost:* https://localhost:* http://127.0.0.1 https://127.0.0.1 http://127.0.0.1:* https://127.0.0.1:* http://0.0.0.0 https://0.0.0.0 http://0.0.0.0:* https://0.0.0.0:* app://* file://* tauri://* vscode-webview://*] OLLAMA_SCHED_SPREAD:false ROCR_VISIBLE_DEVICES:]'
+
+setx OLLAMA_SCHED_SPREAD
+
+
+setx CUDA_VISIBLE_DEVICES
+setx GPU_DEVICE_ORDINAL
+setx HIP_VISIBLE_DEVICES
+setx HSA_OVERRIDE_GFX_VERSION
+setx HTTPS_PROXY
+setx HTTP_PROXY
+setx NO_PROXY
+setx 
+setx 
+setx 
 ```
