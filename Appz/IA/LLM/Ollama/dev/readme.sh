@@ -63,13 +63,22 @@ ollama ls
 ###########################################################################################################################################################################################################
 # Conteneur #
 #############
+docker container rm -f open-webui
+docker image rm ghcr.io/open-webui/open-webui:cuda
 docker run -d -p 3000:8080 --gpus all --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:cuda
-
+netsh advfirewall firewall add rule name="Ollama"     dir=in action=allow protocol=TCP localport=3000
+netsh advfirewall firewall add rule name="Ollama-API" dir=in action=allow protocol=TCP localport=11434
 
 ###########################################################################################################################################################################################################
 # Docker #
 ##########
 docker system df
+
+
+
+
+
+
 
 
 ###########################################################################################################################################################################################################
