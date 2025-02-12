@@ -44,17 +44,14 @@ setx OLLAMA_NUM_PARALLEL '0'
 setx ROCR_VISIBLE_DEVICES ''
 setx OLLAMA_SCHED_SPREAD 'false'
 setx OLLAMA_ORIGINS "[http://localhost https://localhost http://localhost:* https://localhost:* http://127.0.0.1 https://127.0.0.1 http://127.0.0.1:* https://127.0.0.1:* http://0.0.0.0 https://0.0.0.0 http://0.0.0.0:* https://0.0.0.0:* app://* file://* tauri://* vscode-webview://*]"
+```
 
-
-
-setx CUDA_VISIBLE_DEVICES
+```
+setx CUDA_VISIBLE_DEVICES "0"
 setx GPU_DEVICE_ORDINAL
 setx HIP_VISIBLE_DEVICES
 setx HSA_OVERRIDE_GFX_VERSION
 setx HTTPS_PROXY
 setx HTTP_PROXY
 setx NO_PROXY
-setx 
-setx 
-setx 
 ```
