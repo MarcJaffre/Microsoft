@@ -1,11 +1,11 @@
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # <p align='center'> Installation de l'Intelligence Artificielle OLLAMA</p>
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-## I. Installation d'OLLAMA
+## I. Préparation du Système
 #### A. Présentation
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
-#### B. Pré-requis
+#### B. WSL2
 Il est nécessaire d'installer WSL2 via la commande `wsl.exe --install --no-distribution`.
 
 #### C. Gestion des ressources (CPU, RAM, NET, GPU)
@@ -18,3 +18,9 @@ wsl.exe --status
 wsl.exe --update
 wsl.exe --install --no-distribution
 ```
+
+#### C. Pilote
+Il est nécessaire d'installer le Pilote graphique.
+##### 1. AMD
+##### 2. Nvidia
+Il est nécessaire d'installer le pilote Graphique et Nvidia Cuda ToolKit.
