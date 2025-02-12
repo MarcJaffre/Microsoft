@@ -2,7 +2,7 @@
 # <p align='center'> Configuration de OLLAMA </p>
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## I. Variables d'environnement
-
+### A. Listes des variables d'environnement
 | **Variable**                  | **Description (Français)**                                                                 | **Valeur par défaut**          |
 |-------------------------------|--------------------------------------------------------------------------------------------|--------------------------------|
 | `OLLAMA_HOST`                 | Adresse IP du serveur Ollama (par défaut `127.0.0.1:11434`).                               | `127.0.0.1:11434`              |
@@ -24,34 +24,39 @@
 | `OLLAMA_DEBUG`                | Affiche des informations de débogage supplémentaires (par exemple, `OLLAMA_DEBUG=1`).      | Non spécifié                   |
 
 
-```
-setx OLLAMA_DEBUG 'false'
-setx OLLAMA_FLASH_ATTENTION 'false'
-setx OLLAMA_GPU_OVERHEAD '2G'
-setx OLLAMA_HOST 'http://127.0.0.1:11434'
-setx OLLAMA_INTEL_GPU 'false'
-setx OLLAMA_KEEP_ALIVE '5m0s'
-setx OLLAMA_KV_CACHE_TYPE ''
-setx OLLAMA_LLM_LIBRARY ''
-setx OLLAMA_LOAD_TIMEOUT '5m0s'
-setx OLLAMA_MAX_LOADED_MODELS '0'
-setx OLLAMA_MAX_QUEUE '512'
-setx OLLAMA_MODELS 'D:\\IA\\OLLAMA\\Models'
-setx OLLAMA_MULTIUSER_CACHE 'false'
-setx OLLAMA_NOHISTORY 'false'
-setx OLLAMA_NOPRUNE 'false'
-setx OLLAMA_NUM_PARALLEL '0'
-setx ROCR_VISIBLE_DEVICES ''
-setx OLLAMA_SCHED_SPREAD 'false'
-setx OLLAMA_ORIGINS "[http://localhost https://localhost http://localhost:* https://localhost:* http://127.0.0.1 https://127.0.0.1 http://127.0.0.1:* https://127.0.0.1:* http://0.0.0.0 https://0.0.0.0 http://0.0.0.0:* https://0.0.0.0:* app://* file://* tauri://* vscode-webview://*]"
-```
+### B. Ligne de commande
 
 ```
+setx OLLAMA_DEBUG "false"
+setx OLLAMA_FLASH_ATTENTION "false"
+setx OLLAMA_GPU_OVERHEAD "0"
+setx OLLAMA_HOST "http://127.0.0.1:11434"
+setx OLLAMA_INTEL_GPU "false"
+setx OLLAMA_KEEP_ALIVE "5m0s"
+setx OLLAMA_KV_CACHE_TYPE ""
+setx OLLAMA_LLM_LIBRARY ""
+setx OLLAMA_LOAD_TIMEOUT "5m0s"
+setx OLLAMA_MAX_LOADED_MODELS "0"
+setx OLLAMA_MAX_QUEUE "512"
+setx OLLAMA_MODELS "D:\\IA\\OLLAMA\\Models"
+setx OLLAMA_MULTIUSER_CACHE "false"
+setx OLLAMA_NOHISTORY "false"
+setx OLLAMA_NOPRUNE "false"
+setx OLLAMA_NUM_PARALLEL "0"
+setx ROCR_VISIBLE_DEVICES "0"
+setx OLLAMA_SCHED_SPREAD "false"
+setx OLLAMA_ORIGINS ""
+```
+
+
+### C. Complément
+```
 setx CUDA_VISIBLE_DEVICES "0"
-setx GPU_DEVICE_ORDINAL
-setx HIP_VISIBLE_DEVICES
-setx HSA_OVERRIDE_GFX_VERSION
-setx HTTPS_PROXY
-setx HTTP_PROXY
-setx NO_PROXY
+
+:: setx GPU_DEVICE_ORDINAL
+:: setx HIP_VISIBLE_DEVICES
+:: setx HSA_OVERRIDE_GFX_VERSION
+:: setx HTTPS_PROXY
+:: setx HTTP_PROXY
+:: setx NO_PROXY
 ```
