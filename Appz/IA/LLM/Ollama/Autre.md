@@ -5,3 +5,8 @@ Volumes:
 - /var/log/uwsgi
 - /etc/searx
 ```
+
+### Fonction
+```
+https://openwebui.com/functions
+```
