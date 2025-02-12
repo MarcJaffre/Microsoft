@@ -3,7 +3,12 @@
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## I. Préparation du Système
 #### A. Présentation
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+> Ollama est une plateforme open-source conçue pour exécuter localement des modèles de langage de grande taille (LLM) sur des machines personnelles.
+>
+> Elle offre une solution économique et sécurisée en éliminant la dépendance aux services cloud, ce qui garantit la confidentialité des données.
+>
+> Ollama est compatible avec plusieurs modèles populaires tels que LLaMA-2, CodeLLaMA, Falcon, Mistral, et GPT-3.5, et permet leur personnalisation pour des besoins spécifiques
+
 
 #### B. WSL2
 Il est nécessaire d'installer WSL2 via la commande `wsl.exe --install --no-distribution`.
