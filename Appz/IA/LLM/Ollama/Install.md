@@ -29,7 +29,7 @@ Télécharger le setup [OllamaSetup.exe](https://ollama.com/download/OllamaSetup
 Il suffit de lancer le setup et l'installation se fait dans le disque C.
 
 ##### 2. Mode avancée
-`start /wait %USERPROFILE%\Downloads\OllamaSetup.exe /DIR="D:\IA\OLLAMA" /LANG=fr-FR /GROUP="OLLAMA Tools" /VERYSILENT /LOG /LOG="%USERPROFILE%\Downloads\Install.log"`
+`start /wait D:\Installateur\OllamaSetup.exe /DIR="D:\IA\OLLAMA" /LANG=fr-FR /GROUP="OLLAMA Tools" /VERYSILENT /LOG /LOG="D:\Installateur\Install.log"`
 
 <br />
 
@@ -150,4 +150,5 @@ D:\IA\OLLAMA\unins000.exe
 #### B.. Utilisateur
 ```
 rmdir /S /Q %userprofile%\.ollama
+rmdir /S /Q %appdata%\..\Local\Ollama
 ```
