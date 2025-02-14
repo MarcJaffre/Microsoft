@@ -24,3 +24,8 @@
 [FAIL] DD0031: does the Docker API work? prereq failed: is the Docker engine running?
 [FAIL] DD0037: is the connection to Docker working? prereq failed: is the Docker engine running?
 ```
+
+```bash
+powershell Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All
+powershell Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform
+```
