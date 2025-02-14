@@ -68,7 +68,7 @@ setx OLLAMA_LLM_LIBRARY ""
 setx OLLAMA_LOAD_TIMEOUT "5m0s"
 setx OLLAMA_MAX_LOADED_MODELS "0"
 setx OLLAMA_MAX_QUEUE "512"
-setx OLLAMA_MODELS "D:\\IA\\OLLAMA\\Models"
+setx OLLAMA_MODELS "D:\\OLLAMA\\Models"
 setx OLLAMA_MULTIUSER_CACHE "false"
 setx OLLAMA_NOHISTORY "false"
 setx OLLAMA_NOPRUNE "false"
@@ -104,7 +104,7 @@ Il suffit de lancer le setup et l'installation se met dans `%APPDATA%\..\LOCAL\O
 L'installateur va installer dans un autre dossier OLLAMA. ([DOC](https://jrsoftware.org/ishelp/index.php?topic=setupcmdline))
 #### 1. Installation
 ```bash
-%USERPROFILE%\Downloads\OllamaSetup.exe /DIR="D:\IA\OLLAMA" /LANG=fr-FR /GROUP="OLLAMA Tools" /VERYSILENT /LOG /LOG="D:\IA\OLLAMA\Install.log"
+%USERPROFILE%\Downloads\OllamaSetup.exe /DIR="D:\OLLAMA" /LANG=fr-FR /GROUP="OLLAMA Tools" /VERYSILENT /LOG /LOG="D:\OLLAMA\Install.log"
 ```
 <br />
 
@@ -142,14 +142,14 @@ L'installateur va installer dans un autre dossier OLLAMA. ([DOC](https://jrsoftw
 #### 2. Lien Symbolic
 ```
 rmdi /S /Q C:\Users\%username%\.ollama\models
-mklink /D "C:\Users\%username%\.ollama\models" "D:\IA\OLLAMA\Models"
+mklink /D "C:\Users\%username%\.ollama\models" "D:\OLLAMA\Models"
 ```
 
 <br />
 
 #### B. Désinstallation
 ```
-D:\IA\OLLAMA\unins000.exe
+D:\OLLAMA\unins000.exe
 rmdir /S /Q %USERPROFILE%\.ollama
 rmdir /S /Q %APPDATA%\..\Local\Ollama
 ```
