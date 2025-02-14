@@ -24,6 +24,8 @@ wsl.exe --shutdown
 wsl.exe --status
 ```
 
+<br />
+
 #### C. Pilote
 Il est nécessaire d'installer le Pilote graphique.
 ##### 1. AMD
@@ -36,6 +38,7 @@ nvidia-smi -l 3
 ```
 
 
+<br />
 
 ### D. Variable d'environnement
 #### 1. Listes des variables d'environnement
