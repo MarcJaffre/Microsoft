@@ -4,7 +4,8 @@
 ## I. Installation
 ### A. Docker Desktop
 #### 1. Télécharger
-Il est nécessaire de télécharger [Docker-Desktop](https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe).
+Il est nécessaire de télécharger [Docker-Desktop](https://docs.docker.com/desktop/release-notes/).
+
 
 #### 2. Configuration
 Installez-le et assurez-vous qu'il est configuré pour fonctionner avec WSL2.
