@@ -36,3 +36,8 @@ wsl.exe --install --no-distribution
 ```bash
 docker start open-webui
 ```
+
+### F. Purge des fichiers
+```
+\\wsl.localhost\docker-desktop\mnt\docker-desktop-disk\data\docker\volumes\open-webui\_data\uploads
+```
