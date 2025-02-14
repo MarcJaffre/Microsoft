@@ -141,7 +141,7 @@ L'installateur va installer dans un autre dossier OLLAMA. ([DOC](https://jrsoftw
 
 #### 2. Lien Symbolic
 ```
-rmdi /S /Q C:\Users\%username%\.ollama\models
+rmdir /S /Q C:\Users\%username%\.ollama\models
 mklink /D "C:\Users\%username%\.ollama\models" "D:\OLLAMA\Models"
 ```
 
