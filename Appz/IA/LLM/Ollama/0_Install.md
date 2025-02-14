@@ -37,6 +37,8 @@ Afficher les informations (Refresh 3 secondes)
 nvidia-smi -l 3
 ```
 
+###### Exemple
+Le Pilote Nvidia installé est `572` et Nvidia Cuda Toolkit `12.8`.
 
 <br />
 
