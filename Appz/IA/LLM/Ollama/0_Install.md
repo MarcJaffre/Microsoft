@@ -38,7 +38,9 @@ nvidia-smi -l 3
 ```
 
 ###### Exemple
-Le Pilote Nvidia installé est `572` et Nvidia Cuda Toolkit `12.8`.
+Le Pilote Nvidia installé est `572`.
+
+![image](https://github.com/user-attachments/assets/bb84e3e5-dc54-4a33-a6f7-f9a5e82e4b46)
 
 <br />
 
