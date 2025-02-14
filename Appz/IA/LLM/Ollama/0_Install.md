@@ -13,7 +13,7 @@
 Pour optimiser OLLAMA, configurer la pagination système entre 6 Go et 8 Go.
 
 #### C. WSL2
-Il est nécessaire d'installer WSL2 via la commande `wsl.exe --install --no-distribution`.
+Il est nécessaire d'installer WSL2 via la commande `wsl.exe --install --no-distribution` puis `wsl.exe --update`.
 
 #### D. Gestion des ressources (CPU, RAM, NET, GPU)
 Ouvrir le menu `Démarrer` >  `WSL Settings`
@@ -22,8 +22,6 @@ Ouvrir le menu `Démarrer` >  `WSL Settings`
 wsl.exe --uninstall
 wsl.exe --shutdown
 wsl.exe --status
-wsl.exe --update
-wsl.exe --install --no-distribution
 ```
 
 #### C. Pilote
