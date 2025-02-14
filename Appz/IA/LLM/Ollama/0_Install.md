@@ -28,7 +28,7 @@ wsl.exe --status
 Il est nécessaire d'installer le Pilote graphique.
 ##### 1. AMD
 ##### 2. Nvidia
-Il est nécessaire d'installer le pilote Graphique et Nvidia Cuda ToolKit.
+Il est nécessaire d'installer le pilote Graphique et [Nvidia Cuda ToolKit](https://developer.nvidia.com/cuda-downloads?target_os=Windows&target_arch=x86_64&target_version=10&target_type=exe_local).
 
 ### D. Variable d'environnement
 #### 1. Listes des variables d'environnement
