@@ -20,7 +20,7 @@ diskpart
 ```
 #### 2. Compression
 ```
-select vdisk file="D:\IA\Docker\DockerDesktopWSL\disk\docker_data.vhdx"
+select vdisk file="D:\Docker\DockerDesktopWSL\disk\docker_data.vhdx"
 attach vdisk readonly
 compact vdisk
 detach vdisk
