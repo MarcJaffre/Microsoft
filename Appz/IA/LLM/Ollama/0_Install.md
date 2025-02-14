@@ -30,6 +30,13 @@ Il est nécessaire d'installer le Pilote graphique.
 ##### 2. Nvidia
 Il est nécessaire d'installer le pilote Graphique et [Nvidia Cuda ToolKit](https://developer.nvidia.com/cuda-downloads?target_os=Windows&target_arch=x86_64).
 
+Afficher les informations (Refresh 3 secondes)
+```
+nvidia-smi -l 3
+```
+
+
+
 ### D. Variable d'environnement
 #### 1. Listes des variables d'environnement
 
@@ -175,10 +182,4 @@ Available Commands:
   cp          Copy a model
   rm          Remove a model
   help        Help about any command
-```
-
-### B. Vérifier Nvidia
-Afficher la charger GPU
-```
-nvidia-smi -l 3
 ```
