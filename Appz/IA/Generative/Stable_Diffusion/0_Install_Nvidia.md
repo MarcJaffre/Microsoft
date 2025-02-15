@@ -13,6 +13,12 @@ https://www.python.org/ftp/python/3.10.6/python-3.10.6-amd64.exe
 https://github.com/git-for-windows/git/releases/download/v2.46.2.windows.1/Git-2.46.2-64-bit.exe
 ```
 
+### C. Visual C++
+```
+https://aka.ms/vs/16/release/vc_redist.x64.exe
+```
+
+
 ### D. Télécharger Stable Diffusion
 Télécharger et extraire le fichier compresser [isi](https://codeload.github.com/AUTOMATIC1111/stable-diffusion-webui/zip/refs/heads/master)
 
