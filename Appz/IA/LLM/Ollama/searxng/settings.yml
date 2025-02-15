@@ -37,7 +37,6 @@ search:
   formats:
     - html
     - json
-
 #####################################################################################################################################################
 server:
   port: 8888
@@ -54,14 +53,9 @@ server:
     X-Download-Options: noopen
     X-Robots-Tag: noindex, nofollow
     Referrer-Policy: no-referrer
-
-
-
 #####################################################################################################################################################
 redis:
   url: false
-
-
 #####################################################################################################################################################
 ui:
   static_path: ""
@@ -73,7 +67,7 @@ ui:
   center_alignment: false
   default_locale: ""
   theme_args:
-    simple_style: autolly.
+    simple_style: auto
   search_on_category_select: true
   hotkeys: default
   url_formatting: pretty
@@ -107,6 +101,12 @@ ui:
 #   key: !!binary "your_morty_proxy_key"
 #   # [true|false] enable the "proxy" button next to each result
 #   proxify_results: true
+
+
+
+
+
+
 
 #####################################################################################################################################################
 # communication with search engines
