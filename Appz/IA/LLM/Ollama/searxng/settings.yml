@@ -1,3 +1,4 @@
+#####################################################################################################################################################
 general:
   debug: false
   instance_name: "searxng"
@@ -7,6 +8,7 @@ general:
   enable_metrics: true
   open_metrics: ''
 
+#####################################################################################################################################################
 brand:
   new_issue_url: https://github.com/searxng/searxng/issues/new
   docs_url: https://docs.searxng.org/
@@ -14,6 +16,10 @@ brand:
   wiki_url: https://github.com/searxng/searxng/wiki
   issue_url: https://github.com/searxng/searxng/issues
 
+
+#####################################################################################################################################################
+# JSON #
+########
 search:
   # Filter results. 0: None, 1: Moderate, 2: Strict
   safe_search: 0
@@ -33,7 +39,8 @@ search:
   formats:
     - html
     - json
-
+    
+#####################################################################################################################################################
 server:
   port: 8888
   bind_address: "127.0.0.1"
@@ -50,9 +57,11 @@ server:
     X-Robots-Tag: noindex, nofollow
     Referrer-Policy: no-referrer
 
+#####################################################################################################################################################
 redis:
   url: false
 
+#################################################################################################
 ui:
   static_path: ""
   static_use_hash: false
@@ -60,28 +69,14 @@ ui:
   query_in_title: false
   infinite_scroll: false
   default_theme: simple
-  # center the results ?
   center_alignment: false
-  # URL prefix of the internet archive, don't forget trailing slash (if needed).
-  # cache_url: "https://webcache.googleusercontent.com/search?q=cache:"
-  # Default interface locale - leave blank to detect from browser information or
-  # use codes from the 'locales' config section
   default_locale: ""
-  # Open result links in a new tab by default
-  # results_on_new_tab: false
   theme_args:
-    # style of simple theme: auto, light, dark
-    simple_style: auto
-  # Perform search immediately if a category selected.
-  # Disable to select multiple categories at once and start the search manually.
+    simple_style: autolly.
   search_on_category_select: true
-  # Hotkeys: default or vim
   hotkeys: default
-  # URL formatting: pretty, full or host
   url_formatting: pretty
 
-# Lock arbitrary settings on the preferences page.
-#
 # preferences:
 #   lock:
 #     - categories
@@ -112,120 +107,20 @@ ui:
 #   # [true|false] enable the "proxy" button next to each result
 #   proxify_results: true
 
+#####################################################################################################################################################
 # communication with search engines
-#
 outgoing:
-  # default timeout in seconds, can be override by engine
   request_timeout: 3.0
-  # the maximum timeout in seconds
   # max_request_timeout: 10.0
-  # suffix of searx_useragent, could contain information like an email address
-  # to the administrator
   useragent_suffix: ""
-  # The maximum number of concurrent connections that may be established.
   pool_connections: 100
-  # Allow the connection pool to maintain keep-alive connections below this
-  # point.
   pool_maxsize: 20
   # See https://www.python-httpx.org/http2/
   enable_http2: true
-  # uncomment below section if you want to use a custom server certificate
-  # see https://www.python-httpx.org/advanced/#changing-the-verification-defaults
-  # and https://www.python-httpx.org/compatibility/#ssl-configuration
-  #  verify: ~/.mitmproxy/mitmproxy-ca-cert.cer
-  #
-  # uncomment below section if you want to use a proxyq see: SOCKS proxies
-  #   https://2.python-requests.org/en/latest/user/advanced/#proxies
-  # are also supported: see
-  #   https://2.python-requests.org/en/latest/user/advanced/#socks
-  #
-  #  proxies:
-  #    all://:
-  #      - http://proxy1:8080
-  #      - http://proxy2:8080
-  #
-  #  using_tor_proxy: true
-  #
-  # Extra seconds to add in order to account for the time taken by the proxy
-  #
-  #  extra_proxy_timeout: 10
-  #
-  # uncomment below section only if you have more than one network interface
-  # which can be the source of outgoing search requests
-  #
-  #  source_ips:
-  #    - 1.1.1.1
-  #    - 1.1.1.2
-  #    - fe80::/126
 
-# External plugin configuration, for more details see
-#   https://docs.searxng.org/admin/settings/settings_plugins.html
-#
-# plugins:
-#   - mypackage.mymodule.MyPlugin
-#   - mypackage.mymodule.MyOtherPlugin
-#   - ...
-
-# Comment or un-comment plugin to activate / deactivate by default.
-#   https://docs.searxng.org/admin/settings/settings_plugins.html
-#
-# enabled_plugins:
-#   # these plugins are enabled if nothing is configured ..
-#   - 'Basic Calculator'
-#   - 'Hash plugin'
-#   - 'Self Information'
-#   - 'Tracker URL remover'
-#   - 'Unit converter plugin'
-#   - 'Ahmia blacklist'  # activation depends on outgoing.using_tor_proxy
-#   # these plugins are disabled if nothing is configured ..
-#   - 'Hostnames plugin'  # see 'hostnames' configuration below
-#   - 'Open Access DOI rewrite'
-#   - 'Tor check plugin'
-
-# Configuration of the "Hostnames plugin":
-#
-# hostnames:
-#   replace:
-#     '(.*\.)?youtube\.com$': 'invidious.example.com'
-#     '(.*\.)?youtu\.be$': 'invidious.example.com'
-#     '(.*\.)?reddit\.com$': 'teddit.example.com'
-#     '(.*\.)?redd\.it$': 'teddit.example.com'
-#     '(www\.)?twitter\.com$': 'nitter.example.com'
-#   remove:
-#     - '(.*\.)?facebook.com$'
-#   low_priority:
-#     - '(.*\.)?google(\..*)?$'
-#   high_priority:
-#     - '(.*\.)?wikipedia.org$'
-#
-# Alternatively you can use external files for configuring the "Hostnames plugin":
-#
-# hostnames:
-#  replace: 'rewrite-hosts.yml'
-#
-# Content of 'rewrite-hosts.yml' (place the file in the same directory as 'settings.yml'):
-# '(.*\.)?youtube\.com$': 'invidious.example.com'
-# '(.*\.)?youtu\.be$': 'invidious.example.com'
-#
-
+#####################################################################################################################################################
 checker:
-  # disable checker when in debug mode
   off_when_debug: true
-
-  # use "scheduling: false" to disable scheduling
-  # scheduling: interval or int
-
-  # to activate the scheduler:
-  # * uncomment "scheduling" section
-  # * add "cache2 = name=searxngcache,items=2000,blocks=2000,blocksize=4096,bitmap=1"
-  #   to your uwsgi.ini
-
-  # scheduling:
-  #   start_after: [300, 1800]  # delay to start the first run of the checker
-  #   every: [86400, 90000]     # how often the checker runs
-
-  # additional tests: only for the YAML anchors (see the engines section)
-  #
   additional_tests:
     rosebud: &test_rosebud
       matrix:
@@ -255,7 +150,7 @@ checker:
           query: ["linux", "new york", "bbc"]
         result_container:
           - has_infobox
-
+#####################################################################################################################################################
 categories_as_tabs:
   general:
   images:
@@ -268,6 +163,7 @@ categories_as_tabs:
   files:
   social media:
 
+#####################################################################################################################################################
 engines:
   - name: 9gag
     engine: 9gag
@@ -2494,6 +2390,8 @@ engines:
 #        chars: ' '
 #        keys: ['line']
 
+
+#####################################################################################################################################################
 doi_resolvers:
   oadoi.org: 'https://oadoi.org/'
   doi.org: 'https://doi.org/'
