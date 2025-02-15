@@ -11,6 +11,10 @@ netsh advfirewall firewall delete rule name="searx"
 ##### 3. Lancement du conteneur
 Lancer le conteneur
 ##### 4. Arrêter le conteneur
+```
+docker stop SearXNG
+```
+
 ##### 5. Editer settings.yml
 ```
 \\wsl.localhost\docker-desktop\mnt\docker-desktop-disk\data\docker\volumes\searxng\_data\settings.yml
@@ -24,6 +28,9 @@ Rechercher `formats:` et modifier comme ceci
     - json
 ```
 ##### 5. Démarrer le conteneur
+```
+docker start SearXNG
+```
 
 ##### 6. Open-Webui
 ```
