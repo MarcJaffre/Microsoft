@@ -1,11 +1,11 @@
 ### Moteur de recherche:
 #### 1. Creation du conteneur
 ```
-docker run -d -p 8080:8080 --gpus all --add-host=host.docker.internal:host-gateway -v searxng:/etc/searxng --name=SearXNG  searxng/searxng
+docker run -d -p 8080:8080 --gpus all --add-host=host.docker.internal:host-gateway -v searxng:/etc/searxng --restart always --name=SearXNG searxng/searxng
 ```
 #### 2. Pare-Feu
 ```
-netsh advfirewall firewall add rule name="searx"      dir=in action=allow protocol=TCP localport=8080
+netsh advfirewall firewall add rule name="searx" dir=in action=allow protocol=TCP localport=8080
 netsh advfirewall firewall delete rule name="searx"
 ```
 ##### 3. Lancement du conteneur
