@@ -23,7 +23,7 @@ search:
   safe_search: 0
   autocomplete: "google"
   autocomplete_min: 4
-  favicon_resolver: "google"
+  favicon_resolver: ""
   default_lang: "fr"
   ban_time_on_fail: 5
   max_ban_time_on_fail: 120
