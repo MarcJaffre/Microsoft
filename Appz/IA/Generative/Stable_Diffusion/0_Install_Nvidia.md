@@ -19,7 +19,7 @@ Télécharger et extraire le fichier compresser [isi](https://codeload.github.co
 ### E. Xformers (Experimental)
 ```bash
 D:
-cd D:\IA\stable-diffusion-webui-master
+cd D:\stable-diffusion-webui-master
 pip3 install -U xformers --index-url https://download.pytorch.org/whl/cu124
 pip uninstall xformers
 python -m xformers.info
