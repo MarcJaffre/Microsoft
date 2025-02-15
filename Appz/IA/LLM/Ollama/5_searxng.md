@@ -33,6 +33,8 @@ docker start SearXNG
 ```
 
 ##### 6. Open-Webui
+Aller dans `Paramètres` > `Recherche Web`.
+
 ```
 http://host.docker.internal:8080/search?q=<query>
 ```
