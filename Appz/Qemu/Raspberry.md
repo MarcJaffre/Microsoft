@@ -33,3 +33,24 @@ Depuis l'interface qui à internet autorisé le partage depuis TAP9.
 
 ![image](https://github.com/user-attachments/assets/bdcc576c-c15d-422b-97eb-c0962fb18bf9)
 
+----------------------------------------------------------------------------------------------------------------
+## II. Qemu
+### A. Installation de Qemu
+Télécharger la dernière version de QEMU. (qemu-w64-setup-20250326.exe)
+```
+https://qemu.weilnetz.de/w64/2025/
+```
+### B. Variable d'environnement
+Ouvrir le menu démarrer puis taper avancés. Puis cliquer sur Variables d'environnement > Path > Modifier.
+
+Ajouter le chemin où Qemu est installé et validé.
+
+![image](https://github.com/user-attachments/assets/2b546d4c-fbbb-40ee-bf27-cebd30849fa5)
+
+### E. Vérification
+Ouvrir la CMD et taper `qemu-img.exe`.
+
+![Uploading image.png…]()
+
+
+
