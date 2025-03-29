@@ -53,6 +53,7 @@ Ouvrir la CMD et taper `qemu-img.exe`.
 ![image](https://github.com/user-attachments/assets/2e6ea615-d1b8-4bb3-932c-c3ead8df1126)
 
 ### C. Télécharger les fichiers
+#### 1. Buster
 ```
 https://downloads.raspberrypi.org/raspbian/images/raspbian-2020-02-14/2020-02-13-raspbian-buster.zip
 https://github.com/dhruvvyas90/qemu-rpi-kernel/blob/master/kernel-qemu-4.19.50-buster
