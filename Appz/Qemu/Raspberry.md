@@ -101,6 +101,7 @@ cd "%APPZ_DOSSIER%"
 -m %RAM% ^
 -M %TYPE% ^
 -serial stdio ^
+-usbdevice tablet ^
 -netdev tap,id=net0,ifname=TAP9,script=no,downscript=no ^
 -device virtio-net-pci,netdev=net0 ^
 -append "root=/dev/sda2 panic=1 rootfstype=ext4 rw" ^
