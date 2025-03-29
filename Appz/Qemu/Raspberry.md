@@ -105,5 +105,16 @@ cd "%APPZ_DOSSIER%"
 -append "root=/dev/sda2 panic=1 rootfstype=ext4 rw" ^
 -drive "file=%SOURCE%\%IMAGE%,index=0,media=disk,format=raw"
 pause
+```
+
+### E. IP Static
+Il suffit de définir l'ip de la machine
+
+```
+IPv4 : 192.168.2.2
+Mask : 255.255.255.0
+GW   : 192.168.0.1
+DNS  : 192.168.0.1
+```
 
 
