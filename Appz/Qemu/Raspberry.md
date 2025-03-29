@@ -52,5 +52,58 @@ Ouvrir la CMD et taper `qemu-img.exe`.
 
 ![image](https://github.com/user-attachments/assets/2e6ea615-d1b8-4bb3-932c-c3ead8df1126)
 
+### C. Télécharger les fichiers
+```
+https://downloads.raspberrypi.org/raspbian/images/raspbian-2020-02-14/2020-02-13-raspbian-buster.zip
+https://github.com/dhruvvyas90/qemu-rpi-kernel/blob/master/kernel-qemu-4.19.50-buster
+https://github.com/dhruvvyas90/qemu-rpi-kernel/blob/master/versatile-pb-buster-5.4.51.dtb
+```
+
+
+### D. Démarrer la machine
+```bash
+@echo off
+
+:: ##############################################################################################
+:: user: pi
+:: pass: raspberry
+
+
+:: ##############################################################################################
+title Emuler RaspberryPi
+
+:: ##############################################################################################
+set APPZ_DOSSIER=C:\Program Files\qemu
+set APPZ_BINAIRE=qemu-system-arm.exe
+set SOURCE=D:\Users\marc\Documents\Qemu
+set IMAGE=2020-02-13-raspbian-buster.img
+set KERNEL=kernel-qemu-4.19.50-buster
+set DTB=versatile-pb-buster-5.4.51.dtb
+set TYPE_CPU=arm1176
+set RAM=256
+set TYPE=versatilepb
+
+:: ##############################################################################################
+cd "%APPZ_DOSSIER%"
+
+:: ###############################################################################################
+:: # Preparation #
+:: ###############
+:: "%APPZ_DOSSIER%\qemu-img.exe" resize SOURCE%\%IMAGE% +5G
+
+:: ##############################################################################################
+%APPZ_BINAIRE% ^
+-kernel %SOURCE%\%KERNEL% ^
+-dtb %SOURCE%\%DTB% ^
+-cpu %TYPE_CPU% ^
+-smp cores=1 ^
+-m %RAM% ^
+-M %TYPE% ^
+-serial stdio ^
+-netdev tap,id=net0,ifname=TAP9,script=no,downscript=no ^
+-device virtio-net-pci,netdev=net0 ^
+-append "root=/dev/sda2 panic=1 rootfstype=ext4 rw" ^
+-drive "file=%SOURCE%\%IMAGE%,index=0,media=disk,format=raw"
+pause
 
 
