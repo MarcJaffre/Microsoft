@@ -26,7 +26,7 @@ Renommer l'interface en TAP9
 #### 2. Configuration IP
 La passerlle et le DNS doivent être pointer vers le réseau physique.
 
-![image](https://github.com/user-attachments/assets/042b5f68-03ab-455e-9e99-4e14a814686b)
+![image](https://github.com/user-attachments/assets/5c7aefeb-8931-40b8-b2bd-161b587284fd)
 
 
 #### 3. Autoriser le partage de connexion internet
