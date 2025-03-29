@@ -50,7 +50,7 @@ Ajouter le chemin où Qemu est installé et validé.
 ### E. Vérification
 Ouvrir la CMD et taper `qemu-img.exe`.
 
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/2e6ea615-d1b8-4bb3-932c-c3ead8df1126)
 
 
 
