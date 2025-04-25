@@ -86,7 +86,7 @@ if ($versionWindows -eq "Microsoft Windows Server 2016 Standard") {
  echo "#####################################"
  echo ""
  cscript //B C:\Windows\system32\slmgr.vbs /upk
- cscript //B C:\Windows\system32\slmgr.vbs /ipk $KEY_WIN16
+ cscript //B C:\Windows\system32\slmgr.vbs /ipk  $KEY_WIN16
  cscript //B C:\Windows\system32\slmgr.vbs /skms $SRV
 }
 
@@ -96,7 +96,7 @@ if ($versionWindows -eq "Microsoft Windows Server 2019 Standard") {
  echo "#####################################"
  echo ""
  cscript //B C:\Windows\system32\slmgr.vbs /upk
- cscript //B C:\Windows\system32\slmgr.vbs /ipk $KEY_WIN19
+ cscript //B C:\Windows\system32\slmgr.vbs /ipk  $KEY_WIN19
  cscript //B C:\Windows\system32\slmgr.vbs /skms $SRV
  cscript //B C:\Windows\system32\slmgr.vbs /ato
 }
@@ -107,7 +107,7 @@ if ($versionWindows -eq "Microsoft Windows Server 2022 Standard") {
  echo "#####################################"
  echo ""
  cscript //B C:\Windows\system32\slmgr.vbs /upk
- cscript //B C:\Windows\system32\slmgr.vbs /ipk $KEY_WIN22
+ cscript //B C:\Windows\system32\slmgr.vbs /ipk  $KEY_WIN22
  cscript //B C:\Windows\system32\slmgr.vbs /skms $SRV
  cscript //B C:\Windows\system32\slmgr.vbs /ato
 }
@@ -120,10 +120,7 @@ echo "######  Activation Terminée    ######"
 echo "#####################################"
 }
 
-
-
 ########################################################################################################################################################################################################
 # Pre-requis #
 ##############
 set-executionpolicy restricted
-
