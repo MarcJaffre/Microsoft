@@ -95,9 +95,11 @@ Une fois installé et fonctionnel, aller dans :
 - Onglet Détails
 - Sélectionner « GUID de classe »
 - Clic droit sur la valeur puis copier
+```
 
 Le GUID est **{1ed2bbf9-11f0-4084-b21f-ad83a8e6dcdc}**
-```
+
+
 
 ![image](https://github.com/user-attachments/assets/668d31bd-2f92-4df5-9a2c-e5feb6d4a135)
 
@@ -114,8 +116,6 @@ Aller dans Préférences > Paramètres Windows > Registre.
 | Mettre à jour | HKEY_LOCAL_MACHINE | Software\Policies\Microsoft\Windows NT\Printers\PointAndPrint| RestrictDriverInstallationToAdministrators | REG_DWORD      | 00000000             | Hexadécimal |
 
 ![image](https://github.com/user-attachments/assets/ab5c6f78-baf4-45e1-bd2e-8463333a4fd1)
-
-<br />
 
 #### 2. Imprimantes
 Aller dans Stratégies > Modèles d'administration > Imprimantes
@@ -146,6 +146,7 @@ Coller votre GUID par ligne.
 
 ![image](https://github.com/user-attachments/assets/0ee0fc67-1193-43e7-9382-6d2d73e913f2)
  
+<br />
 
 ### B. UTILISATEUR
 #### 1. Déployer l'imprimante
