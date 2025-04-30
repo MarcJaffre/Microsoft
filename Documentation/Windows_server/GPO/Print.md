@@ -101,12 +101,12 @@ Le GUID est **{1ed2bbf9-11f0-4084-b21f-ad83a8e6dcdc}**
 
 ![image](https://github.com/user-attachments/assets/668d31bd-2f92-4df5-9a2c-e5feb6d4a135)
 
-
 <br />
 
-### D. STRATEGIE DE GROUPE
-#### 1.ORDINATEUR
-##### A. Registre
+--------------------------------------------------------------------------------------------------------------------------------------------
+## IV. STRATEGIE DE GROUPE
+### A. ORDINATEUR
+#### 1. Registre
 Aller dans Préférences > Paramètres Windows > Registre. 
 
 | Action	| Ruche              | Chemin de la clé                                             | Nom de la valeur                           | Type de valeur | Données de la valeur | Base        |
@@ -117,10 +117,10 @@ Aller dans Préférences > Paramètres Windows > Registre.
 
 <br />
 
-##### B. Imprimantes
+#### 2. Imprimantes
 Aller dans Stratégies > Modèles d'administration > Imprimantes
 
-Restrictions pointer et imprimer
+#### 3.Restrictions pointer et imprimer
 > Cocher la case Activé
 > 
 > Cocher « Les utilisateurs ne peuvent pointer et imprimer que sur ces serveurs ».
@@ -137,7 +137,7 @@ Restrictions pointer et imprimer
 > 
 > Exemple : SRV-ADDS-01.lan.fr
 
-##### C. Autoriser uniquement certaines classes de pilotes
+#### 4. Autoriser uniquement certaines classes de pilotes
 Aller dans Stratégies > Modèles d'administration > Système > Installation de pilotes.
 
 Sélectionner « Autoriser les non-administrateurs à installer des pilotes pour ces classes d'installation de périphériques ».
@@ -147,14 +147,20 @@ Coller votre GUID par ligne.
 ![image](https://github.com/user-attachments/assets/0ee0fc67-1193-43e7-9382-6d2d73e913f2)
  
 
-#### 2. UTILISATEUR
-Déployer l'imprimante
+### B. UTILISATEUR
+#### 1. Déployer l'imprimante
 Aller dans Stratégies > Préférences > Paramètres du Panneau de configuration > Imprimantes.
 
 ![image](https://github.com/user-attachments/assets/47ceea47-252a-4e39-a3e7-9f9a40e54d19)
 
 
-#### 3.	CLIENT
+<br />
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+#### 2.	CLIENT
 EXEMPLE DE DEPLOIEMENT AUTOMATIQUE
 L’imprimante va se déployer à l’ouverture de la session si la GPO si l’utilisateurs est concernés.
 
