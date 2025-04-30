@@ -63,7 +63,7 @@ Le GUID est **{1ed2bbf9-11f0-4084-b21f-ad83a8e6dcdc}**
 
 <br />
  
-### D.	STRATEGIE DE GROUPE
+### D. STRATEGIE DE GROUPE
 #### 1.ORDINATEUR
 ##### A. Registre
 Aller dans Préférences > Paramètres Windows > Registre. 
