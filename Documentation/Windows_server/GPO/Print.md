@@ -31,25 +31,15 @@ Sélectionne « Ajouter une imprimante TCP/IP … ».
 Sélectionner « Périphérique TCP/IP » puis indiquer l’IP de l’imprimante.
 
 Le nom de l’imprimante est important, car côté client se sera ce qui sera visible dans son logiciel.
- 
 
- 
+Clic droit sur l’imprimante puis « Répertorier dans l’annuaire ». 
 
-
-Clic droit sur l’imprimante puis « Répertorier dans l’annuaire ».
 Ceci permet de la trouver plus facilement côté client si besoin.
  
-
- 
-3.3.3	Préférence de l’imprimante
+#### 4. Préférence de l’imprimante
 Sélectionner l’imprimante puis sélectionner Propriétés.
- 
- 
 
- 
-
- 
-4	GUID DE CLASSE
+### C. GUID DE CLASSE
 Pour autoriser l’installation de la classe du pilote, il faut récupérer son GUID.
 Sur un poste client, installer l’imprimante manuellement.
 Une fois installé et fonctionnel, aller dans :
@@ -61,70 +51,52 @@ Une fois installé et fonctionnel, aller dans :
 -	Sélectionner « GUID de classe »
 -	Clic droit sur la valeur puis copier
 
- 
-
-Le GUID est {1ed2bbf9-11f0-4084-b21f-ad83a8e6dcdc}
+Le GUID est **{1ed2bbf9-11f0-4084-b21f-ad83a8e6dcdc}**
 
  
-5	STRATEGIE DE GROUPE 
-5.1	ORDINATEUR
-5.1.1	Registre
-Aller dans Préférences > Paramètres Windows > Registre.
+### D.	STRATEGIE DE GROUPE
+#### 1.ORDINATEUR
+##### A. Registre
+Aller dans Préférences > Paramètres Windows > Registre. 
 
-Action	Mettre à jour
-Ruche	HKEY_LOCAL_MACHINE
-Chemin de la clé	Software\Policies\Microsoft\Windows NT\Printers\PointAndPrint
-Nom de la valeur	RestrictDriverInstallationToAdministrators
-Type de valeur	REG_DWORD
-Données de la valeur	00000000
-Base	Hexadécimal
-
- 
-
- 
-5.1.2	Imprimantes
+| Action	       | Ruche             	| Chemin de la clé                                             | Nom de la valeur                           | Type de valeur | Données de la valeur | Base        |
+| ------------- | ------------------ | ------------------------------------------------------------ | ------------------------------------------ | -------------- | -------------------- | ----------- | 
+| Mettre à jour | HKEY_LOCAL_MACHINE | Software\Policies\Microsoft\Windows NT\Printers\PointAndPrint| RestrictDriverInstallationToAdministrators |	REG_DWORD      | 00000000             | Hexadécimal |
+	
+##### B. Imprimantes
 Aller dans Stratégies > Modèles d'administration > Imprimantes
-5.1.3	Restrictions pointer et imprimer
-Cocher la case Activé
-Cocher « Les utilisateurs ne peuvent pointer et imprimer que sur ces serveurs ».
-Indiquez le nom complet du serveur d'impression : (Exemple : SRV-ADDS-01.lan.fr)
-Le pilote s'installe silencieusement : Ne pas afficher l'avertissement ou l'invite d'élévation.
-Le pilote se mette à jour silencieusement : Ne pas afficher l'avertissement ou l'invite d'élévation.
-5.1.4	Autoriser uniquement les serveurs d'impression approuvés
-Indiquer le nom complet de votre serveur d'impression.
-Exemple : SRV-ADDS-01.lan.fr
 
-5.1.5	Autoriser uniquement certaines classes de pilotes
+Restrictions pointer et imprimer
+> Cocher la case Activé
+> Cocher « Les utilisateurs ne peuvent pointer et imprimer que sur ces serveurs ».
+> Indiquez le nom complet du serveur d'impression : (Exemple : SRV-ADDS-01.lan.fr)
+> Le pilote s'installe silencieusement : Ne pas afficher l'avertissement ou l'invite d'élévation.
+> Le pilote se mette à jour silencieusement : Ne pas afficher l'avertissement ou l'invite d'élévation.
+> Autoriser uniquement les serveurs d'impression approuvés
+> Indiquer le nom complet de votre serveur d'impression.
+> Exemple : SRV-ADDS-01.lan.fr
+
+##### C. Autoriser uniquement certaines classes de pilotes
 Aller dans Stratégies > Modèles d'administration > Système > Installation de pilotes.
 Sélectionner « Autoriser les non-administrateurs à installer des pilotes pour ces classes d'installation de périphériques »
 Coller votre GUID par ligne.
  
 
-
-5.2	UTILISATEUR
-5.2.1	Déployer l'imprimante
+#### 2. UTILISATEUR
+Déployer l'imprimante
 Aller dans Stratégies > Préférences > Paramètres du Panneau de configuration > Imprimantes.
- 
 
- 
-6	CLIENT
+
+#### 3.	CLIENT
 6.1	EXEMPLE DE DEPLOIEMENT AUTOMATIQUE
 L’imprimante va se déployer à l’ouverture de la session si la GPO si l’utilisateurs est concernés.
  
-
-
  
-6.2	EXEMPLE DE DEPLOIEMENT PAR UN TECHNICIEN
+#### 4. EXEMPLE DE DEPLOIEMENT PAR UN TECHNICIEN
 La méthode suivante permet l’installation de l’imprimante manuellement en effectuant une recherche via l’AD.
 On pourrait ne pas avoir besoin d’une GPO si l’imprimante est sur très peu de poste ou si on souhaite déployé l’imprimante par utilisateur.
  
- 
-
- 
-
-
-
-7	ACTIVE DIRECTORY (OBJET)
+#### 5. ACTIVE DIRECTORY (OBJET)
 7.1.1	Vérifier si l’objet existe
 Aller dans « Utilisateurs et ordinateurs Active Directory ».
 Clic droit sur le domaine puis Rechercher
