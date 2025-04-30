@@ -19,13 +19,27 @@ Ouvrir le panneau « Gestion de l’impression ».
 #### 2. Pilotes
 Aller dans l’onglet Pilotes puis faire clic droit « Ajouter un pilote ».
 
+![image](https://github.com/user-attachments/assets/fbff3b60-08f0-4676-8361-1cea32cad361)
+
 Sélectionner l’architecture prise en charge (x86, x64)
+
+![image](https://github.com/user-attachments/assets/95184903-9a4e-43de-bd26-9d0bd0e4954d)
 
 Choisir le pilote souhaite en allant dans « Disque Fourni ».
 
+![image](https://github.com/user-attachments/assets/a9780edc-e98a-435e-8698-22bf1644c989)
+
+
 Cliquer sur « Parcourir » et Sélectionner le fichier « .inf » dans le dossier du pilote et faire « OK ».
 
+![image](https://github.com/user-attachments/assets/30f3bc60-4228-4fb1-bdaf-0098c0833122)
+
 Exemple : HP Envy 5540
+
+![image](https://github.com/user-attachments/assets/ff38b10e-e848-42c8-8e34-638f8c5fe606)
+
+![image](https://github.com/user-attachments/assets/2a255f1e-a7d7-41c2-bd90-a8c86dc22ea7)
+
 
 #### 3. Imprimantes
 Aller dans « Imprimantes » puis clic droit « Ajouter une imprimante ».
