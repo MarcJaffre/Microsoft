@@ -44,13 +44,26 @@ Exemple : HP Envy 5540
 #### 3. Imprimantes
 Aller dans « Imprimantes » puis clic droit « Ajouter une imprimante ».
 
+![image](https://github.com/user-attachments/assets/f6754108-6409-49af-a1af-98ef13adae44)
+
 Sélectionne « Ajouter une imprimante TCP/IP … ».
+
+![image](https://github.com/user-attachments/assets/e043ec86-d037-4da7-ac47-ed1a01931715)
 
 Sélectionner « Périphérique TCP/IP » puis indiquer l’IP de l’imprimante.
 
+![image](https://github.com/user-attachments/assets/6fd03581-6b50-4368-a1bc-ea0ad071cae7)
+
 Le nom de l’imprimante est important, car côté client se sera ce qui sera visible dans son logiciel.
 
+![image](https://github.com/user-attachments/assets/4d15014e-6d9a-4488-9cb0-29a1396526d1)
+
+![image](https://github.com/user-attachments/assets/880a7448-9893-408b-b1b9-64e0b98e7456)
+
+
 Clic droit sur l’imprimante puis « Répertorier dans l’annuaire ». 
+
+
 
 Ceci permet de la trouver plus facilement côté client si besoin.
  
