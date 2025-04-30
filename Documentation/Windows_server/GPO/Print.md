@@ -43,6 +43,8 @@ Ceci permet de la trouver plus facilement côté client si besoin.
 #### 4. Préférence de l’imprimante
 Sélectionner l’imprimante puis sélectionner Propriétés.
 
+<br />
+
 ### C. GUID DE CLASSE
 Pour autoriser l’installation de la classe du pilote, il faut récupérer son GUID.
 
@@ -58,7 +60,6 @@ Une fois installé et fonctionnel, aller dans :
 - Clic droit sur la valeur puis copier
 
 Le GUID est **{1ed2bbf9-11f0-4084-b21f-ad83a8e6dcdc}**
-
 
 <br />
  
