@@ -43,15 +43,17 @@ Sélectionner l’imprimante puis sélectionner Propriétés.
 
 ### C. GUID DE CLASSE
 Pour autoriser l’installation de la classe du pilote, il faut récupérer son GUID.
+
 Sur un poste client, installer l’imprimante manuellement.
+
 Une fois installé et fonctionnel, aller dans :
--	Gestionnaire de périphériques
--	Déployé Files d’attente à l’impression
--	Clic droit sur l’imprimante
--	Propriétés
--	Onglet Détails
--	Sélectionner « GUID de classe »
--	Clic droit sur la valeur puis copier
+- Gestionnaire de périphériques
+- Déployé Files d’attente à l’impression
+- Clic droit sur l’imprimante
+- Propriétés
+- Onglet Détails
+- Sélectionner « GUID de classe »
+- Clic droit sur la valeur puis copier
 
 Le GUID est **{1ed2bbf9-11f0-4084-b21f-ad83a8e6dcdc}**
 
@@ -70,17 +72,26 @@ Aller dans Stratégies > Modèles d'administration > Imprimantes
 
 Restrictions pointer et imprimer
 > Cocher la case Activé
+> 
 > Cocher « Les utilisateurs ne peuvent pointer et imprimer que sur ces serveurs ».
+> 
 > Indiquez le nom complet du serveur d'impression : (Exemple : SRV-ADDS-01.lan.fr)
+> 
 > Le pilote s'installe silencieusement : Ne pas afficher l'avertissement ou l'invite d'élévation.
+> 
 > Le pilote se mette à jour silencieusement : Ne pas afficher l'avertissement ou l'invite d'élévation.
+> 
 > Autoriser uniquement les serveurs d'impression approuvés
+> 
 > Indiquer le nom complet de votre serveur d'impression.
+> 
 > Exemple : SRV-ADDS-01.lan.fr
 
 ##### C. Autoriser uniquement certaines classes de pilotes
 Aller dans Stratégies > Modèles d'administration > Système > Installation de pilotes.
-Sélectionner « Autoriser les non-administrateurs à installer des pilotes pour ces classes d'installation de périphériques »
+
+Sélectionner « Autoriser les non-administrateurs à installer des pilotes pour ces classes d'installation de périphériques ».
+
 Coller votre GUID par ligne.
  
 
