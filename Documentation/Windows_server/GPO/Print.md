@@ -9,6 +9,8 @@ Il est nécessaire de télécharger le pilote de l’imprimante sur le serveur e
 
 Faire attention à la compatibilité des builds (22h2,24h2…)
 
+<br />
+
 ### B. ROLES
 Il est nécessaire d’installer le rôle « Services d'impression et de numérisation de documents » sur le serveur.
 
@@ -57,6 +59,8 @@ Une fois installé et fonctionnel, aller dans :
 
 Le GUID est **{1ed2bbf9-11f0-4084-b21f-ad83a8e6dcdc}**
 
+
+<br />
  
 ### D.	STRATEGIE DE GROUPE
 #### 1.ORDINATEUR
