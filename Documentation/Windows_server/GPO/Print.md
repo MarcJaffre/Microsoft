@@ -4,7 +4,9 @@
 ## I. Windows Server
 ### A. PREREQUIS
 Une imprimante fonctionnelle et configurée en IPv4 statique et que le DNS pointe vers le serveur.
+
 Il est nécessaire de télécharger le pilote de l’imprimante sur le serveur et penser à la compatibilité des systèmes d’exploitation. (W10/W11)
+
 Faire attention à la compatibilité des builds (22h2,24h2…)
 
 ### B. ROLES
