@@ -63,12 +63,18 @@ Le nom de l’imprimante est important, car côté client se sera ce qui sera vi
 
 Clic droit sur l’imprimante puis « Répertorier dans l’annuaire ». 
 
-
+![image](https://github.com/user-attachments/assets/8ed345ed-ce89-4704-8bdf-0183d8d5a29b)
 
 Ceci permet de la trouver plus facilement côté client si besoin.
  
 #### 4. Préférence de l’imprimante
 Sélectionner l’imprimante puis sélectionner Propriétés.
+
+![image](https://github.com/user-attachments/assets/1d0024bd-c7d9-42ea-94a1-e362c5042154)
+
+![image](https://github.com/user-attachments/assets/5d908dd7-4c8b-4b52-89a1-ce1abd8d6e6a)
+
+![image](https://github.com/user-attachments/assets/bdd53aa8-b449-4144-b551-1e134c5c7de9)
 
 <br />
 
@@ -87,6 +93,9 @@ Une fois installé et fonctionnel, aller dans :
 - Clic droit sur la valeur puis copier
 
 Le GUID est **{1ed2bbf9-11f0-4084-b21f-ad83a8e6dcdc}**
+
+![image](https://github.com/user-attachments/assets/668d31bd-2f92-4df5-9a2c-e5feb6d4a135)
+
 
 <br />
  
