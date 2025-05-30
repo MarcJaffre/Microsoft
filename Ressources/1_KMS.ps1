@@ -1,9 +1,10 @@
 ########################################################################################################################################################################################################
 # Auteur         : Marc Jaffre
 # Pré-requis     : Conteneur KMS actif
-# Description    : Script d'activation de Microsoft Windows (Client, Server)
+# Description    : Script d'activation de Microsoft Windows 
 # Fonctionnement :
 ########################################################################################################################################################################################################
+
 
 ########################################################################################################################################################################################################
 # Nettoyage #
@@ -18,27 +19,27 @@ set-executionpolicy unrestricted
 ########################################################################################################################################################################################################
 # Serveur d'activation #
 ########################
-$SRV = "192.168.X.X"
+$SRV = "192.168.0.3"
 
 ########################################################################################################################################################################################################
 # Cle CD Windows #
 ##################
-# KMS KEY
-$KEY_WIN10_PRO = "W269N-WFGWX-YVC9B-4J6C9-T83GX"
-$KEY_WIN16     = "WC2BQ-8NRM3-FDDYY-2BFGV-KHKQY"
-$KEY_WIN19     = "N69G4-B89J2-4G8F4-WWYCC-J464C"
-$KEY_WIN22     = "VDYBN-27WPP-V4HQT-9VMD4-VMK7H"
+$KEY_WIN10_PRO   = "W269N-WFGWX-YVC9B-4J6C9-T83GX"
+$KEY_WIN10_PRO_N = "MH37W-N47XK-V7XM9-C7227-GCQG9"
+$KEY_WIN16       = "WC2BQ-8NRM3-FDDYY-2BFGV-KHKQY"
+$KEY_WIN19       = "N69G4-B89J2-4G8F4-WWYCC-J464C"
+$KEY_WIN22       = "VDYBN-27WPP-V4HQT-9VMD4-VMK7H"
 
 ########################################################################################################################################################################################################
 # Detection OS #
 ################
-# Trapper OS
 $versionWindows = (Get-WmiObject -class Win32_OperatingSystem).Caption
+
 
 ########################################################################################################################################################################################################
 # Windows 10/11 PRO #
 #####################
-if ($versionWindows -eq "Microsoft Windows 11 Professionnel" -or $versionWindows -eq "Microsoft Windows 10 Professionnel") {
+if ($versionWindows -eq "Microsoft Windows 10 Professionnel" -or $versionWindows -eq "Microsoft Windows 11 Professionnel" ) {
  cscript //B C:\Windows\system32\slmgr.vbs /upk
  cscript //B C:\Windows\system32\slmgr.vbs /ipk  $KEY_WIN10_PRO
  cscript //B C:\Windows\system32\slmgr.vbs /skms $SRV
@@ -46,9 +47,18 @@ if ($versionWindows -eq "Microsoft Windows 11 Professionnel" -or $versionWindows
  C:\Windows\system32\slmgr.vbs /dlv
 }
 
+if ($versionWindows -eq "Microsoft Windows 10 Professionnel N" -or $versionWindows -eq "Microsoft Windows 11 Professionnel N" ) {
+ cscript //B C:\Windows\system32\slmgr.vbs /upk
+ cscript //B C:\Windows\system32\slmgr.vbs /ipk  $KEY_WIN10_PRO_N
+ cscript //B C:\Windows\system32\slmgr.vbs /skms $SRV
+ cscript //B C:\Windows\system32\slmgr.vbs /ato
+ C:\Windows\system32\slmgr.vbs /dlv
+}
+
+
 ########################################################################################################################################################################################################
-# Windows Server - Evaluation vers Standard Edition #
-#####################################################
+# Evaluation vers Standard Edition #
+####################################
 if ($versionWindows -eq "Microsoft Windows Server 2016 Standard Evaluation") {
  echo "########################################################"
  echo "# Windows Server 2016 - Evaluation en Standard Edition #"
