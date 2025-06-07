@@ -3,8 +3,7 @@
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## I. Putty
 ### A. Création d'un profil
-### B. Commande
-#### 1. Eteindre un linux
+### B. Lancer un script
 ```
-"PuTTY.exe" -load "marc" -l  root -pw admin -m "D:\Users\marc\Documents\putty\poweroff.txt"
+putty.exe -ssh root@adresse_ip -pw <PASSWORD> -m C:\chemin\vers\shutdown.txt
 ```
