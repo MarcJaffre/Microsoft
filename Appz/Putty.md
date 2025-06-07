@@ -6,4 +6,5 @@
 ### B. Lancer un script
 ```
 putty.exe -ssh root@adresse_ip -pw <PASSWORD> -m C:\chemin\vers\shutdown.txt
+plink.exe -ssh -pw myPassword root@adresse_ip /sbin/poweroff
 ```
