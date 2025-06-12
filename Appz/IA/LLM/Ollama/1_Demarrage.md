@@ -11,7 +11,7 @@
 
 ----------------------------------------------------------------------------------------------------------------------------------
 ## II. Française
-### A.  [Dolphin-mistral](https://ollama.com/library/mistral)
+### A.  [Dolphin-mistral](https://ollama.com/library/dolphin-mistral)
 Le modèle Dolphin non censuré basé sur Mistral qui **excelle dans les tâches de codage**. 
 ```bash
 ollama run dolphin-mistral
