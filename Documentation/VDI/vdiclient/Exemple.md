@@ -38,5 +38,9 @@ pve.home.lan:3128 = proxmox74.ddns.net
 [AdditionalParameters]
 host-subject      = OU=PVE Cluster Node,O=Proxmox Virtual Environment,CN=pve.lan
 type              = spice
+
+title             = Machine Virtuelle 300
+secure-attention  = Ctrl+Alt+Ins
+toggle-fullscreen = Shift+F11
 ##############################################################################################
 ```
