@@ -1,3 +1,12 @@
+### FQDN
+Le ping `pve.home.lan` depuis le lan est OK.
+
+
+### Host-subject
+![image](https://github.com/user-attachments/assets/672a8f75-f6ee-4502-8e93-217ac979a141)
+
+
+```
 ##############################################################################################
 # FQDN de la machine : proxmox.lan (Verifier la configuration DNS + Host)
 ##############################################################################################
@@ -20,6 +29,7 @@ user          = <USERNAME>
 token_name    = <TOKEN_NAME>
 token_value   = <TOKEN_KEY_API>
 hostpool      = { "proxmox74.ddns.net" : 8006 }
+auto_vmid     = 300
 
 ##############################################################################################
 [SpiceProxyRedirect]
@@ -29,3 +39,4 @@ pve.home.lan:3128 = proxmox74.ddns.net
 host-subject      = OU=PVE Cluster Node,O=Proxmox Virtual Environment,CN=pve.lan
 type              = spice
 ##############################################################################################
+```
