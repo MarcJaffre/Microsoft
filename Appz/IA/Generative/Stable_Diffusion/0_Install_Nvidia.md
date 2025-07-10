@@ -20,7 +20,7 @@ https://aka.ms/vs/16/release/vc_redist.x64.exe
 
 
 ### D. Télécharger Stable Diffusion
-Télécharger et extraire le fichier compresser [isi](https://codeload.github.com/AUTOMATIC1111/stable-diffusion-webui/zip/refs/heads/master)
+Télécharger et extraire le fichier compresser [ICI](https://codeload.github.com/AUTOMATIC1111/stable-diffusion-webui/zip/refs/heads/master)
 
 ### E. Xformers (Experimental)
 ```bash
