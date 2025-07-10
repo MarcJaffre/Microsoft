@@ -78,7 +78,7 @@ echo set PYTHON=
 echo set GIT=
 echo set VENV_DIR=
 echo set USE_TORCH=0
-echo set COMMANDLINE_ARGS=--device-id 0 --disable-console-progressbars --disable-model-loading-ram-optimization --lowram --disable-nan-check --listen --api --api-auth marc:admin
+echo set COMMANDLINE_ARGS=--device-id 0 --disable-console-progressbars --disable-model-loading-ram-optimization --lowram --disable-nan-check --listen --api --api-auth marc:admin --skip-torch-cuda-test
 echo call webui.bat
 ) > D:\stable-diffusion-webui-master\webui-user.bat
 
