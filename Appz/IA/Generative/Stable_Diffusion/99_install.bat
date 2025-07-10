@@ -48,6 +48,16 @@ start /wait            %userprofile%\Downloads\vc_redist.x64.exe       /install 
 :: # Stable Diffusion #
 :: ####################
 rmdir /q /s D:\stable-diffusion-webui-master
-
-
 "C:\Program Files\7-Zip\7z.exe" x %userprofile%\Downloads\stable-diffusion-webui-master.zip  -oD:\ -y
+
+:: ####################################################################################################################################################################
+:: # XFormers #
+:: ############
+D:
+cd D:\stable-diffusion-webui-master
+pip3 install -U xformers --index-url https://download.pytorch.org/whl/cu124
+pip uninstall xformers
+python -m xformers.info
+pip list
+
+
