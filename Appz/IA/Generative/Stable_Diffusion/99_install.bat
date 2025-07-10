@@ -1,15 +1,6 @@
 @echo off
 
 :: ##################################################################################################################################################################################
-:: # Purge #
-:: #########
-del %userprofile%\Downloads\7z2500-x64.msi 
-del %userprofile%\Downloads\Git-2.46.2-64-bit.exe
-del %userprofile%\Downloads\python-3.10.6-amd64.exe
-del %userprofile%\Downloads\vc_redist.x64.exe
-del %userprofile%\Downloads\stable-diffusion-webui-master.zip
-
-:: ##################################################################################################################################################################################
 :: # Nettoyage console #
 :: #####################
 cls
@@ -49,6 +40,15 @@ start /wait            %userprofile%\Downloads\vc_redist.x64.exe       /install 
 :: ####################
 rmdir /q /s D:\stable-diffusion-webui-master
 "C:\Program Files\7-Zip\7z.exe" x %userprofile%\Downloads\stable-diffusion-webui-master.zip  -oD:\ -y
+
+:: ##################################################################################################################################################################################
+:: # Purge #
+:: #########
+del %userprofile%\Downloads\7z2500-x64.msi 
+del %userprofile%\Downloads\Git-2.46.2-64-bit.exe
+del %userprofile%\Downloads\python-3.10.6-amd64.exe
+del %userprofile%\Downloads\vc_redist.x64.exe
+del %userprofile%\Downloads\stable-diffusion-webui-master.zip
 
 :: ##################################################################################################################################################################################
 :: # Dossier de Travail #
