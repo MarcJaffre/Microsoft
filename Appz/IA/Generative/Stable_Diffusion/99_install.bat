@@ -34,8 +34,10 @@ pause
 :: ################
 start /wait msiexec /i %userprofile%\Downloads\7z2500-x64.msi          /qn
 start /wait            %userprofile%\Downloads\Git-2.46.2-64-bit.exe   /SILENT   /SP-
-start /wait            %userprofile%\Downloads\python-3.10.6-amd64.exe /quiet  InstallAllUsers=1 PrependPath=1
 start /wait            %userprofile%\Downloads\vc_redist.x64.exe       /install /quiet
+
+start /wait            %userprofile%\Downloads\python-3.10.6-amd64.exe /quiet  InstallAllUsers=1 PrependPath=1
+setx PATH "C:\Program Files\Python3x;%PATH%"
 
 :: ##################################################################################################################################################################################
 :: # Stable Diffusion #
