@@ -57,10 +57,17 @@ D:
 cd D:\stable-diffusion-webui-master
 
 :: ##################################################################################################################################################################################
+:: # Torch #
+:: #########
+del D:\torch-win_amd64.whl
+curl -L -o D:\torch-win_amd64.whl "https://download.pytorch.org/whl/cu121/torch-2.1.2%2Bcu121-cp310-cp310-win_amd64.whl"
+pip install D:\torch-win_amd64.whl
+
+:: ##################################################################################################################################################################################
 :: # XFormers #
 :: ############
-pip3 install -U xformers --index-url https://download.pytorch.org/whl/cu124  --no-cache-dir
-python -m xformers.info
+:: pip3 install -U xformers --index-url https://download.pytorch.org/whl/cu124  --no-cache-dir
+:: python -m xformers.info
 
 :: ##################################################################################################################################################################################
 :: # Pip #
