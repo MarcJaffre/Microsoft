@@ -51,16 +51,24 @@ rmdir /q /s D:\stable-diffusion-webui-master
 "C:\Program Files\7-Zip\7z.exe" x %userprofile%\Downloads\stable-diffusion-webui-master.zip  -oD:\ -y
 
 :: ####################################################################################################################################################################
-:: # XFormers #
-:: ############
+:: # Dossier de Travail #
+:: ######################
 D:
 cd D:\stable-diffusion-webui-master
+
+:: ####################################################################################################################################################################
+:: # XFormers #
+:: ############
 pip3 install -U xformers --index-url https://download.pytorch.org/whl/cu124  --no-cache-dir
 python -m xformers.info
 
 :: pip uninstall xformers
 :: pip list
 
+
+:: ####################################################################################################################################################################
+:: # webui-user.bat #
+:: ##################
 (
 echo set PYTHON=
 echo set GIT=
@@ -68,3 +76,9 @@ echo set VENV_DIR=
 echo set COMMANDLINE_ARGS=--device-id 0 --disable-console-progressbars --disable-model-loading-ram-optimization --lowram --disable-nan-check --listen --api --api-auth marc:admin
 echo call webui.bat
 ) > D:\stable-diffusion-webui-master\webui-user.bat
+
+
+:: ####################################################################################################################################################################
+:: # Start #
+:: #########
+call webui-user.bat
