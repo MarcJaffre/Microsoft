@@ -61,3 +61,10 @@ python -m xformers.info
 :: pip uninstall xformers
 :: pip list
 
+(
+echo set PYTHON=
+echo set GIT=
+echo set VENV_DIR=
+echo set COMMANDLINE_ARGS=--device-id 0 --disable-console-progressbars --disable-model-loading-ram-optimization --lowram --disable-nan-check --listen --api --api-auth marc:admin
+echo call webui.bat
+) > D:\stable-diffusion-webui-master\webui-user.bat
