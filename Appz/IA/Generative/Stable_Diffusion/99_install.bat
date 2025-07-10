@@ -50,4 +50,4 @@ start /wait            %userprofile%\Downloads\vc_redist.x64.exe       /install 
 rmdir /q /s D:\stable-diffusion-webui-master
 
 
-"C:\Program Files\7-Zip\7z.exe" x C:\Users\Marc\Downloads\stable-diffusion-webui-master.zip  -oD:\ -y
+"C:\Program Files\7-Zip\7z.exe" x %userprofile%\Downloads\stable-diffusion-webui-master.zip  -oD:\ -y
