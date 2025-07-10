@@ -55,9 +55,9 @@ rmdir /q /s D:\stable-diffusion-webui-master
 :: ############
 D:
 cd D:\stable-diffusion-webui-master
-pip3 install -U xformers --index-url https://download.pytorch.org/whl/cu124
-pip uninstall xformers
+pip3 install -U xformers --index-url https://download.pytorch.org/whl/cu124  --no-cache-dir
 python -m xformers.info
-pip list
 
+:: pip uninstall xformers
+:: pip list
 
