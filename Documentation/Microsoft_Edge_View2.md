@@ -25,9 +25,9 @@ reg add "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersio
 ```
 
 
-<img width="722" height="317" alt="image" src="https://github.com/user-attachments/assets/ea0d2139-0969-40bd-9661-2de434ce3f80" />
+<img width="722" height="400" alt="image" src="https://github.com/user-attachments/assets/ea0d2139-0969-40bd-9661-2de434ce3f80" />
 
-<img width="722" height="317" alt="image" src="https://github.com/user-attachments/assets/090d319b-901c-453a-b15e-000f1916af67" />
+<img width="722" height="400" alt="image" src="https://github.com/user-attachments/assets/090d319b-901c-453a-b15e-000f1916af67" />
 
 
 ### D. Réinstallation (Non testé)
