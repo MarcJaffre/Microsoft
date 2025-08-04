@@ -1,4 +1,4 @@
-### EdgeWebView
+### EdgeWebView (Non testé)
 ```
 https://developer.microsoft.com/en-us/microsoft-edge/webview2/?form=MA13LH#download
 Evergreen Standalone Installer
