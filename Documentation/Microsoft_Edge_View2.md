@@ -1,5 +1,18 @@
-### Reparation de WebView2
-Il est impossible de le désinstaller. Il faut autoriser l'affichage et la réparation pour permettre de le réparer.
+----------------------------------------------------------------------------------------
+# <p align='center'> Guide de réparation de WebView2 </p>
+----------------------------------------------------------------------------------------
+## I. Guide
+### A. Présentation
+Microsoft utilise la boite à outil WebView2 pour ses applications, ce qui rend ce composant INDISPENSABLE.
+
+### B. Politique
+Par défaut, Microsoft à définit le composant comme non visible et non réparable dans Windows. (Non visible, non réparable)
+
+### C. Contournement
+Pour permettre l'affichage du composant et la réparation, il faut modifier les valeurs du registre.
+
+La valeur 1 active la protection et la valeur sur 0 désactive la protection.
+
 ```bash
 :: Autoriser affichage de Panneau de configuration
 reg add "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Microsoft EdgeWebView" /v SystemComponent /t reg_dword /d 0 /f
@@ -8,10 +21,7 @@ reg add "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersio
 reg add "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Microsoft EdgeWebView" /v NoRepair /t reg_dword /d 0 /f
 
 :: Refuser la desinstallation
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Microsoft EdgeWebView" /v NoRemove        /t reg_dword /d 1 /f
-
-# - https://developer.microsoft.com/en-us/microsoft-edge/webview2/
-# - Evergreen Standalone Installer
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Microsoft EdgeWebView" /v NoRemove /t reg_dword /d 1 /f
 ```
 
 
@@ -20,4 +30,5 @@ reg add "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersio
 <img width="722" height="317" alt="image" src="https://github.com/user-attachments/assets/090d319b-901c-453a-b15e-000f1916af67" />
 
 
-
+### D. Réinstallation (Non testé)
+Aller sur la page [Microsoft-Edge-View2](https://developer.microsoft.com/en-us/microsoft-edge/webview2) puis choisir `Evergreen Standalone Installer`.
