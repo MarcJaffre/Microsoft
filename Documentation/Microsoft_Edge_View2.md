@@ -32,3 +32,6 @@ reg add "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersio
 
 ### D. Réinstallation (Non testé)
 Aller sur la page [Microsoft-Edge-View2](https://developer.microsoft.com/fr-fr/microsoft-edge/webview2) puis choisir `Evergreen Standalone Installer`.
+
+### E. Extras
+BCuninstaller
