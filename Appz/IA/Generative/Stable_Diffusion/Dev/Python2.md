@@ -101,7 +101,9 @@ cd /d "%WEBUI_DIR%"
 call "%VENV_DIR%\Scripts\activate.bat"
 set  PYTHONPATH=%WEBUI_DIR%
 set  PYTHON=%VENV_DIR%\Scripts\python.exe
-python launch.py --listen --port 80 --xformers --medvram
+set COMMANDLINE_ARGS=--skip-torch-cuda-test --use-directml --precision full --no-half --medvram --opt-split-attention --disable-nan-check --listen --port 80
+
+python launch.py %COMMANDLINE_ARGS%
 ```
 
 
