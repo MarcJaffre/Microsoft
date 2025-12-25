@@ -17,7 +17,7 @@ start /wait curl https://bootstrap.pypa.io/get-pip.py --output .\get-pip.py
 ```
 
 ```
-set PYTHON_HOME=D:\Users\Marc\Desktop\projet\python-3.10.0
+set PYTHON_HOME=C:\python-3.10.0
 set PATH=%PYTHON_HOME%;%PYTHON_HOME%\Scripts;%PATH%
 cd %PYTHON_HOME%
 ```
