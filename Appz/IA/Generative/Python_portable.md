@@ -4,8 +4,16 @@
 ## I. Python (Portable)
 ### A. Téléchargement
 ```
-https://www.python.org/ftp/python/3.10.0/python-3.10.0-embed-amd64.zip
-https://bootstrap.pypa.io/get-pip.py
+cd ..
+rmdir /q /s projet
+mkdir projet
+cd projet
+start /wait curl https://www.python.org/ftp/python/3.10.0/python-3.10.0-embed-amd64.zip --output python-3.10.0-embed-amd64.zip
+start /wait 7z x python-3.10.0-embed-amd64.zip -o"python-3.10.0"
+del python-3.10.0-embed-amd64.zip
+start /wait curl https://bootstrap.pypa.io/get-pip.py --output get-pip.py
+
+mv 
 ```
 
 ### B. Préparation
