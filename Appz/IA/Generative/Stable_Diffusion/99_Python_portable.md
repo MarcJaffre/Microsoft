@@ -78,16 +78,30 @@ pip install transformers scipy ftfy accelerate
 ```
 set GIT=C:\Program Files\Git\bin\git.exe
 "%GIT%" clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
+```
+
+#### X. Fix
+```
 cd stable-diffusion-webui
+pip install virtualenv
+%PYTHON_HOME%\python.exe -m venv .\venv
 ```
 
-
-#### E. Lancement
+#### X. Lancement
 ```
-webui-user.bat
+notepad webui-user.bat
 ```
 
+```
+@echo off
 
+set PYTHON=C:\projet\python-3.10.0\python.exe
+set GIT=
+set VENV_DIR=
+set COMMANDLINE_ARGS=
+
+call webui.bat
+```
 
 
 
