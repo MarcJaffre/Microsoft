@@ -151,7 +151,8 @@ set  PYTHON=%VENV_DIR%\Scripts\python.exe
 
 set COMMANDLINE_ARGS=--skip-torch-cuda-test --use-directml --precision full --no-half --medvram --opt-split-attention --disable-nan-check --listen --port 80
 
-python launch.py %COMMANDLINE_ARGS%
+deactivate
+python launch.py" %COMMANDLINE_ARGS%"
 ```
 
 
