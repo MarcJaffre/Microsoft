@@ -4,11 +4,11 @@
 ## I. Python (Portable)
 ```
 C:\stable-diffusion\
-├── python-3.10.0\          ← Python embarqué 3.10
-├── sd-env\                 ← Environnement virtuel
+├── python-3.10.0\          ← Python 3.10
+├── sd-env\                 ← Environnement virtuel des modules de Stables diffusions
 ├── webui\                  ← Clone de AUTOMATIC1111 WebUI
-├── requirements.txt        ← Liste des modules
-└── deploy-sd.bat           ← Ce script (Découper par étape)
+├── requirements.txt        ← Liste des modules à installé
+└── deploy-sd.bat           ← Ce script d'installation et de lancement (Découper par étape)
 ```
 
 ### X. Configuration du projet
