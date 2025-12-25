@@ -4,7 +4,7 @@
 ## I. Python (Portable)
 ### A. Téléchargement
 ```
-cd ..
+cd C:\
 rmdir /q /s projet
 mkdir projet
 cd projet
