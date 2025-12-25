@@ -31,7 +31,7 @@ python.exe get-pip.py
 
 ```bash
 cls
-set PYTHON_HOME=C:\projet\python-3.10.0
+set PYTHON_HOME=C:\projets\python-3.10.0
 set PATH=%PYTHON_HOME%;%PYTHON_HOME%\Scripts;%PATH%
 cd C:\
 cd %PYTHON_HOME%
