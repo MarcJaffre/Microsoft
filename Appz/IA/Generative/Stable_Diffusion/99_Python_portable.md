@@ -89,19 +89,23 @@ pip install virtualenv
 
 #### X. Lancement
 ```
-notepad webui-user.bat
+start /wait notepad webui-user.bat
+call webui-user.bat
 ```
 
 ```
 @echo off
 
 set PYTHON=C:\projet\python-3.10.0\python.exe
-set GIT=
-set VENV_DIR=
+set GIT=C:\Program Files\Git\bin\git.exe
+set VENV_DIR=C:\projet\python-3.10.0\stablediffusion
 set COMMANDLINE_ARGS=
 
 call webui.bat
 ```
+
+
+
 
 
 
