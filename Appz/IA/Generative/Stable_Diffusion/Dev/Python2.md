@@ -97,8 +97,13 @@ cls
 ### X. Lancement de Stable Diffusion
 ```bash
 cls
-cd /d "%WEBUI_DIR%"
 
+set PROJECT_DIR=C:\stable-diffusion
+set WEBUI_DIR=%PROJECT_DIR%\webui
+set VENV_DIR=%PROJECT_DIR%\sd-env
+
+
+cd /d "%WEBUI_DIR%"
 call "%VENV_DIR%\Scripts\activate.bat"
 set  PYTHONPATH=%WEBUI_DIR%
 set  PYTHON=%VENV_DIR%\Scripts\python.exe
