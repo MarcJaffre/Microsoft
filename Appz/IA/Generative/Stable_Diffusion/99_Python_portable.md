@@ -6,9 +6,9 @@
 ```bash
 cls
 cd C:\
-rmdir /q /s projet
-mkdir projet
-cd projet
+rmdir /q /s projets
+mkdir projets
+cd projets
 ```
 
 ### B. Téléchargement
