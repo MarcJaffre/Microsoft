@@ -61,13 +61,14 @@ python --version
 python -m pip --version
 ```
 
-
 ### X. Installation de virtualenv avec le Python embarqué
 ```bash
 "%PYTHON_DIR%\python.exe" -m pip install virtualenv
 ```
 
-### X. Suppression de l'environnement virtuel
+<br />
+
+### X. Suppression de l'environnement virtuel (sd-env)
 ```bash
 cls
 cd /d "%PROJECT_DIR%"
@@ -75,7 +76,7 @@ deactivate
 rmdir /S /Q "%VENV_DIR%"
 ```
 
-### X. Création de l'environnement virtuel
+### X. Création de l'environnement virtuel (sd-env)
 ```bash
 cls
 cd /d "%PROJECT_DIR%"
