@@ -67,6 +67,7 @@ python -m pip --version
 ```
 
 <br />
+<br />
 
 ### X. Suppression de l'environnement virtuel (sd-env)
 ```bash
@@ -89,7 +90,7 @@ cls
 call "%VENV_DIR%\Scripts\activate.bat"
 ```
 
-### X.Installation des dependances via PIP(sd-env)
+### X.Installation des dependances via PIP (sd-env)
 ```bash
 cls
 pip install --upgrade pip
@@ -103,6 +104,8 @@ cls
 pip list | findstr /R "torch torchvision torchaudio"
 ```
 
+
+<br />
 <br />
 
 ### X. Clonage du projet Stable-Diffusion
@@ -118,8 +121,6 @@ cls
 cd /d "%WEBUI_DIR%"
 powershell -Command "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui/master/requirements.txt' -OutFile 'requirements.txt'"
 ```
-
-
 
 ### X. Mise à niveau
 ```bash
