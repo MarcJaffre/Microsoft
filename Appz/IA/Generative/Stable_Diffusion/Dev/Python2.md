@@ -30,27 +30,23 @@ mkdir       "%PROJECT_DIR%"
 cd /d       "%PROJECT_DIR%"
 ```
 
-### X. Purge ancien environnement
+### X. Purge ancien Environnement
 ```bash
 cls
 rmdir /q /s "%VENV_DIR%"
 rmdir /q /s "%WEBUI_DIR%"
 ```
 
-### X. Téléchargement de Python 
+### X. Installation Python embarqué
 ```bash
 cls
 powershell -Command "Invoke-WebRequest -Uri 'https://www.python.org/ftp/python/%PYTHON_VERSION%/python-%PYTHON_VERSION%-embed-amd64.zip' -OutFile 'python-%PYTHON_VERSION%-embed-amd64.zip'"
-```
-
-### X. Extraction et purge zip
-```bash
-cls
 powershell -Command "Expand-Archive -Path 'python-%PYTHON_VERSION%-embed-amd64.zip' -DestinationPath '%PYTHON_DIR%'"
 del "python-%PYTHON_VERSION%-embed-amd64.zip"
 ```
 
-### X. PIP
+
+### X. Installation de PIP
 ```bash
 cls
 cd /d "%PYTHON_DIR%"
@@ -59,46 +55,41 @@ powershell -Command "Invoke-WebRequest -Uri 'https://bootstrap.pypa.io/get-pip.p
 python.exe get-pip.py --no-warn-script-location
 ```
 
-### X. Définir PATH (Ajout GIT)
+### X. Vérification des installations
 ```bash
 cls
-set GIT="C:\Program Files\Git\bin\git.exe"
-set PATH=%GIT%;%PYTHON_DIR%;%PYTHON_DIR%\Scripts;%PATH%
-set PYTHONHOME=%PYTHON_DIR%
-```
-
-### X. Verification
-```bash
 python --version
-pip --version
+pip    --version
 ```
 
-### X. Environnement virtuel
-#### 1. Installation de Env
+
+### X. Installation de virtualenv avec le Python embarqué
 ```bash
 cls
-cd /d "%PROJECT_DIR%"
-pip install virtualenv
+"%PYTHON_DIR%\python.exe" -m pip install virtualenv
 ```
-#### 2. Suppression de l'environnement
+
+### X. Suppression de l'environnement virtuel
 ```bash
 cls
 deactivate
 rmdir /S /Q "%VENV_DIR%"
 ```
-#### 3. Création de l'environnement
+
+### X. Création de l'environnement virtuel
 ```bash
 cls
-python -m virtualenv "%VENV_DIR%"
+cd /d "%PROJECT_DIR%"
+"%PYTHON_DIR%\python.exe" -m virtualenv "%VENV_DIR%"
 ```
 
-#### 4. Activation de l'environnement
+### X. Activation et installation dans l'environnement virtuel
 ```bash
 cls
 call "%VENV_DIR%\Scripts\activate.bat"
 ```
 
-#### 5. Installation des dependances
+### X.Installation des dependances via PIP
 ```bash
 cls
 pip install --upgrade pip
@@ -116,9 +107,9 @@ pip list | findstr /R "torch torchvision torchaudio"
 ### X. Clonage du projet Stable-Diffusion
 ```bash
 cls
-clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git "%WEBUI_DIR%"
+set GIT="C:\Program Files\Git\bin\git.exe"
+%GIT% clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git "%WEBUI_DIR%"
 ```
-
 
 ### X. Lancement de Stable Diffusion
 ```bash
@@ -140,10 +131,25 @@ python launch.py %COMMANDLINE_ARGS%
 ```
 
 
-### X. 
+
+
+
+
+
+
+
+
+
+
+
+### X. Définir PATH (Ajout GIT)
 ```bash
 cls
+set GIT="C:\Program Files\Git\bin\git.exe"
+set PATH=%GIT%;%PYTHON_DIR%;%PYTHON_DIR%\Scripts;%PATH%
+set PYTHONHOME=%PYTHON_DIR%
 ```
+
 
 
 ### X. 
