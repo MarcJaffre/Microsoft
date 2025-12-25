@@ -91,10 +91,11 @@ call "%VENV_DIR%\Scripts\activate.bat"
 ```bash
 cls
 pip install --upgrade pip
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+pip install torch==2.7.1+cu118 torchvision==0.22.1+cu118 torchaudio==2.7.1+cu118 --index-url https://download.pytorch.org/whl/cu118
 pip install diffusers transformers accelerate xformers
 pip install gradio==3.43.0
 pip install --upgrade -r requirements.txt
+pip list | grep -E "(torch|torchvision|torchaudio)"
 ```
 
 ### X. Clonage du projet Stable-Diffusion
