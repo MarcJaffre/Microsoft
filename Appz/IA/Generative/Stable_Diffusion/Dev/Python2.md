@@ -109,10 +109,18 @@ pip list | findstr /R "torch torchvision torchaudio"
 <br />
 
 ### X. Clonage du projet Stable-Diffusion (stable-diffusion-webui)
+stable_diffusion_repo
 ```bash
 cls
 set GIT="C:\Program Files\Git\bin\git.exe"
 %GIT% clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git "%WEBUI_DIR%"
+```
+
+### X. Fix Depots
+```
+cls
+cd /d "%WEBUI_DIR%"\modules
+powershell -Command "(Get-Content launch_utils.py) -replace 'https://github.com/Stability-AI/stablediffusion.git', 'https://github.com/AUTOMATIC1111/stable-diffusion-webui.git' | Set-Content launch_utils.py"
 ```
 
 ### X. Requirements.txt
