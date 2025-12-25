@@ -25,9 +25,13 @@ cd C:\
 cd %PYTHON_HOME%
 ```
 
+### X. Site
+```
+powershell -Command "(Get-Content python310._pth) -replace '#import', 'import' | Set-Content python310._pth"
+```
 
 ### B. Ajout de PIP
- ```
+```
 python.exe get-pip.py
 ```
 
