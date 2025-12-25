@@ -58,7 +58,7 @@ python.exe get-pip.py --no-warn-script-location
 ```bash
 cls
 python --version
-pip    --version
+python -m pip --version
 ```
 
 
