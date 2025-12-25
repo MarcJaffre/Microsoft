@@ -62,7 +62,8 @@ python.exe get-pip.py --no-warn-script-location
 ### X. Définir PATH
 ```bash
 cls
-set PATH=%PYTHON_DIR%;%PYTHON_DIR%\Scripts;%PATH%
+set GIT="C:\Program Files\Git\bin\git.exe"
+set PATH=%GIT%;%PYTHON_DIR%;%PYTHON_DIR%\Scripts;%PATH%
 set PYTHONHOME=%PYTHON_DIR%
 ```
 
@@ -99,7 +100,7 @@ pip install --upgrade -r requirements.txt
 ### X. Clonage du projet Stable-Diffusion
 ```bash
 cls
-"C:\Program Files\Git\bin\git.exe" clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git "%WEBUI_DIR%"
+clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git "%WEBUI_DIR%"
 ```
 
 
