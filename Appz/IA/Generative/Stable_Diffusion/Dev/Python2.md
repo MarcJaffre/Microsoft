@@ -51,14 +51,14 @@ python.exe get-pip.py --no-warn-script-location
 ```
 
 ### X. Définir PATH
-```
+```bash
 cls
 set PATH=%PYTHON_DIR%;%PYTHON_DIR%\Scripts;%PATH%
 set PYTHONHOME=%PYTHON_DIR%
 ```
 
 ### X. Verification
-```
+```bash
 python --version
 pip --version
 ```
