@@ -59,7 +59,7 @@ powershell -Command "Invoke-WebRequest -Uri 'https://bootstrap.pypa.io/get-pip.p
 python.exe get-pip.py --no-warn-script-location
 ```
 
-### X. Définir PATH
+### X. Définir PATH (Ajout GIT)
 ```bash
 cls
 set GIT="C:\Program Files\Git\bin\git.exe"
