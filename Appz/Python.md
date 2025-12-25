@@ -18,12 +18,26 @@ https://bootstrap.pypa.io/get-pip.py
  ```
 set PYTHON_HOME=D:\Users\marc\Desktop\python-3.10.0-embed
 set PATH=%PYTHON_HOME%;%PYTHON_HOME%\Scripts;%PATH%
+cd %PYTHON_HOME%
 python.exe get-pip.py
 ```
 
 ### 4. env
 ```
+set PYTHON_HOME=D:\Users\marc\Desktop\python-3.10.0-embed
+set PATH=%PYTHON_HOME%;%PYTHON_HOME%\Scripts;%PATH%
 pip install virtualenv
+cd %PYTHON_HOME%
+```
+### 5. Stable diffusion
+```
+virtualenv stablediffusion
+.\stablediffusion\Scripts\activate
+pip install diffusers
+pip install transformers scipy ftfy accelerate
+git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
+cd stable-diffusion-webui
+webui-user.bat
 ```
 
 #### X. Utilisation
