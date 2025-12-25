@@ -137,22 +137,26 @@ pip install --upgrade -r requirements.txt
 
 ### X. Lancement de Stable Diffusion
 ```bash
-cls
+@echo off
+
 
 set PROJECT_DIR=C:\stable-diffusion
 set WEBUI_DIR=%PROJECT_DIR%\webui
 set VENV_DIR=%PROJECT_DIR%\sd-env
 
-
 cd /d "%WEBUI_DIR%"
-call "%VENV_DIR%\Scripts\activate.bat"
-set  PYTHONPATH=%WEBUI_DIR%
-set  PYTHON=%VENV_DIR%\Scripts\python.exe
 
+call "%VENV_DIR%\Scripts\activate.bat"
+
+:: Chemin vers git.exe (sans guillemets dans la variable)
+set GIT=C:\Program Files\Git\bin\git.exe
+
+set PYTHONPATH=%WEBUI_DIR%
+set PYTHON=%VENV_DIR%\Scripts\python.exe
 set COMMANDLINE_ARGS=--skip-torch-cuda-test --use-directml --precision full --no-half --medvram --opt-split-attention --disable-nan-check --listen --port 80
 
+%PYTHON% launch.py %COMMANDLINE_ARGS%
 deactivate
-python launch.py" %COMMANDLINE_ARGS%"
 ```
 
 
