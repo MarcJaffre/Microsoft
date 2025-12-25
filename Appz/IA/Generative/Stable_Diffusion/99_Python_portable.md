@@ -85,6 +85,7 @@ set GIT=C:\Program Files\Git\bin\git.exe
 cd stable-diffusion-webui
 pip install virtualenv
 %PYTHON_HOME%\python.exe -m venv .\venv
+%PYTHON_HOME%\python.exe -m pip install -r requirements.txt
 ```
 
 #### X. Lancement
