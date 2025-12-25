@@ -4,6 +4,7 @@
 ## I. Python (Portable)
 ### A. Téléchargement
 ```
+cls
 cd C:\
 rmdir /q /s projet
 mkdir projet
@@ -17,8 +18,10 @@ start /wait curl https://bootstrap.pypa.io/get-pip.py --output .\get-pip.py
 ```
 
 ```
+cls
 set PYTHON_HOME=C:\projet\python-3.10.0
 set PATH=%PYTHON_HOME%;%PYTHON_HOME%\Scripts;%PATH%
+cd C:\
 cd %PYTHON_HOME%
 ```
 
