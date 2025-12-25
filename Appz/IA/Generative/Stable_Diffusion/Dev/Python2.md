@@ -110,7 +110,7 @@ pip install --upgrade -r requirements.txt
 #### 6. Lister les dépendances
 ```bash
 cls
-pip list
+pip list | findstr /R "torch torchvision torchaudio"
 ```
 
 ### X. Clonage du projet Stable-Diffusion
