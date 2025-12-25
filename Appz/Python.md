@@ -12,10 +12,21 @@ https://bootstrap.pypa.io/get-pip.py
 - Extraitre le fichier compressé dans python-3.10.0-embed-amd64.zip
 - Déplacer le fichier get-pip.py à la racine du dossier Python310
 - Créer un dossier Python310\Scripts
-- Lancer Le téléchargement de PIP : python.exe get-pip.py
 ```
 
-#### 3. Utilisation
+ #### 3. PIP
+ ```
+set PYTHON_HOME=D:\Users\marc\Desktop\python-3.10.0-embed
+set PATH=%PYTHON_HOME%;%PYTHON_HOME%\Scripts;%PATH%
+python.exe get-pip.py
+```
+
+### 4. env
+```
+pip install virtualenv
+```
+
+#### X. Utilisation
 ```
 set PYTHON_HOME=D:\Users\marc\Desktop\python-3.10.0-embed
 set PATH=%PYTHON_HOME%;%PYTHON_HOME%\Scripts;%PATH%
