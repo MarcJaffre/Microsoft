@@ -26,13 +26,22 @@ python.exe get-pip.py
 ```
 set PYTHON_HOME=D:\Users\marc\Desktop\python-3.10.0-embed
 set PATH=%PYTHON_HOME%;%PYTHON_HOME%\Scripts;%PATH%
-pip install virtualenv
 cd %PYTHON_HOME%
+pip install virtualenv
 ```
-### 5. Stable diffusion
+
+
+
+### 5. Création d'un environnement pour Stable Diffusion
 ```
+set PYTHON_HOME=D:\Users\marc\Desktop\python-3.10.0-embed
+set PATH=%PYTHON_HOME%;%PYTHON_HOME%\Scripts;%PATH%
+cd %PYTHON_HOME%
 virtualenv stablediffusion
 .\stablediffusion\Scripts\activate
+```
+#### 6.
+```
 pip install diffusers
 pip install transformers scipy ftfy accelerate
 git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
