@@ -37,7 +37,7 @@ rmdir /q /s "%VENV_DIR%"
 rmdir /q /s "%WEBUI_DIR%"
 ```
 
-### X. Telecharement de Python 
+### X. Téléchargement de Python 
 ```bash
 cls
 powershell -Command "Invoke-WebRequest -Uri 'https://www.python.org/ftp/python/%PYTHON_VERSION%/python-%PYTHON_VERSION%-embed-amd64.zip' -OutFile 'python-%PYTHON_VERSION%-embed-amd64.zip'"
