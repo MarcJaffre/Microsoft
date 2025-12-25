@@ -77,7 +77,7 @@ cls
 call "%VENV_DIR%\Scripts\activate.bat"
 ```
 
-### X. Installatiob des dependances
+### X. Installation des dependances
 ```bash
 cls
 pip install --upgrade pip
