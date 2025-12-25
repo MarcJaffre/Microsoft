@@ -8,7 +8,7 @@ C:\stable-diffusion\
 ├── sd-env\                 ← Environnement virtuel
 ├── webui\                  ← Clone de AUTOMATIC1111 WebUI
 ├── requirements.txt        ← Liste des modules
-└── deploy-sd.bat           ← Ce script (Code par étape)
+└── deploy-sd.bat           ← Ce script (Découper par étape)
 ```
 
 ### X. Configuration du projet
