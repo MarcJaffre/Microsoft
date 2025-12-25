@@ -108,7 +108,7 @@ pip list | findstr /R "torch torchvision torchaudio"
 <br />
 <br />
 
-### X. Clonage du projet Stable-Diffusion
+### X. Clonage du projet Stable-Diffusion (stable-diffusion-webui)
 ```bash
 cls
 set GIT="C:\Program Files\Git\bin\git.exe"
