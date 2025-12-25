@@ -83,7 +83,7 @@ cd /d "%PROJECT_DIR%"
 "%PYTHON_DIR%\python.exe" -m virtualenv "%VENV_DIR%"
 ```
 
-### X. Activation et installation dans l'environnement virtuel
+### X. Activation et installation dans l'environnement virtuel (sd-env)
 ```bash
 cls
 call "%VENV_DIR%\Scripts\activate.bat"
