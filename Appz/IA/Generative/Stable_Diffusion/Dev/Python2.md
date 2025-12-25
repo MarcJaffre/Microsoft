@@ -2,6 +2,15 @@
 # <p align='center'> Installation de Python et de Stable Diffusion </p>
 ---------------------------------------------------------------------------------------------------------------------------------------
 ## I. Python (Portable)
+```
+C:\stable-diffusion\
+├── python-3.10.0\          ← Python embarqué 3.10
+├── sd-env\                 ← Environnement virtuel
+├── webui\                  ← Clone de AUTOMATIC1111 WebUI
+├── requirements.txt        ← Liste des modules
+└── deploy-sd.bat           ← Ce script
+```
+
 ### X. Configuration du projet
 ```bash
 cls
