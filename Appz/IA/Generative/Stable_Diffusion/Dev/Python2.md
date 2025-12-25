@@ -118,19 +118,21 @@ set GIT="C:\Program Files\Git\bin\git.exe"
 ### X. Requirements.txt
 ```bash
 cls
-cd /d "%WEBUI_DIR%"
+cd /d "%PROJECT_DIR%"
 powershell -Command "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui/master/requirements.txt' -OutFile 'requirements.txt'"
 ```
 
 ### X. Mise à niveau
 ```bash
 cls
+cd /d "%PROJECT_DIR%"
 pip install --upgrade -r requirements.txt
 ```
 
 
-
-
+<br />
+<br />
+<br />
 
 
 ### X. Lancement de Stable Diffusion
