@@ -12,6 +12,7 @@ cd projet
 ```
 
 ### B. Téléchargement
+#### 1. Python 3.10.0
 ```bash
 cls
 start /wait curl https://www.python.org/ftp/python/3.10.0/python-3.10.0-embed-amd64.zip --output python-3.10.0-embed-amd64.zip
@@ -19,7 +20,13 @@ start /wait 7z x python-3.10.0-embed-amd64.zip -o"python-3.10.0"
 del python-3.10.0-embed-amd64.zip
 mkdir .\python-3.10.0\Scripts
 cd .\python-3.10.0
+```
+#### 2. PIP
+```bash
+cls
 start /wait curl https://bootstrap.pypa.io/get-pip.py --output .\get-pip.py
+powershell -Command "(Get-Content python310._pth) -replace '#import', 'import' | Set-Content python310._pth"
+python.exe get-pip.py
 ```
 
 ```bash
@@ -30,15 +37,6 @@ cd C:\
 cd %PYTHON_HOME%
 ```
 
-### C. Site
-```bash
-powershell -Command "(Get-Content python310._pth) -replace '#import', 'import' | Set-Content python310._pth"
-```
-
-### D. Ajout de PIP
-```bash
-python.exe get-pip.py
-```
 
 ### E. Utilisation
 ```bash
