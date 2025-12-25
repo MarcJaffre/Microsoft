@@ -3,7 +3,7 @@
 ---------------------------------------------------------------------------------------------------------------------------------------
 ## I. Python (Portable)
 ### A. Dossier de travail
-```
+```bash
 cls
 cd C:\
 rmdir /q /s projet
@@ -12,7 +12,7 @@ cd projet
 ```
 
 ### B. Téléchargement
-```
+```bash
 cls
 start /wait curl https://www.python.org/ftp/python/3.10.0/python-3.10.0-embed-amd64.zip --output python-3.10.0-embed-amd64.zip
 start /wait 7z x python-3.10.0-embed-amd64.zip -o"python-3.10.0"
@@ -22,7 +22,7 @@ cd .\python-3.10.0
 start /wait curl https://bootstrap.pypa.io/get-pip.py --output .\get-pip.py
 ```
 
-```
+```bash
 cls
 set PYTHON_HOME=C:\projet\python-3.10.0
 set PATH=%PYTHON_HOME%;%PYTHON_HOME%\Scripts;%PATH%
@@ -31,23 +31,23 @@ cd %PYTHON_HOME%
 ```
 
 ### C. Site
-```
+```bash
 powershell -Command "(Get-Content python310._pth) -replace '#import', 'import' | Set-Content python310._pth"
 ```
 
 ### D. Ajout de PIP
-```
+```bash
 python.exe get-pip.py
 ```
 
 ### E. Utilisation
-```
+```bash
 python --version
 pip    --version
 ```
 
 ### F. Ajout ENV
-```
+```bash
 pip install virtualenv
 ```
 
