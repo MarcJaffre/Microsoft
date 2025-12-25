@@ -46,26 +46,37 @@ pip    --version
 pip install virtualenv
 ```
 
-### E. Stable Diffusion
+<br />
+
+---------------------------------------------------------------------------------------------------------------------------------------
+## II. Stable Diffusion
+### A. Dossier de Travail
 ```
-set PYTHON_HOME=D:\Users\marc\Desktop\python-3.10.0-embed
+cls
+set PYTHON_HOME=C:\projet\python-3.10.0
 set PATH=%PYTHON_HOME%;%PYTHON_HOME%\Scripts;%PATH%
+cd C:\
 cd %PYTHON_HOME%
+```
+
+### B. Création de l'environnement
+```
 virtualenv stablediffusion
 .\stablediffusion\Scripts\activate
 ```
 
-#### F. Installation avec Hugging Face Diffusers
+#### C. Installation avec Hugging Face Diffusers
 ```
 pip install diffusers
 pip install transformers scipy ftfy accelerate
 ```
-#### G. Cloner le dépôt GitHub
+
+#### D. Cloner le dépôt GitHub
 ```
 git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
 ```
 
-#### H. Lancement
+#### E. Lancement
 ```
 cd stable-diffusion-webui
 webui-user.bat
