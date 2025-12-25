@@ -1,5 +1,5 @@
 ---------------------------------------------------------------------------------------------------------------------------------------
-# <p align='center'> Installation de Python et de Stable Diffusion </p>
+# <p align='center'> Installation de Stable Diffusion sur un environnement portable </p>
 ---------------------------------------------------------------------------------------------------------------------------------------
 ## I. Python (Portable)
 ```
