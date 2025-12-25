@@ -2,13 +2,18 @@
 # <p align='center'> Installation de Python et de Stable Diffusion </p>
 ---------------------------------------------------------------------------------------------------------------------------------------
 ## I. Python (Portable)
-### A. Téléchargement
+### A. Dossier de travail
 ```
 cls
 cd C:\
 rmdir /q /s projet
 mkdir projet
 cd projet
+```
+
+### B. Téléchargement
+```
+cls
 start /wait curl https://www.python.org/ftp/python/3.10.0/python-3.10.0-embed-amd64.zip --output python-3.10.0-embed-amd64.zip
 start /wait 7z x python-3.10.0-embed-amd64.zip -o"python-3.10.0"
 del python-3.10.0-embed-amd64.zip
@@ -25,23 +30,23 @@ cd C:\
 cd %PYTHON_HOME%
 ```
 
-### X. Site
+### C. Site
 ```
 powershell -Command "(Get-Content python310._pth) -replace '#import', 'import' | Set-Content python310._pth"
 ```
 
-### B. Ajout de PIP
+### D. Ajout de PIP
 ```
 python.exe get-pip.py
 ```
 
-#### C. Utilisation
+### E. Utilisation
 ```
 python --version
 pip    --version
 ```
 
-### D. Ajout ENV
+### F. Ajout ENV
 ```
 pip install virtualenv
 ```
