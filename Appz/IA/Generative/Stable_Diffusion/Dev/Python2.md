@@ -74,28 +74,43 @@ pip --version
 ```
 
 ### X. Environnement virtuel
+#### 1. Installation de Env
 ```bash
 cls
 cd /d "%PROJECT_DIR%"
 pip install virtualenv
+```
+#### 2. Suppression de l'environnement
+```bash
+cls
+deactivate
+rmdir /S /Q "%VENV_DIR%"
+```
+#### 3. Création de l'environnement
+```bash
+cls
 python -m virtualenv "%VENV_DIR%"
 ```
 
-### X. Activation de l'environnement
+#### 4. Activation de l'environnement
 ```bash
 cls
 call "%VENV_DIR%\Scripts\activate.bat"
 ```
 
-### X. Installation des dependances
+#### 5. Installation des dependances
 ```bash
 cls
 pip install --upgrade pip
 pip install torch==2.7.1+cu118 torchvision==0.22.1+cu118 torchaudio==2.7.1+cu118 --index-url https://download.pytorch.org/whl/cu118
-pip install diffusers transformers accelerate xformers
-pip install gradio==3.43.0
+pip install accelerate diffusers transformers
+pip install xformers==0.0.31 gradio==3.43.0
 pip install --upgrade -r requirements.txt
-pip list | grep -E "(torch|torchvision|torchaudio)"
+```
+#### 6. Lister les dépendances
+```bash
+cls
+pip list
 ```
 
 ### X. Clonage du projet Stable-Diffusion
