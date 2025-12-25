@@ -23,7 +23,6 @@ set WEBUI_DIR=%PROJECT_DIR%\webui
 
 ### X. Dossier de travail
 ```bash
-cls
 cd /d C:\
 rmdir /q /s "%PROJECT_DIR%"
 mkdir       "%PROJECT_DIR%"
@@ -65,13 +64,13 @@ pip    --version
 
 ### X. Installation de virtualenv avec le Python embarqué
 ```bash
-cls
 "%PYTHON_DIR%\python.exe" -m pip install virtualenv
 ```
 
 ### X. Suppression de l'environnement virtuel
 ```bash
 cls
+cd /d "%PROJECT_DIR%"
 deactivate
 rmdir /S /Q "%VENV_DIR%"
 ```
@@ -96,7 +95,6 @@ pip install --upgrade pip
 pip install torch==2.7.1+cu118 torchvision==0.22.1+cu118 torchaudio==2.7.1+cu118 --index-url https://download.pytorch.org/whl/cu118
 pip install accelerate diffusers transformers
 pip install xformers==0.0.31 gradio==3.43.0
-pip install --upgrade -r requirements.txt
 ```
 #### 6. Lister les dépendances
 ```bash
@@ -110,6 +108,26 @@ cls
 set GIT="C:\Program Files\Git\bin\git.exe"
 %GIT% clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git "%WEBUI_DIR%"
 ```
+
+### X. Requirements.txt
+```bash
+cls
+cd /d "%WEBUI_DIR%"
+powershell -Command "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui/master/requirements.txt' -OutFile 'requirements.txt'"
+```
+
+
+
+### X. Mise à niveau
+```bash
+cls
+pip install --upgrade -r requirements.txt
+```
+
+
+
+
+
 
 ### X. Lancement de Stable Diffusion
 ```bash
@@ -132,16 +150,6 @@ python launch.py %COMMANDLINE_ARGS%
 
 
 
-
-
-
-
-
-
-
-
-
-
 ### X. Définir PATH (Ajout GIT)
 ```bash
 cls
@@ -149,8 +157,6 @@ set GIT="C:\Program Files\Git\bin\git.exe"
 set PATH=%GIT%;%PYTHON_DIR%;%PYTHON_DIR%\Scripts;%PATH%
 set PYTHONHOME=%PYTHON_DIR%
 ```
-
-
 
 ### X. 
 ```bash
