@@ -30,10 +30,8 @@ python.exe get-pip.py
 
 #### C. Utilisation
 ```
-set PYTHON_HOME=D:\Users\marc\Desktop\python-3.10.0-embed
-set PATH=%PYTHON_HOME%;%PYTHON_HOME%\Scripts;%PATH%
 python --version
-pip --version
+pip    --version
 ```
 
 ### D. Ajout ENV
