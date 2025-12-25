@@ -89,7 +89,7 @@ cls
 call "%VENV_DIR%\Scripts\activate.bat"
 ```
 
-### X.Installation des dependances via PIP
+### X.Installation des dependances via PIP(sd-env)
 ```bash
 cls
 pip install --upgrade pip
@@ -97,11 +97,13 @@ pip install torch==2.7.1+cu118 torchvision==0.22.1+cu118 torchaudio==2.7.1+cu118
 pip install accelerate diffusers transformers
 pip install xformers==0.0.31 gradio==3.43.0
 ```
-#### 6. Lister les dépendances
+#### 6. Lister les dépendances(sd-env)
 ```bash
 cls
 pip list | findstr /R "torch torchvision torchaudio"
 ```
+
+<br />
 
 ### X. Clonage du projet Stable-Diffusion
 ```bash
