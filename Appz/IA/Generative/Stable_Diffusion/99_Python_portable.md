@@ -76,12 +76,14 @@ pip install transformers scipy ftfy accelerate
 
 #### D. Cloner le dépôt GitHub
 ```
-git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
+set GIT=C:\Program Files\Git\bin\git.exe
+"%GIT%" clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
+cd stable-diffusion-webui
 ```
+
 
 #### E. Lancement
 ```
-cd stable-diffusion-webui
 webui-user.bat
 ```
 
