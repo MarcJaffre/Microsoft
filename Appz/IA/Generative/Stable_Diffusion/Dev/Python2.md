@@ -113,6 +113,8 @@ stable_diffusion_repo
 ```bash
 cls
 set GIT="C:\Program Files\Git\bin\git.exe"
+
+rmdir /q /s  "%WEBUI_DIR%"
 %GIT% clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git "%WEBUI_DIR%"
 ```
 
@@ -122,11 +124,6 @@ cls
 cd /d "%WEBUI_DIR%"\modules
 powershell -Command "(Get-Content launch_utils.py) -replace 'https://github.com/Stability-AI/stablediffusion.git', 'https://github.com/AUTOMATIC1111/stable-diffusion-webui.git' | Set-Content launch_utils.py"
 powershell -Command "(Get-Content launch_utils.py) -replace 'cf1d67a6fd5ea1aa600c4df58e5b47da45f6bdbf', '82a973c04367123ae98bd9abdf80d9eda9b910e2' | Set-Content launch_utils.py"
-```
-
-
-
-
 ```
 
 ### X. Requirements.txt
@@ -140,19 +137,16 @@ powershell -Command "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/A
 ```bash
 cls
 cd /d "%PROJECT_DIR%"
+call "%VENV_DIR%\Scripts\activate.bat"
 pip install --upgrade -r requirements.txt
 ```
 
-
 <br />
 <br />
-<br />
-
 
 ### X. Lancement de Stable Diffusion
 ```bash
 @echo off
-
 
 set PROJECT_DIR=C:\stable-diffusion
 set WEBUI_DIR=%PROJECT_DIR%\webui
