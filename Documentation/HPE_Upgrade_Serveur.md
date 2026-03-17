@@ -11,12 +11,17 @@ Depuis le serveur physique, chercher l'étiquette qui contient le lien vers le m
 <img width="140" height="142" alt="image" src="https://github.com/user-attachments/assets/31734233-b472-45f7-9776-184ff4dc9fa6" />
 
 ### C. Service Pack for HPE Proliant (SPP)
+Aller dans `Drivers and Software` puis rechercher 
+
 Le package contient tout ce qui faut pour la mise à niveau du serveur. (ISO)
 
 <img width="945" height="595" alt="image" src="https://github.com/user-attachments/assets/51813c3c-e761-4d79-ad84-88a60caef854" />
 
+<img width="2036" height="912" alt="image" src="https://github.com/user-attachments/assets/60e7ea64-086a-4fb1-afc1-6dc29b234cc3" />
+
+
 ### D. Monter l'image
-Double cliquer sur l'image iso pour monter le SPP
+
 
 <img width="600" height="403" alt="image" src="https://github.com/user-attachments/assets/239fd0ee-a92c-4472-bf4f-59e886175115" />
 
