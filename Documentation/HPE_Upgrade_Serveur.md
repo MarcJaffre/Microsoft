@@ -6,6 +6,7 @@
 Mettre à jour les Firmwares physique d'un serveur HPE
 
 ### B. Référence du serveur
+Depuis le serveur physique, récupérer l'URL dédiée au firmware du serveur.
 <img width="140" height="142" alt="image" src="https://github.com/user-attachments/assets/31734233-b472-45f7-9776-184ff4dc9fa6" />
 
 ### C. Service Pack for HPE Proliant (SPP)
