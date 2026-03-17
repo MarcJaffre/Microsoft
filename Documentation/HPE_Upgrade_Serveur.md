@@ -15,9 +15,9 @@ Aller dans `Drivers and Software` puis rechercher
 
 Le package contient tout ce qui faut pour la mise à niveau du serveur. (ISO)
 
-<img width="945" height="595" alt="image" src="https://github.com/user-attachments/assets/51813c3c-e761-4d79-ad84-88a60caef854" />
-
 <img width="2036" height="912" alt="image" src="https://github.com/user-attachments/assets/60e7ea64-086a-4fb1-afc1-6dc29b234cc3" />
+
+<img width="945" height="595" alt="image" src="https://github.com/user-attachments/assets/51813c3c-e761-4d79-ad84-88a60caef854" />
 
 
 ### D. Monter l'image
