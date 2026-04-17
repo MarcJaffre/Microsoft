@@ -29,29 +29,29 @@ Le package contient tout ce qui faut pour la mise à niveau du serveur. (ISO)
 Lancer le fichier `Launch_sum.bat` avec les droits administrateurs.
 
 #### 2. Localhost Guided Update
-<img width="587" height="421" alt="image" src="https://github.com/user-attachments/assets/0f8a83af-4232-439d-98b4-b7c2e5480022" />
+<p align='center'> <img width="587" height="421" alt="image" src="https://github.com/user-attachments/assets/0f8a83af-4232-439d-98b4-b7c2e5480022" /> </p>
 
 #### 3. Step 1 (Inventory)
-<img width="786" height="492" alt="image" src="https://github.com/user-attachments/assets/22488596-bb28-46d7-bcac-86abab16831b" />
+<p align='center'> <img width="786" height="492" alt="image" src="https://github.com/user-attachments/assets/22488596-bb28-46d7-bcac-86abab16831b" /> </p>
 
-<img width="747" height="465" alt="image" src="https://github.com/user-attachments/assets/5399a05b-b1ff-48b6-8a64-ecd5e3776720" />
+<p align='center'> <img width="747" height="465" alt="image" src="https://github.com/user-attachments/assets/5399a05b-b1ff-48b6-8a64-ecd5e3776720" /> </p>
 
 ```
 Durée de l’opération : 48 min
 ```
 
 #### 4. Step 2 (Review)
-<img width="945" height="422" alt="image" src="https://github.com/user-attachments/assets/c8bc71ee-2b1e-4ac2-874d-8a6c227e5eeb" />
+<p align='center'> <img width="945" height="422" alt="image" src="https://github.com/user-attachments/assets/c8bc71ee-2b1e-4ac2-874d-8a6c227e5eeb" /> </p>
 
-<img width="945" height="583" alt="image" src="https://github.com/user-attachments/assets/060d8282-701a-4b4f-9d73-9364ad15b487" />
+<p align='center'> <img width="945" height="583" alt="image" src="https://github.com/user-attachments/assets/060d8282-701a-4b4f-9d73-9364ad15b487" /> </p>
 
-<img width="945" height="276" alt="image" src="https://github.com/user-attachments/assets/8ed924db-727a-42f0-8ec6-8ac4f695fc24" />
+<p align='center'> <img width="945" height="276" alt="image" src="https://github.com/user-attachments/assets/8ed924db-727a-42f0-8ec6-8ac4f695fc24" /> </p>
 
-<img width="945" height="111" alt="image" src="https://github.com/user-attachments/assets/a5a35eb6-e1f8-4839-8cb1-2556946a0a29" />
+<p align='center'> <img width="945" height="111" alt="image" src="https://github.com/user-attachments/assets/a5a35eb6-e1f8-4839-8cb1-2556946a0a29" /> </p>
 
 
 #### 5. Step 3 : Deployment
-<img width="945" height="834" alt="image" src="https://github.com/user-attachments/assets/91c6e9e1-8c34-48fa-aa30-a704037c5b98" />
+<p align='center'> <img width="945" height="834" alt="image" src="https://github.com/user-attachments/assets/91c6e9e1-8c34-48fa-aa30-a704037c5b98" /> </p>
 
 ```
 Durée de l’opération : 40 min
