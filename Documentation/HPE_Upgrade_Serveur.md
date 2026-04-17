@@ -19,10 +19,7 @@ Le package contient tout ce qui faut pour la mise à niveau du serveur. (ISO)
 
 
 ### D. Monter l'image
-
-
-<img width="600" height="403" alt="image" src="https://github.com/user-attachments/assets/239fd0ee-a92c-4472-bf4f-59e886175115" />
-
+<p align='center'> <img width="600" height="403" alt="image" src="https://github.com/user-attachments/assets/239fd0ee-a92c-4472-bf4f-59e886175115" /> </p>
 
 ### E. Mise à niveau
 #### 1. Lancer le Batch
