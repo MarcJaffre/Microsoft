@@ -48,7 +48,11 @@
 
 ### I. Consentement et autorisations
 #### 1. Paramètres de consentement de l’utilisateur
+<img width="1461" height="827" alt="image" src="https://github.com/user-attachments/assets/b90faec2-5cd2-40e5-a045-4dc5fe50d5d2" />
+
 #### 2. Paramètres du consentement de l’administrateur
+Très utile pour permettre aux utilisateur de faire une demande d'autorisation à une application spécifique. La validation peut être validée ou automatisée.
+<img width="1458" height="829" alt="image" src="https://github.com/user-attachments/assets/0d23c448-c145-4ffa-ad7d-307fcd9c6d8e" /> <br />
 #### 3. Classifications d’autorisation
 
 
