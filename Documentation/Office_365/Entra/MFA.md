@@ -7,6 +7,7 @@
 
 <img width="1498" height="750" alt="image" src="https://github.com/user-attachments/assets/81b1b8fc-267d-4d75-9231-285dffdf264e" />
 
+<img width="1476" height="761" alt="image" src="https://github.com/user-attachments/assets/2cec119b-0612-46d2-b308-e3e102465cea" />
 
 Reset :
 <img width="1493" height="759" alt="image" src="https://github.com/user-attachments/assets/1730a161-3a1c-4315-9cfc-6d3f6ca48150" />
