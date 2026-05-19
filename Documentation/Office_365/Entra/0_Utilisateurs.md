@@ -25,13 +25,3 @@
 <img width="1686" height="828" alt="image" src="https://github.com/user-attachments/assets/14521cc2-9a8a-434a-99a0-b87f6974dba5" />
 
 
-
-
-
-### B. Groupes
-### C. Appareils
-### D. Assistants
-### E. Applications d'entreprise
-### F. Inscription d'applications
-### G. Rôles et administrateurs
-
