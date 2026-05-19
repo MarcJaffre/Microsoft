@@ -1,5 +1,5 @@
 -----------------------------------------------------------------
-# <p align='center'> Entra - Méthodes d'authentification </p>
+# <p align='center'> Entra ID - Méthodes d'authentification </p>
 -----------------------------------------------------------------
 ## I. Présentation
 ### A. Stratégies
