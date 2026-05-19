@@ -1,34 +1,33 @@
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 # <p align='center'> Entra - Applications d'entreprise </p>
 ------------------------------------------------------------------------------------------------------------------------------------------------------
-## I. Vue d'ensemble 
+## I. Présentation
 ### A. Vue d'ensemble
 ### B. Diagnostiquer et résoudre les problèmes
+
 ### C. Toutes les applications
 ### D. Connecteurs de réseau privé
 ### E. Paramètres utilisateur
-### F. 
-### G. 
-### H. 
-### I. 
-### J. 
-### K. 
+### F. Lanceur d’applications
+### G. Extensions d'authentification personnalisées
+### H. Accès conditionnel
+### I. Consentement et autorisations
+### J. Stratégies d’application
+### K. Journaux de connexion
+### L. Utilisation et insights
+### M. Journaux d'audit
+### N. Provisionner des journaux
+### O. Révisions d'accès
+### P. Demandes de consentement d’administrateur
+### Q. Résultats de l'opération en bloc
 
 
 
 
 
-Lanceur d’applications
-Extensions d'authentification personnalisées
-Sécurité
-Accès conditionnel
-Consentement et autorisations
-Stratégies d’application
-Activité
-Journaux de connexion
-Utilisation et insights
-Journaux d'audit
-Provisionner des journaux
-Révisions d'accès
-Demandes de consentement d’administrateur
-Résultats de l'opération en bloc
+
+
+
+
+
+
