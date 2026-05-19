@@ -1,7 +1,1 @@
-02_Groupes
-03_Appareils
-04_Assistants
-05_Applications_d-entreprise
-06_Inscription_d-applications
-07_Roles_et_administrateurs
-
+https://entra.microsoft.com/
