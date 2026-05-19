@@ -1,4 +1,6 @@
-<img width="1453" height="866" alt="image" src="https://github.com/user-attachments/assets/ae81ec31-1a82-4b40-a04c-15205ea65282" />------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
 # <p align='center'> Entra - </p>
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 ## I .XXXXXXXXX
@@ -9,8 +11,7 @@
 <img width="1456" height="857" alt="image" src="https://github.com/user-attachments/assets/331fcec3-b8cf-4d05-89da-43ddab8f6c6b" />
 
 ### C. Paramètres de l'appareil
-
-<img width="1453" height="866" alt="image" src="https://github.com/user-attachments/assets/b618fcdf-4b38-4b5a-9321-39d56606d688" />
+<img width="1453" height="866" alt="image" src="https://github.com/user-attachments/assets/ae81ec31-1a82-4b40-a04c-15205ea65282" />
 
 ### D. Clés BitLocker
 <img width="1454" height="858" alt="image" src="https://github.com/user-attachments/assets/8249831b-8cc8-4599-9696-d133f2f35eeb" />
