@@ -46,16 +46,21 @@
 <img width="1455" height="863" alt="image" src="https://github.com/user-attachments/assets/28edca4c-499c-411f-b492-6bfe5d975833" /> <br />
 
 ### K. Journaux de connexion
+<img width="1460" height="861" alt="image" src="https://github.com/user-attachments/assets/0477caf4-a984-4380-b83b-614637fa937d" /> <br />
 
 ### L. Utilisation et insights
 
 ### M. Journaux d'audit
+<img width="1460" height="861" alt="image" src="https://github.com/user-attachments/assets/cd505f46-792e-47a6-9f2b-cd7eef88b034" /> <br />
 
 ### N. Provisionner des journaux
+<img width="1461" height="860" alt="image" src="https://github.com/user-attachments/assets/010ca019-f64f-4949-aeff-0382413fbe81" />
 
 ### O. Révisions d'accès
 
 ### P. Demandes de consentement d’administrateur
+Permet de valider les demandes de consentement à une application.
+<img width="1179" height="851" alt="image" src="https://github.com/user-attachments/assets/711de895-41e0-4e59-84d0-84a72f99be15" />
 
 ### Q. Résultats de l'opération en bloc
 
