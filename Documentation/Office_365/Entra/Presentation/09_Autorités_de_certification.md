@@ -1,5 +1,5 @@
 -------------------------------------------------------------
-# <p align='center'> Entra - Autorités de certification </p>
+# <p align='center'> Entra ID - Autorités de certification </p>
 -------------------------------------------------------------
 ## I. Présentation
 ### A Autorités de certification
