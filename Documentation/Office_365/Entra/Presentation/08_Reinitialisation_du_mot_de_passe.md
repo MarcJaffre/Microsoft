@@ -1,5 +1,5 @@
 ------------------------------------------------------------------
-# <p align='center'> Entra - Réinitialisation du mot de passe </p>
+# <p align='center'> Entra ID - Réinitialisation du mot de passe </p>
 ------------------------------------------------------------------
 ## I. Présentation
 ### A. Propriétés
