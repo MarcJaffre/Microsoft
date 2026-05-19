@@ -1,7 +1,9 @@
 ------------------------------------------------------------------------
 <p align='center'> Entra - Groupes </p> 
 ------------------------------------------------------------------------
+
 ## I. Groupes
+
 ### A. Vue d'ensemble
 <img width="1697" height="825" alt="image" src="https://github.com/user-attachments/assets/9878798c-448f-46cf-9db2-947229cee24f" />
 
