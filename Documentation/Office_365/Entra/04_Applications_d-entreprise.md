@@ -24,14 +24,13 @@
 <img width="1459" height="859" alt="image" src="https://github.com/user-attachments/assets/d073c938-93c7-4814-935a-cf13d197cf65" /> <br />
 
 ### H. Accès conditionnel
-#### 1. 
-#### 2. 
-#### 3. 
-#### 4. 
-#### 5. 
-#### 7. 
-#### 8. 
-#### 9. 
+#### 1. Vue d'ensemble
+#### 2. Stratégies
+#### 3. Stratégies supprimées
+#### 4. Diagnostiquer et résoudre les problèmes
+#### 5. Points forts d’authentification
+#### 7. Journaux de connexion
+#### 8. Journaux d'audit
 
 <br />
 
@@ -62,8 +61,7 @@
 Permet de valider les demandes de consentement à une application.
 <img width="1179" height="851" alt="image" src="https://github.com/user-attachments/assets/711de895-41e0-4e59-84d0-84a72f99be15" />
 
-### Q. Résultats de l'opération en bloc
-
+### Q. 
 
 
 
