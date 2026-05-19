@@ -25,8 +25,14 @@
 
 ### H. Accès conditionnel
 #### 1. Vue d'ensemble
+<img width="1456" height="862" alt="image" src="https://github.com/user-attachments/assets/f219814e-a292-4274-8923-0a4c980b6df3" />
+
 #### 2. Stratégies
+<img width="1460" height="856" alt="image" src="https://github.com/user-attachments/assets/0ca19fe4-9d2f-437c-bef2-9dfe0e47e09a" />
+
 #### 3. Stratégies supprimées
+<img width="1457" height="862" alt="image" src="https://github.com/user-attachments/assets/379054c8-62a3-4733-8c03-a4f786dccd95" />
+
 #### 4. Diagnostiquer et résoudre les problèmes
 #### 5. Points forts d’authentification
 #### 7. Journaux de connexion
