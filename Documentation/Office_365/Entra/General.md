@@ -15,12 +15,12 @@
 #### 4. Diagnostiquer et résoudre les problèmes
 <img width="1691" height="828" alt="image" src="https://github.com/user-attachments/assets/23efd537-11d9-45a1-84e7-b10305e77370" />
 
+#### 5. Utilisateurs supprimés
+#### 6. Réinitialisation du mot de passe
+#### 7. Paramètres utilisateur
 
-#### 5.
-#### 6.
-#### 7.
-#### 8.
-#### 9.
+
+
 
 
 ### B. Groupes
