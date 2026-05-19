@@ -8,11 +8,12 @@
 
 ------------------------------------------------------------------------------------------------
 ## II. Entra
-### B. Groupe
+### B. Groupes
 Les groupes servent à définis des membres. (Utilisateurs, applications ..)
 
 <img width="1700" height="746" alt="image" src="https://github.com/user-attachments/assets/5fefd4e5-6751-470b-bcd2-1b431c55f5d2" />
 
+<img width="1393" height="735" alt="image" src="https://github.com/user-attachments/assets/94805157-fef2-4f20-b26d-a317b135e3ee" />
 
 
 ### A. Application Entreprise
@@ -25,4 +26,5 @@ Pour permettre aux utilisateurs de faire une demande d'autorisation auprès de l
 #### 2. Politique par application
 Aller dans `Applications d'entreprise` > `Toutes les applications` > `Mon_Appz` .
 
-<img width="768" height="641" alt="image" src="https://github.com/user-attachments/assets/8a7b1ee6-8996-4aef-913e-19ce4c3f871b" />
+Exemple d'auto-approbation: 
+<img width="1284" height="751" alt="image" src="https://github.com/user-attachments/assets/e6fc6c27-3f0e-4b38-a5fd-ff9dcecf1502" />
