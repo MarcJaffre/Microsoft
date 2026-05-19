@@ -21,7 +21,7 @@
 <img width="1459" height="866" alt="image" src="https://github.com/user-attachments/assets/81c47a85-8a8f-421e-acb9-a7a461ed06b5" />
 
 ### G. Extensions d'authentification personnalisées
-<img width="1459" height="859" alt="image" src="https://github.com/user-attachments/assets/d073c938-93c7-4814-935a-cf13d197cf65" /> <br />
+<img width="1459" height="859" alt="image" src="https://github.com/user-attachments/assets/d073c938-93c7-4814-935a-cf13d197cf65" /> <br /> <br />
 
 ### H. Accès conditionnel
 #### 1. Vue d'ensemble
@@ -34,11 +34,16 @@
 <img width="1457" height="862" alt="image" src="https://github.com/user-attachments/assets/379054c8-62a3-4733-8c03-a4f786dccd95" />
 
 #### 4. Diagnostiquer et résoudre les problèmes
-#### 5. Points forts d’authentification
-#### 7. Journaux de connexion
-#### 8. Journaux d'audit
+<img width="1449" height="827" alt="image" src="https://github.com/user-attachments/assets/0ec42f34-51f5-49c9-a2a6-d8a37f9cf083" />
 
-<br />
+#### 5. Points forts d’authentification
+<img width="1458" height="823" alt="image" src="https://github.com/user-attachments/assets/cdb8bad7-2e1e-4fd4-824a-1659919d6407" />
+
+#### 7. Journaux de connexion
+<img width="1457" height="828" alt="image" src="https://github.com/user-attachments/assets/1c956a10-b277-4708-adf7-7dbcdb1c2407" />
+
+#### 8. Journaux d'audit
+<img width="1462" height="824" alt="image" src="https://github.com/user-attachments/assets/b481411e-1d92-4285-8390-71a93c0ee63a" /> <br /> <br />
 
 
 ### I. Consentement et autorisations
