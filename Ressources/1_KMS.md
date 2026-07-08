@@ -28,6 +28,7 @@ docker logs vlmcsd;
 
 | Operatin System  | Version | Catégorie          | Clé de Produit                |  
 | ---------------- | ------- | ------------------ | ----------------------------- |
+| Windows Server   | 2022    | Standard Edition   | TVRH6-WHNXV-R9WG3-9XRFY-MY832 |
 | Windows Server   | 2022    | Standard Edition   | VDYBN-27WPP-V4HQT-9VMD4-VMK7H |
 | Windows Server   | 2019    | Standard Edition   | N69G4-B89J2-4G8F4-WWYCC-J464C |
 | Windows Server   | 2016    | Standard Edition   | WC2BQ-8NRM3-FDDYY-2BFGV-KHKQY |
