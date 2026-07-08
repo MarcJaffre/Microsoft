@@ -10,6 +10,7 @@ https://www.microsoft.com/fr-fr/evalcenter/download-windows-11-enterprise
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## II. Windows Server
 ```
+https://www.microsoft.com/fr-fr/evalcenter/download-windows-server-2025
 https://www.microsoft.com/fr-fr/evalcenter/download-windows-server-2022
 https://www.microsoft.com/fr-fr/evalcenter/download-windows-server-2019
 https://www.microsoft.com/fr-fr/evalcenter/download-windows-server-2019-essentials
