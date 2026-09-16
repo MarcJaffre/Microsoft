@@ -16,6 +16,7 @@ https://www.catalog.update.microsoft.com/home.aspx
 <img width="428" height="80" alt="image" src="https://github.com/user-attachments/assets/47b09bd5-2476-4aed-84d5-6862f57a1a66" />
 
 #### 2. Interprétation
-La mise à jour est pour une architecture de processeur (Arm / X64) et une version de Windows (24H2, 25H2,26H2)
+La mise à jour est pour une architecture de processeur (Arm64 / X64) et une version de Windows (24H2, 25H2,26H2)
 
 <img width="360" height="312" alt="image" src="https://github.com/user-attachments/assets/1399b163-046f-449b-a941-b0840b00669a" />
+
