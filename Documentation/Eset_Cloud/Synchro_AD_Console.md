@@ -5,7 +5,7 @@
 ### A. Programmes d'installation
 <img width="242" height="776" alt="image" src="https://github.com/user-attachments/assets/129492ea-33dd-4be3-a444-029a73bce1de" />
 
-<img width="1802" height="861" alt="image" src="https://github.com/user-attachments/assets/f1f3e108-5374-486e-9c1a-45a17bd368fb" />
+<img width="1147" height="861" alt="image" src="https://github.com/user-attachments/assets/f1f3e108-5374-486e-9c1a-45a17bd368fb" />
 
 <img width="1147" height="821" alt="image" src="https://github.com/user-attachments/assets/c82376d4-7716-45af-9561-10066037343f" />
 
