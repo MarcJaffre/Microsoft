@@ -12,12 +12,17 @@ Le fichier installateur GPO contient le fichier `install_config.ini` utiliser pa
 <img width="1775" height="173" alt="image" src="https://github.com/user-attachments/assets/97ca1e2e-68d2-4323-93d4-2d20e170776c" /> <br />
 <img width="432"  height="386" alt="image" src="https://github.com/user-attachments/assets/11ef85b4-f0ad-4c75-9f09-cd1a698609a7" /> <br />
 
-
 ### B. Création du Jeton d'accès
 <img width="810" height="540" alt="image" src="https://github.com/user-attachments/assets/e1334c88-62d9-44c6-b8f4-f4f3772d5ef0" />
 
-### C. Script
-Ce script va synchroniser les OU contenant les machines dans la console Eset.
+<br />
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+## II. Windows Serveur
+### A. Présentation
+Le script suivant permet de synchroniser les poste de travail avec les OU contenant des machines sur la console Eset.
+
+### B. Script
 ```bash
 @echo on
 cls
