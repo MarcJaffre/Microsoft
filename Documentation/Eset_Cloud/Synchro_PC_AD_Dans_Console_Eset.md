@@ -2,7 +2,12 @@
 # <p align='center'> Synchronisation des postes Windows AD dans console ESET </p>  
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## I. Console Eset
-### A. Programmes d'installation
+### A. Documentation
+> https://help.eset.com/protect_cloud/fr-FR/fs_agent_deploy_gpo_sccm.html?protect_cloud_synchronize_with_ad.html
+>
+> https://support.eset.com/fr/kb7760-utilisez-leset-active-directory-scanner-pour-synchroniser-eset-protect#prerequisites
+> 
+### B. Programmes d'installation
 Le fichier installateur GPO contient le fichier `install_config.ini` utiliser par le programme.
 
 <img width="242"  height="776" alt="image" src="https://github.com/user-attachments/assets/129492ea-33dd-4be3-a444-029a73bce1de" /> <br />
